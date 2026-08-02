@@ -1,0 +1,408 @@
+{
+  "schema": "fatal-vow.local-vertex-color-weapon-bank/v1",
+  "status": "candidate_visual_evidence",
+  "renderer": "scripts/render_local_weapon_bank.py",
+  "authorized_lane": "local_only",
+  "source_atlas": {
+    "filename": "Meshy_AI_Low_Poly_Tools_and_Tr_0802140452_texture.glb",
+    "sha256": "f6e86e2a7a65061b8575ecbf3afd5d32e396716b21f57353718d3e9f66cfbd1a",
+    "selection": {
+      "x_lt": -0.24,
+      "y_gt": 0.1,
+      "triangles": 182
+    },
+    "grip_origin_atlas": [
+      -0.272,
+      0.352,
+      0.0
+    ],
+    "local_axes_atlas": {
+      "x": [
+        0.7871874846277396,
+        -0.6167137618421145,
+        0.0
+      ],
+      "y": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "z_toward_blade": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    "source_extent": 0.2573118550617262,
+    "target_extent": 0.9777850492345596,
+    "uniform_scale": 3.8,
+    "vertex_color_contract": {
+      "grip": "#E852C4",
+      "shaft": "#48D6BF",
+      "blade": "#5B95EE"
+    }
+  },
+  "pose_catalog": {
+    "filename": "pose_grammar.v1.json",
+    "sha256": "8b6036871aa8dcd179e7fb9213fd5ef949320c1aef4bba1209aae83f59eea1f4"
+  },
+  "arms_source": {
+    "filename": "FPSPlayer.glb (5)",
+    "sha256": "9be07cf0e46e2ed97abca38a8a6cf1bbd7c111cec3fa9671c1b0b721c37535da",
+    "vertex_color_mode": "bone-heat from actual skin weights"
+  },
+  "camera": {
+    "canvas": [
+      640,
+      360
+    ],
+    "projection": "u=CX-focal*(world_x-origin_x)/depth; v=CY-focal*(world_y-origin_y)/depth; depth=world_z-origin_z",
+    "cx": 320.0,
+    "cy": 180.0,
+    "vertical_fov_degrees": 82.0,
+    "focal": 207.0663132997817,
+    "origin_world": [
+      0.0,
+      1.2830411338806151,
+      -0.0392589196562767
+    ],
+    "forward_world": "+Z",
+    "near": 0.015,
+    "calibration_source": "docs/ONEHANDATTACK2_SHOVEL_SOURCE_REVIEW.md and source GLB Camera node"
+  },
+  "frames": [
+    {
+      "atom": "onehandattack2.s000",
+      "role": "guard",
+      "sample_index": 0,
+      "time_seconds": 0.0,
+      "weapon_r_model": {
+        "translation": [
+          0.2021191,
+          1.1487716,
+          0.3312064
+        ],
+        "rotation_xyzw": [
+          0.4710484,
+          -0.0380377,
+          -0.0413091,
+          0.8803182
+        ],
+        "scale": [
+          0.9999996,
+          0.9999996,
+          0.9999997
+        ]
+      },
+      "output": "frames/00-guard.png",
+      "sha256": "1cbdf8818d370b06abfb899a9022270995a3ca2076b02146853d8399937a5ebe",
+      "vertex_color_composite": "frames/00-guard-vertex-color-composite.png",
+      "vertex_color_composite_sha256": "3115820dc80cf2cd462d1f77a7f0835f4de22da569b27ca60136b990a43789cf",
+      "visible_bounds_px": [
+        151,
+        233,
+        332,
+        359
+      ],
+      "touches_boundary": true,
+      "nearest_visible_depth": 0.28977999811606203
+    },
+    {
+      "atom": "onehandattack2.s004",
+      "role": "anticipation",
+      "sample_index": 4,
+      "time_seconds": 0.1666667,
+      "weapon_r_model": {
+        "translation": [
+          0.2599378,
+          1.204679,
+          0.1854072
+        ],
+        "rotation_xyzw": [
+          -0.4127246,
+          -0.0409739,
+          0.0507624,
+          0.9085168
+        ],
+        "scale": [
+          0.9999995,
+          0.9999998,
+          0.9999996
+        ]
+      },
+      "output": "frames/01-anticipation.png",
+      "sha256": "eabdba4a38f0db36ddc614cdd48bf53afc578e82f662c946f0159ad0b766ba21",
+      "vertex_color_composite": "frames/01-anticipation-vertex-color-composite.png",
+      "vertex_color_composite_sha256": "d773f7484e80c4e72c3c4c619d9a36bd1b860baaa754b59833fed32d023db1f5",
+      "visible_bounds_px": [
+        0,
+        0,
+        339,
+        296
+      ],
+      "touches_boundary": true,
+      "nearest_visible_depth": 0.18443744845563995
+    },
+    {
+      "atom": "onehandattack2.s006",
+      "role": "contact",
+      "sample_index": 6,
+      "time_seconds": 0.25,
+      "weapon_r_model": {
+        "translation": [
+          0.0790185,
+          1.1871856,
+          0.3986713
+        ],
+        "rotation_xyzw": [
+          -0.537761,
+          -0.4945425,
+          -0.4333236,
+          0.527704
+        ],
+        "scale": [
+          0.9999995,
+          0.9999997,
+          0.9999997
+        ]
+      },
+      "output": "frames/02-contact.png",
+      "sha256": "fd69438f093996ee52e5c513a232acf24d206abf9145482bd6dd70d658aaedfe",
+      "vertex_color_composite": "frames/02-contact-vertex-color-composite.png",
+      "vertex_color_composite_sha256": "c96837daf339e5affea71cafda3a9de21c9a4ebf4b1acbe8f71e013ec8895ad3",
+      "visible_bounds_px": [
+        257,
+        0,
+        341,
+        236
+      ],
+      "touches_boundary": true,
+      "nearest_visible_depth": 0.2641269418856597
+    },
+    {
+      "atom": "onehandattack2.s027",
+      "role": "recovery",
+      "sample_index": 27,
+      "time_seconds": 1.125,
+      "weapon_r_model": {
+        "translation": [
+          -0.2158024,
+          1.1895506,
+          0.2200101
+        ],
+        "rotation_xyzw": [
+          -0.5125622,
+          -0.384326,
+          0.0489112,
+          0.7662775
+        ],
+        "scale": [
+          0.9999997,
+          0.9999996,
+          0.9999997
+        ]
+      },
+      "output": "frames/03-recovery.png",
+      "sha256": "d728e273d2b4424a39965f064a8a99e9ead8918f894a304277944525a6cad79a",
+      "vertex_color_composite": "frames/03-recovery-vertex-color-composite.png",
+      "vertex_color_composite_sha256": "9cbbdba0c65c0e77f4801b827c56605bcf19024af12e5a018b349ebf738428fa",
+      "visible_bounds_px": [
+        441,
+        0,
+        639,
+        302
+      ],
+      "touches_boundary": true,
+      "nearest_visible_depth": 0.2170133779492638
+    }
+  ],
+  "watchdown": {
+    "timeline_frame_indices": [
+      0,
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3
+    ],
+    "durations_ms": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "output": "onehandattack2-weapon-bank-watchdown.gif",
+    "vertex_color_composite_output": "onehandattack2-vertex-color-composite-watchdown.gif"
+  },
+  "contact_sheet": "onehandattack2-weapon-bank-contact-sheet.png",
+  "vertex_color_composite_contact_sheet": "onehandattack2-vertex-color-composite-contact-sheet.png",
+  "claim_boundary": "This proves local source-atlas extraction, semantic vertex coloring, camera-space Weapon.R registration, and weapon-only cadence. It does not prove accepted hand identity, grip closure, or final occlusion."
+}
