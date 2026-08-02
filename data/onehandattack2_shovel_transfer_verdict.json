@@ -1,0 +1,24 @@
+{
+  "schema": "rotoscoping.transfer-verdict/v1",
+  "project_id": "fatal-vow-onehandattack2-shovel-v3",
+  "motion_witness": "FPSPlayer.glb (5) / OneHandAttack2",
+  "target_identity": "Medieval Fleshpunk Hand Turnaround Sheet.png",
+  "motion_correspondence": {
+    "status": "revision-required",
+    "observations": [
+      "The strict 3x3 edit preserved the source camera and margins substantially better than earlier candidates.",
+      "Earlier whole-sheet candidates enlarged, recentered, or completed offscreen tool geometry and are rejected."
+    ]
+  },
+  "target_identity_correspondence": {
+    "status": "revision-required",
+    "observations": [
+      "The isolated k004 load-bearing redraw demonstrated a credible accepted hand identity and five-finger grip.",
+      "Whole-sheet k001-k003 grips remain open or ambiguous around the shovel shaft."
+    ]
+  },
+  "runtime_watchdown": "blocked",
+  "overall": "red",
+  "next_required_repair": "Canonical hand/grip part adapter for k001-k003, then frozen-pair review before the remaining keys."
+}
+
