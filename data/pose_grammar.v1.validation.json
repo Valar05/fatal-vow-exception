@@ -1,8 +1,8 @@
 {
   "schema": "fatal-vow.pose-grammar-validation/v1",
   "catalog": "data/pose_grammar.v1.json",
-  "catalog_sha256": "a22877e976013020d97412e90ef3bf7e236cbe57def3a8a4259b2186ad899367",
-  "repeat_sha256": "a22877e976013020d97412e90ef3bf7e236cbe57def3a8a4259b2186ad899367",
+  "catalog_sha256": "8b6036871aa8dcd179e7fb9213fd5ef949320c1aef4bba1209aae83f59eea1f4",
+  "repeat_sha256": "8b6036871aa8dcd179e7fb9213fd5ef949320c1aef4bba1209aae83f59eea1f4",
   "deterministic": true,
   "source_clip_count": 38,
   "pose_atom_count": 405,
@@ -20,11 +20,12 @@
   "first_sentence": {
     "source": "data/grammar_sentences/onehandattack2_minimal_v0.json",
     "compile": "data/grammar_sentences/onehandattack2_minimal_v0.compiled.json",
-    "compile_sha256": "bb806c2b774c8ff51211379288bd9a1c586963b749f80ace5c9defc27b0bf305",
+    "compile_sha256": "dcece9d05a7f941ba1238529bd262f6f4d7b515c967d6390340d23e1914b92df",
     "motion_compile_status": "pass",
     "visual_compile_status": "blocked_missing_layers",
     "missing_layer_count": 12,
     "timeline_frames": 8
   },
+  "registration_contract": "Every v1 pose row retains weapon_registration and reconstruction.",
   "claim_boundary": "This validates deterministic mining and sentence compilation only. No visual watchdown, layer identity, occlusion, or animation acceptance is claimed."
 }
