@@ -12,13 +12,13 @@ Build an independent Fatal Vow game where embodied labor, shovel-kata, mutable t
 
 ## Capability State
 
-Implemented: deterministic scar/voxel source contracts; reproducible extraction of 38 Infinite Brutality clips and 5,427 transform channels; calibrated FPS-camera review; first shovel source selection and eight-key evidence packet; deterministic phase-complete pose-grammar miner; 405 source-exact v1 candidate atoms in 33 families; scored-sentence compiler; layered hand/weapon/finger runtime contract and score language; reproducible local-only shovel-bank renderer with semantic grip/shaft/blade vertex colors and source skin-weight vertex-color diagnostics.
+Implemented: deterministic scar/voxel contracts; extraction of 38 Infinite Brutality clips / 5,427 channels; calibrated FPS-camera review; 405 source-exact v1 candidate atoms in 33 families; scored-sentence compiler; layered hand/weapon/finger runtime contract; local semantic and material-vertex shovel banks; and a reusable accepted-pixel hand carrier whose hand/cuff follows `Weapon.R +Z` while the forearm follows a declared wrist-to-frame-edge exit.
 
-Tested: extraction JSON and channels; 12 one-hand/knife diagnostic runtimes at native 24 FPS; `OneHandAttack2` camera/tool registration; isolated load-bearing k004 identity redraw; v1 grammar repeatability and phase coverage; the first sentence passes atom, role, `one_hand_long_handle` grip, cue/accent/hold/release score, and interruption compilation; the approved atlas region yields exactly 182 shovel triangles and locally renders all four registered weapon poses plus a source vertex-color watchdown.
+Tested: extraction and phase coverage; 12 one-hand/knife diagnostics; `Weapon.R +Z`; isolated k004 identity; 182-triangle shovel extraction; cross-clip grip compatibility; all 12 sentence layers by path/hash/size/mode; eight-frame 10-FPS watchdown; and byte-identical repeat runs across 13 semantic-bank, 13 material-bank, and 26 carrier files.
 
-Rejected: three whole-sheet transfers and two whole-image adapter attempts. Whole-image generation cannot preserve source-specific part transfer, immutable tool geometry, or layered occlusion.
+Rejected: three whole-sheet transfers, two whole-image adapters, and `onehandattack2.s000` as this sentence's guard because its near-camera D-handle hid the forearm. The atom remains mined evidence; only that sentence role is rejected.
 
-Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Sheet.png` as first-person hand identity authority, the shift from isolated animations to a compostable pose grammar, and Drew's correction that this weapon/occlusion evidence renders locally and uses vertex color. The 405 v1 mined atoms and the four weapon frames are candidates, not collectively accepted poses or final art. No complete grammar-composed runtime sentence is accepted. The first sentence is motion-compile green and visual-compile red with eight target-hand passes missing.
+Accepted: commission, sealed decisions, hero hand identity authority, compostable pose grammar, local-only rendering, and vertex color as visibility evidence. The first carrier sentence is implemented, artifact-complete, and internally reviewed as a candidate visual pass. Drew has not accepted it as final art or runtime behavior.
 
 ## Sealed Decisions
 
@@ -48,6 +48,11 @@ Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Shee
 - First sentence source: `data/grammar_sentences/onehandattack2_minimal_v0.json`
 - First sentence compile: `data/grammar_sentences/onehandattack2_minimal_v0.compiled.json`
 - Local weapon-bank renderer: `scripts/render_local_weapon_bank.py`
+- Hand-carrier builder: `scripts/build_vertex_hand_carrier.py`
+- Material grammar bank: `evidence/onehandattack2-grammar-bank-material/`
+- Semantic grammar bank: `evidence/onehandattack2-grammar-bank-semantic/`
+- Carrier watchdown: `evidence/onehandattack2-hand-carrier/onehandattack2-hand-carrier-watchdown.gif`
+- Carrier verdict: `data/onehandattack2_hand_carrier_verdict.json`
 - Local weapon-bank manifest: `evidence/onehandattack2-local-weapon-bank/onehandattack2-local-weapon-bank.manifest.json`
 - Weapon bank: `evidence/onehandattack2-local-weapon-bank/onehandattack2-weapon-bank-contact-sheet.png`
 - Source vertex-color composite: `evidence/onehandattack2-local-weapon-bank/onehandattack2-vertex-color-composite-contact-sheet.png`
@@ -58,11 +63,11 @@ Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Shee
 
 ## Active Gate
 
-The first grammar sentence passes motion compilation: `onehandattack2.s000` guard → `onehandattack2.s004` anticipation → accepted-role override on source-exact `onehandattack2.s006` / k004 contact → `onehandattack2.s027` recovery, conducted at 10 authored FPS by cue/accent/hold/release. The corrected local lane now supplies all four source-locked shovel layers plus vertex-color source composites. Visual compilation remains red because the accepted Fatal Vow rear-hand/forearm and foreground-finger passes do not yet exist for the four recipes. The flattened accepted k004 image cannot be promoted into those passes.
+The first sentence is `onehandattack3.s002` guard → `onehandattack2.s004` anticipation → accepted-role `onehandattack2.s006` contact → `onehandattack2.s027` recovery. Motion compile passes. All twelve registered layer artifacts exist and visual compile is ready for render. The local material and vertex-color watchdowns are reproducible and internally pass as candidates. Final-art promotion is blocked on Drew's visual ruling; thin matte/cloth-edge artifacts, no supporting-left-hand atom, and no game-runtime integration remain explicit limits.
 
 ## Next Authorized Action
 
-Use the locally rendered semantic vertex-color composites as the registered mask carrier. Manually author the matching accepted-identity hand carrier for the four recipes, derive rear-hand/forearm and foreground-finger passes from its vertex-color/depth contract, composite them around the independent weapon frames, then review the intended-cadence watchdown. Do not resume whole-sheet generation, use Cloud Blender, or build named attacks independently.
+Present the material and semantic watchdowns for Drew's visual ruling. If accepted, promote this carrier as the first `one_hand_long_handle` layer atom and integrate its score/layers into the local game runtime. If rejected, repair the named perceptual defect at the carrier or pose-atom stage without rerolling whole sheets. Do not use Cloud Blender or return to named-attack construction.
 
 ## Evidence Pointers
 
@@ -72,6 +77,8 @@ Use the locally rendered semantic vertex-color composites as the registered mask
 - Phase-complete catalog: https://github.com/Valar05/fatal-vow-exception/blob/main/data/pose_grammar.v1.json
 - v1 validation: https://github.com/Valar05/fatal-vow-exception/blob/main/data/pose_grammar.v1.validation.json
 - First sentence compile: https://github.com/Valar05/fatal-vow-exception/blob/main/data/grammar_sentences/onehandattack2_minimal_v0.compiled.json
+- Hand-carrier verdict: https://github.com/Valar05/fatal-vow-exception/blob/main/data/onehandattack2_hand_carrier_verdict.json
+- Hand-carrier watchdown: https://github.com/Valar05/fatal-vow-exception/blob/main/evidence/onehandattack2-hand-carrier/onehandattack2-hand-carrier-watchdown.gif
 - Adapter verdict: https://github.com/Valar05/fatal-vow-exception/blob/main/data/onehandattack2_grip_adapter_verdict.json
 - Hero hand plate: ChatGPT Library `libfile_8466a8dd2b408191a489cefda59013c3`
 - Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
@@ -79,15 +86,12 @@ Use the locally rendered semantic vertex-color composites as the registered mask
 
 ## Recent Delta
 
-- Selected `OneHandAttack2`, reduced it to eight source-witnessed keys, and corrected shovel binding to `Weapon.R` +Z.
-- Accepted isolated k004 as premise evidence; rejected whole-sheet and whole-image adapter candidates.
-- Adopted the fourth door: registered rear-hand / weapon / foreground-finger layers with grip-class hot swapping.
-- Replaced isolated animation construction with a compostable pose grammar and score language.
-- Mined 297 source-exact candidate atoms from all 38 donor clips into 33 semantic families without resampling or promoting visual acceptance.
-- Found that v0 had no one-handed long-handle recoil/recovery atom; repaired the miner with source-exact phase anchors while retaining kinematic discoveries.
-- Mined 405 v1 candidates and compiled the first grip-compatible scored sentence.
-- Repaired the compact-row contract so v1 retains exact weapon registration and reconstruction data needed by the weapon-view bank.
-- Kept the motion pass separate from the red visual compile: twelve registered layer atoms remain missing.
-- Drew corrected the execution lane to local render only and specified vertex color for visibility/occlusion evidence; the earlier Home Center render blocker is superseded.
-- Recovered the authoritative 82° 16:9 FPS camera and `Weapon.R +Z` bind, visually rejected an incorrect compact-camera reconstruction, and rendered the exact four-pose weapon bank locally from the approved 182-triangle shovel region.
-- Added semantic weapon vertex colors and source skin-weight vertex-color composites. The sentence compiler now resolves all four weapon layers and reports eight missing target-hand passes instead of twelve.
+- Replaced isolated attack strips with a 405-atom, 33-family pose grammar and cue/accent/hold/release score language.
+- Corrected the shovel bind to `Weapon.R +Z`; kept the 182-triangle tool independent from hand art.
+- Rejected whole-sheet/whole-image transfer and built a three-pass hot-swap contract instead.
+- Reproduced the original semantic weapon bank, then added a separate source-texture-to-vertex material bank.
+- Found and repaired false manifest axis data caused by a reused `shaft` variable.
+- Built one accepted-pixel hand carrier; hand/cuff follows the socket and forearm follows a typed frame-edge exit.
+- Removed resurrected donor-tool pixels from the carrier after mask hole filling exposed the contamination.
+- Replaced the occluded `onehandattack2.s000` guard with compatible mined `onehandattack3.s002`; this is grammar composition, not a new named attack.
+- Compiled and rendered all twelve layers; 52 generated evidence files repeat byte-identically. Candidate watchdowns exist; user acceptance and runtime integration remain open.
