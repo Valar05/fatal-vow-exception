@@ -297,6 +297,8 @@ def build(corpus: dict, maximum: int) -> dict:
         "grip_class",
         "selection_reasons",
         "kinematic_salience",
+        "weapon_registration",
+        "reconstruction",
     ]
     atom_records = [
         [
@@ -312,6 +314,8 @@ def build(corpus: dict, maximum: int) -> dict:
             atom["classification"]["grip_class"],
             atom["classification"]["selection_reasons"],
             atom["kinematic_salience"],
+            atom["weapon_registration"],
+            atom["reconstruction"],
         ]
         for atom in atoms
     ]
