@@ -1,0 +1,145 @@
+{
+  "schema": "fatal-vow.source-evidence/v1",
+  "source_motion": "OneHandAttack2",
+  "visibility_policy": "Only visible source events are asserted; hidden finger closure is unknown.",
+  "events": [
+    {
+      "key_id": "k001",
+      "time_seconds": 0.0,
+      "event": "guarded start",
+      "right_hand_to_tool": "Weapon.R socket locked",
+      "left_hand_attachment": "not attached",
+      "finger_closure": "unknown from donor mesh",
+      "weapon_root": [
+        206.721,
+        256.788
+      ],
+      "weapon_shaft_witness": [
+        270.579,
+        126.744
+      ],
+      "support_feet": "not applicable in first-person arm crop"
+    },
+    {
+      "key_id": "k002",
+      "time_seconds": 0.083333,
+      "event": "anticipation begins",
+      "right_hand_to_tool": "Weapon.R socket locked",
+      "left_hand_attachment": "not attached",
+      "finger_closure": "unknown from donor mesh",
+      "weapon_root": [
+        198.78,
+        252.922
+      ],
+      "weapon_shaft_witness": [
+        267.651,
+        99.145
+      ],
+      "support_feet": "not applicable in first-person arm crop"
+    },
+    {
+      "key_id": "k003",
+      "time_seconds": 0.208333,
+      "event": "left crossing extreme",
+      "right_hand_to_tool": "Weapon.R socket locked",
+      "left_hand_attachment": "not attached",
+      "finger_closure": "unknown from donor mesh",
+      "weapon_root": [
+        33.496,
+        268.368
+      ],
+      "weapon_shaft_witness": [
+        -53108627.917,
+        692299.193
+      ],
+      "support_feet": "not applicable in first-person arm crop"
+    },
+    {
+      "key_id": "k004",
+      "time_seconds": 0.25,
+      "event": "fast re-entry and reversal",
+      "right_hand_to_tool": "Weapon.R socket locked",
+      "left_hand_attachment": "not attached",
+      "finger_closure": "unknown from donor mesh",
+      "weapon_root": [
+        282.576,
+        226.933
+      ],
+      "weapon_shaft_witness": [
+        -149.601,
+        220.245
+      ],
+      "support_feet": "not applicable in first-person arm crop"
+    },
+    {
+      "key_id": "k005",
+      "time_seconds": 0.333333,
+      "event": "rightward catch",
+      "right_hand_to_tool": "Weapon.R socket locked",
+      "left_hand_attachment": "not attached",
+      "finger_closure": "unknown from donor mesh",
+      "weapon_root": [
+        433.745,
+        227.03
+      ],
+      "weapon_shaft_witness": [
+        342.758,
+        182.699
+      ],
+      "support_feet": "not applicable in first-person arm crop"
+    },
+    {
+      "key_id": "k006",
+      "time_seconds": 0.625,
+      "event": "high-right reach extreme",
+      "right_hand_to_tool": "Weapon.R socket locked",
+      "left_hand_attachment": "not attached",
+      "finger_closure": "unknown from donor mesh",
+      "weapon_root": [
+        489.112,
+        223.457
+      ],
+      "weapon_shaft_witness": [
+        47.035,
+        36.744
+      ],
+      "support_feet": "not applicable in first-person arm crop"
+    },
+    {
+      "key_id": "k007",
+      "time_seconds": 0.791667,
+      "event": "recovery landing",
+      "right_hand_to_tool": "Weapon.R socket locked",
+      "left_hand_attachment": "not attached",
+      "finger_closure": "unknown from donor mesh",
+      "weapon_root": [
+        492.818,
+        256.404
+      ],
+      "weapon_shaft_witness": [
+        -1555516.708,
+        -49218124.963
+      ],
+      "support_feet": "not applicable in first-person arm crop"
+    },
+    {
+      "key_id": "k008",
+      "time_seconds": 1.25,
+      "event": "held endpoint",
+      "right_hand_to_tool": "Weapon.R socket locked",
+      "left_hand_attachment": "not attached",
+      "finger_closure": "unknown from donor mesh",
+      "weapon_root": [
+        492.818,
+        256.405
+      ],
+      "weapon_shaft_witness": [
+        -1555506.316,
+        -49218094.251
+      ],
+      "support_feet": "not applicable in first-person arm crop"
+    }
+  ],
+  "critical_key": "k004",
+  "critical_reason": "fast re-entry plus weapon reversal, grip foreshortening, and broad silhouette change"
+}
