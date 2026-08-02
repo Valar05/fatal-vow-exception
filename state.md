@@ -12,20 +12,22 @@ Build an independent Fatal Vow game where embodied labor, shovel-kata, mutable t
 
 ## Capability State
 
-Implemented: deterministic scar/voxel source contracts; complete reproducible extraction of 38 Infinite Brutality clips and 5,427 transform channels; calibrated FPS-camera review; first shovel source selection and eight-key evidence packet.
+Implemented: deterministic scar/voxel source contracts; reproducible extraction of 38 Infinite Brutality clips and 5,427 transform channels; calibrated FPS-camera review; first shovel source selection and eight-key evidence packet; deterministic pose-grammar miner; 297 source-exact candidate atoms in 33 families; layered hand/weapon/finger runtime contract and score language.
 
-Tested: extraction JSON and channels; 12 one-hand/knife diagnostic runtimes at native 24 FPS; `OneHandAttack2` camera/tool registration; isolated load-bearing k004 identity redraw.
+Tested: extraction JSON and channels; 12 one-hand/knife diagnostic runtimes at native 24 FPS; `OneHandAttack2` camera/tool registration; isolated load-bearing k004 identity redraw; grammar miner syntax, endpoint coverage, and repeatable output.
 
-Rejected: three whole-sheet transfers and two canonical-adapter attempts. The adapter attempts prove readable closure but not source-specific part transfer or immutable tool preservation.
+Rejected: three whole-sheet transfers and two whole-image adapter attempts. Whole-image generation cannot preserve source-specific part transfer, immutable tool geometry, or layered occlusion.
 
-Accepted: commission, sealed decisions, and `Medieval Fleshpunk Hand Turnaround Sheet.png` as first-person hand identity authority. No full hand-and-tool animation, canonical grip adapter, or representative runtime is accepted.
+Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Sheet.png` as first-person hand identity authority, and the shift from isolated animations to a compostable pose grammar. The 297 mined atoms are candidates, not collectively accepted poses. No complete grammar-composed runtime sentence is accepted.
 
 ## Sealed Decisions
 
 - New independent public game; single-player first; deterministic state contracts may anticipate later multiplayer without implementing networking.
 - Infinite Brutality is a bounded donor, not Fatal Vow canon.
-- 3D world and bodies; 2D timing. Contact sheets are source, approval surface, and correction language.
-- First-person hands, forearms, grip, and tool are one stepped performance at roughly 8–12 authored FPS inside a 30 FPS runtime. Reject smooth weapon-only motion.
+- 3D world and bodies; 2D timing. Contact sheets remain source, approval surface, and correction language.
+- Do not build animations as isolated finished strips. Mine pose atoms, contacts, layers, transitions, and timing; compose performances as scores over recipes.
+- Visible hands, forearms, grip, and tool read as one stepped 8–12 FPS performance, but runtime keeps rear hand/forearm, weapon, and foreground fingers separate and registered.
+- Hot swaps require a declared compatible grip class, socket, pivot, occlusion, reach, and contact contract. Collision remains independent of artwork.
 - Hero hand authority uses full lateral forearms, natural tapered sleeve transitions, and no square cutoffs.
 - The world is not literally fleshpunk. Rendering may borrow its material language; causality remains faithful to the novels.
 - After Chapter 7, audience votes cannot move Tetsuya's body. Momo-chan chooses; she is not a command wheel. The sealed conclusion remains protected.
@@ -36,43 +38,36 @@ Accepted: commission, sealed decisions, and `Medieval Fleshpunk Hand Turnaround 
 - Drive Writing: https://docs.google.com/document/d/1RrgqSJxFYu4_27pcY5DUWVAqwn8-IUifiuc49-xEmpE/edit
 - Drive Game: https://docs.google.com/document/d/1WoRCeiIL-t0ocujK8K-zTc5EP-pG0i9y8rcpHjuLFV8/edit
 - Drive Shared: https://docs.google.com/document/d/1MbnpDRbAKJPgIVGHbGWC4mzQ80lrAmy8u5IhO903y8o/edit
+- Grammar: `docs/POSE_GRAMMAR.md`
+- Miner: `scripts/mine_pose_grammar.py`
+- Candidate catalog: `data/pose_grammar.v0.json`
 - Arcade workflow: `docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md`
-- Shovel source review: `docs/ONEHANDATTACK2_SHOVEL_SOURCE_REVIEW.md`
-- Key evidence: `data/onehandattack2_shovel_source_evidence.json`
+- Shovel evidence: `data/onehandattack2_shovel_source_evidence.json`
 - Transfer verdict: `data/onehandattack2_shovel_transfer_verdict.json`
 - Adapter verdict: `data/onehandattack2_grip_adapter_verdict.json`
 
 ## Active Gate
 
-The first source-locked shovel master remains red. `OneHandAttack2`, eight semantic keys, and `Weapon.R` +Z are locked. Isolated k004 proves hand identity and five-finger closure. Whole-image generation does not produce the missing canonical adapter: it repeats grips, includes full forearms, reconstructs immutable shovel geometry, and cannot preserve source-specific layered occlusion for k001–k003.
+The isolated-animation gate is retired. The active gate is the first grammar-composed sentence. It must use a source guard, mined anticipation, accepted `OneHandAttack2` k004 hard grip/contact, and mined recoil/recovery; keep rear hand/forearm, weapon, and foreground fingers as registered layers; and run from a cue/accent/hold/release score. The mined catalog is navigation and evidence, not visual acceptance.
 
 ## Next Authorized Action
 
-Build a mask-constrained layered grip adapter. Freeze every non-hand source pixel, preserve shaft pixels and wrist anchors, and author back-hand versus front-finger occlusion separately for k001–k003. Review frozen source/candidate pairs before touching k005–k008. Runtime watchdown, arcade timing, breakdowns, interpolation, and smoothing remain blocked.
+Build and watch the smallest grammar proof in the established FPS camera. Review the composed source/candidate frames and intended-cadence watchdown for hand identity, weapon path, grip ownership, occlusion, camera, frame-edge exits, interruption safety, and deliberate arcade timing. Do not resume whole-sheet generation or build the remaining named attacks independently.
 
 ## Evidence Pointers
 
 - README: https://github.com/Valar05/fatal-vow-exception/blob/main/README.md
-- Shovel source review: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/ONEHANDATTACK2_SHOVEL_SOURCE_REVIEW.md
+- Pose grammar: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/POSE_GRAMMAR.md
+- Candidate catalog: https://github.com/Valar05/fatal-vow-exception/blob/main/data/pose_grammar.v0.json
 - Adapter verdict: https://github.com/Valar05/fatal-vow-exception/blob/main/data/onehandattack2_grip_adapter_verdict.json
 - Hero hand plate: ChatGPT Library `libfile_8466a8dd2b408191a489cefda59013c3`
 - Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
 - Design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
 
-## ChatGPT Library Assets
-
-| Asset | Stable identity | Role | Status | Verification |
-|---|---|---|---|---|
-| Fatal Vow game design | `libfile_04e85c38ae848191b0f192f756663871` | foundation | source | read/source-ledger checked |
-| Low-poly tool atlas | `libfile_fbe7ae138b088191bec37de2f09fd907` | shovel geometry | source | shovel isolated; +Z bind reviewed |
-| FPSPlayer.glb (5) | `libfile_6ed0f03b95c4819189e609333180cbfa` | motion authority | source | 38 clips extracted |
-| motion_corpus.json | `libfile_eff00dae99a88191b64658eff5315c74` v0 | exact transforms | evidence | 38 clips; 5,427 channels |
-| Medieval Fleshpunk Hand Turnaround Sheet.png | `libfile_8466a8dd2b408191a489cefda59013c3` | hand identity | accepted | Drew: “Perfect!” |
-
-Current-turn generated adapter candidates enter Library automatically. Their stable identities are intentionally not guessed before next-turn readback; neither candidate is accepted.
-
 ## Recent Delta
 
-- 2026-08-02: Selected `OneHandAttack2`, reduced it to eight source-witnessed keys, and corrected the shovel bind to `Weapon.R` +Z.
-- 2026-08-02: Accepted isolated k004 as premise evidence; rejected three whole-sheet candidates for camera squeeze, source drift, tool completion, or grip collapse.
-- 2026-08-02: Built and visually reviewed two adapter candidates. Both were rejected. Published the exact missing capability as mask-constrained layered occlusion rather than rerolling the whole motion.
+- Selected `OneHandAttack2`, reduced it to eight source-witnessed keys, and corrected shovel binding to `Weapon.R` +Z.
+- Accepted isolated k004 as premise evidence; rejected whole-sheet and whole-image adapter candidates.
+- Adopted the fourth door: registered rear-hand / weapon / foreground-finger layers with grip-class hot swapping.
+- Replaced isolated animation construction with a compostable pose grammar and score language.
+- Mined 297 source-exact candidate atoms from all 38 donor clips into 33 semantic families without resampling or promoting visual acceptance.
