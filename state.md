@@ -10,7 +10,7 @@ Drive control hub: https://drive.google.com/drive/folders/1hw5NVu5ftzmnKTBwL-oTO
 
 Outcome: Build a new, independent Fatal Vow game where embodied labor, shovel-kata, mutable terrain, choosing inhabitants, and provenance-bearing consequences remain true to the novels.
 Owner/executor: Drew owns canon and acceptance; Adam advances implementation and durable state through authorized lanes.
-Method/workflow: Source truth first; 3D world and bodies with 2D timing; Drew-authored performance through Pose Lab; deterministic scar events own terrain truth; disposable presentation consumes them.
+Method/workflow: Source truth first; 3D world and bodies with 2D timing; Drew-authored performance through Pose Lab; visible hands, forearms, grip, and tool animate together on deliberate stepped arcade keys; deterministic scar events own terrain truth; disposable presentation consumes them.
 Lane/tool: Public GitHub repository through Home Center; compact Drive control records; ChatGPT Library for broad assets.
 Exclusions: No literal-fleshpunk rewrite of the setting; no generic crafting tree; no commanded Momo-chan; no networking implementation yet; no unbounded Infinite Brutality import; no scratch artifact as delivery proof.
 Evidence: Repository readback, executable contract tests, runtime profiling, visual review, and Tim-phone acceptance.
@@ -37,6 +37,8 @@ Accepted: The commission and sealed design decisions below are accepted. No repr
 - Pose Lab is the bounded upstream source for Drew-authored FPS-to-Meshy performance transfer.
 - The world is not literally fleshpunk. Rendering may be influenced by it; world materials, technology, institutions, and causality remain faithful to the novels.
 - 3D world, 3D bodies, 2D timing. Contact sheets remain animation source, approval surface, and correction language.
+- First-person hands, forearms, grip, and tool animate as one coupled low-FPS performance. Reject smooth weapon-only motion. Runtime may render at 30 FPS while authored poses step at roughly 8–12 FPS.
+- Hero hand plates must show full lateral forearms with natural sleeve transitions; no square or rectangular arm cutoffs.
 - After Chapter 7, audience votes cannot move Tetsuya's body.
 - Momo-chan is a choosing intelligence, never a pet command wheel.
 - The sealed conclusion remains protected.
@@ -49,6 +51,7 @@ Accepted: The commission and sealed design decisions below are accepted. No repr
 - Drive Writing: https://docs.google.com/document/d/1RrgqSJxFYu4_27pcY5DUWVAqwn8-IUifiuc49-xEmpE/edit
 - Drive Game: https://docs.google.com/document/d/1WoRCeiIL-t0ocujK8K-zTc5EP-pG0i9y8rcpHjuLFV8/edit
 - Drive Shared: https://docs.google.com/document/d/1MbnpDRbAKJPgIVGHbGWC4mzQ80lrAmy8u5IhO903y8o/edit
+- First-person hand + weapon arcade workflow: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md
 
 ## Active Gate
 
@@ -56,11 +59,12 @@ A representative, source-faithful trench slice has not yet been proved at stable
 
 ## Next Authorized Action
 
-Run the repository contract suite at current HEAD, preserve exact results, then advance the smallest representative trench slice that exercises conserved digging, scar history, disposable contours, first-person shovel performance, and the target-device budget.
+Extract and verify the weapon/tool bone position and quaternion rotation from FPSPlayer.glb (5), then use the accepted hero hand plate and established FPS camera mount to author the first coupled hand-and-tool arcade clip. Preserve deliberate 8–12 FPS semantic keys and review it in first person before promotion.
 
 ## Evidence Pointers
 
 - Repository README: https://github.com/Valar05/fatal-vow-exception/blob/main/README.md
+- First-person arcade workflow: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md
 - Game design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
 - Drive control hub: https://drive.google.com/drive/folders/1hw5NVu5ftzmnKTBwL-oTOstrNqghTe2w
 
@@ -79,4 +83,6 @@ None required to complete this bootstrap. New canon, acceptance, or lane changes
 
 ## Recent Delta
 
+- 2026-08-02: Chose coupled hero hands + tool with low-FPS arcade timing over smooth weapon-only animation. Documented the bounded Infinite Brutality donor workflow and hero plate acceptance contract. Candidate plate generated with full side forearms and non-square terminations; not yet accepted and its stable Library identity is not available in this turn.
+- 2026-08-02: Weapon/tool bone transform extraction remains requested but unimplemented; it is the next evidence gate.
 - 2026-08-02: Bootstrapped repository-root state plus compact Drive Writing, Game, and Shared control records. Broad assets remain in Library.
