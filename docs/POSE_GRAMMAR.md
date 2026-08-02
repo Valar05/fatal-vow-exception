@@ -58,6 +58,28 @@ Role hints are navigation, not acceptance. The miner cannot know that a visually
 
 The generated `data/pose_grammar.v0.json` retains exact clip, sample index, time, weapon registration, selection reason, and reconstruction recipe for every atom.
 
+## Phase-complete mining
+
+Kinematic peaks alone do not make a usable language. The v0 catalog contained
+interesting one-handed poses but no `one_hand_long_handle` recoil or recovery
+atom, so the first advertised sentence could not be composed without borrowing
+an incompatible grip class.
+
+`data/pose_grammar.v1.json` preserves the kinematic discoveries and also pins
+the nearest source-exact sample for every semantic phase anchor. The pin is a
+coverage rule, not an acting judgment. Phase anchors remain mined candidates.
+
+`scripts/compose_pose_sentence.py` compiles a sentence in two independent
+states:
+
+- motion compile: atom identity, role, grip-class compatibility, score order,
+  and interruption routes;
+- visual compile: registered rear-hand/forearm, weapon, and foreground-finger
+  layers for every recipe.
+
+A motion pass cannot promote a visual failure. A flattened accepted image is
+premise evidence, not three hot-swappable layers wearing a trench coat.
+
 ## Song/score contract
 
 The score chooses pose recipes and timing. It may synchronize accents, holds, ruptures, repeats, or releases to audio markers. It may not silently modify contacts, camera, provenance, layer order, or acceptance state.
@@ -76,3 +98,8 @@ The first proof is not another complete attack. It is a small sentence assembled
 - a short score containing cue, accent, hold, and release.
 
 The proof passes only when the composed first-person watchdown preserves hand identity, weapon path, grip ownership, camera, frame-edge exits, readable low-FPS cadence, and interruption safety.
+
+The initial `OneHandAttack2` sentence now passes motion compilation and remains
+blocked at visual compilation. Its four recipes require twelve registered
+layers; none exists yet as a reusable runtime atom. The accepted k004 image
+remains accepted only as isolated grip/contact premise evidence.
