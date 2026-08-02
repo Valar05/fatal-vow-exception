@@ -1,0 +1,380 @@
+{
+  "schema": "rotoscoping.motion/v1",
+  "project_id": "fatal-vow-onehandattack2-shovel-v3",
+  "product_invariant": "candidate motion = source motion; candidate identity = accepted target identity",
+  "source": {
+    "name": "FPSPlayer.glb (5)",
+    "sha256": "9be07cf0e46e2ed97abca38a8a6cf1bbd7c111cec3fa9671c1b0b721c37535da",
+    "ownership": "project-owned or user-authorized Infinite Brutality donor asset",
+    "clip": "OneHandAttack2",
+    "frame_rate": 24.0,
+    "duration_seconds": 1.25,
+    "display_width": 640,
+    "display_height": 360,
+    "audio": "none"
+  },
+  "prop": {
+    "name": "Meshy_AI_Low_Poly_Tools_and_Tr_0802140452_texture.glb",
+    "sha256": "f6e86e2a7a65061b8575ecbf3afd5d32e396716b21f57353718d3e9f66cfbd1a",
+    "atlas_region_xy": [
+      -0.5,
+      0.145,
+      -0.25,
+      0.38
+    ],
+    "socket": "Weapon.R",
+    "registration": "candidate; source-locked socket path with authored shovel-to-socket bind"
+  },
+  "motion": {
+    "keyframes": [
+      {
+        "id": "k001",
+        "source_index": 0,
+        "time_seconds": 0.0,
+        "duration_seconds": 0.083333,
+        "event": "guarded start",
+        "path": "source/frames/k001.png",
+        "sha256": "de594f7e0cc0dd16de25567860bd78949f1843263b15329cc6f792397fcd0b52",
+        "weapon": {
+          "socket_screen_xy": [
+            206.721,
+            256.788
+          ],
+          "shaft_witness_screen_xy": [
+            270.579,
+            126.744
+          ],
+          "socket_model_xyz": [
+            0.2021191,
+            1.1487716,
+            0.3312064
+          ],
+          "socket_rotation_matrix": [
+            [
+              0.9936929,
+              0.0368948,
+              -0.1058877
+            ],
+            [
+              -0.1085656,
+              0.5528138,
+              -0.826202
+            ],
+            [
+              0.0280535,
+              0.8324872,
+              0.5533329
+            ]
+          ],
+          "shaft_endpoint_visibility": "visible"
+        }
+      },
+      {
+        "id": "k002",
+        "source_index": 2,
+        "time_seconds": 0.083333,
+        "duration_seconds": 0.125,
+        "event": "anticipation begins",
+        "path": "source/frames/k002.png",
+        "sha256": "0d6ebee8c685e38b1e9499d5063d8df54eba4c3821ce010ff74dd38032d1d048",
+        "weapon": {
+          "socket_screen_xy": [
+            198.78,
+            252.922
+          ],
+          "shaft_witness_screen_xy": [
+            267.651,
+            99.145
+          ],
+          "socket_model_xyz": [
+            0.2094526,
+            1.1596954,
+            0.3194483
+          ],
+          "socket_rotation_matrix": [
+            [
+              0.9930748,
+              0.0177318,
+              -0.1161342
+            ],
+            [
+              -0.0975767,
+              0.6750173,
+              -0.7313206
+            ],
+            [
+              0.0654249,
+              0.7375883,
+              0.6720731
+            ]
+          ],
+          "shaft_endpoint_visibility": "visible"
+        }
+      },
+      {
+        "id": "k003",
+        "source_index": 5,
+        "time_seconds": 0.208333,
+        "duration_seconds": 0.041667,
+        "event": "left crossing extreme",
+        "path": "source/frames/k003.png",
+        "sha256": "01f974366aeee65658c9a79057b5e3c756d8284a87d999f33a2db8f95b75c0c1",
+        "weapon": {
+          "socket_screen_xy": [
+            33.496,
+            268.368
+          ],
+          "shaft_witness_screen_xy": [
+            -53108627.917,
+            692299.193
+          ],
+          "socket_model_xyz": [
+            0.2695739,
+            1.2013403,
+            0.1561818
+          ],
+          "socket_rotation_matrix": [
+            [
+              0.998206,
+              -0.0187015,
+              -0.0568711
+            ],
+            [
+              0.0585477,
+              0.1066446,
+              0.9925716
+            ],
+            [
+              -0.0124978,
+              -0.994121,
+              0.1075482
+            ]
+          ],
+          "shaft_endpoint_visibility": "behind-camera"
+        }
+      },
+      {
+        "id": "k004",
+        "source_index": 6,
+        "time_seconds": 0.25,
+        "duration_seconds": 0.083333,
+        "event": "fast re-entry and reversal",
+        "path": "source/frames/k004.png",
+        "sha256": "96b0c18aa76be1767c0a18a7914efb021257480602b605bb4461fbbefb85191b",
+        "weapon": {
+          "socket_screen_xy": [
+            282.576,
+            226.933
+          ],
+          "shaft_witness_screen_xy": [
+            -149.601,
+            220.245
+          ],
+          "socket_model_xyz": [
+            0.0790185,
+            1.1871856,
+            0.3986713
+          ],
+          "socket_rotation_matrix": [
+            [
+              0.135317,
+              0.9892242,
+              -0.0558952
+            ],
+            [
+              0.0745579,
+              0.0460875,
+              0.9961508
+            ],
+            [
+              0.9879926,
+              -0.1389637,
+              -0.0675184
+            ]
+          ],
+          "shaft_endpoint_visibility": "visible"
+        }
+      },
+      {
+        "id": "k005",
+        "source_index": 8,
+        "time_seconds": 0.333333,
+        "duration_seconds": 0.291667,
+        "event": "rightward catch",
+        "path": "source/frames/k005.png",
+        "sha256": "3ae1f4a744554bbc88000a45084ba7b97d80959b1006bd99cf4ffd6b9de1f36b",
+        "weapon": {
+          "socket_screen_xy": [
+            433.745,
+            227.03
+          ],
+          "shaft_witness_screen_xy": [
+            342.758,
+            182.699
+          ],
+          "socket_model_xyz": [
+            -0.2670097,
+            1.1762457,
+            0.4476206
+          ],
+          "socket_rotation_matrix": [
+            [
+              -0.9796954,
+              0.1984457,
+              0.0285552
+            ],
+            [
+              0.0578036,
+              0.143199,
+              0.9880042
+            ],
+            [
+              0.191976,
+              0.969594,
+              -0.1517627
+            ]
+          ],
+          "shaft_endpoint_visibility": "visible"
+        }
+      },
+      {
+        "id": "k006",
+        "source_index": 15,
+        "time_seconds": 0.625,
+        "duration_seconds": 0.166667,
+        "event": "high-right reach extreme",
+        "path": "source/frames/k006.png",
+        "sha256": "e6491754a6af18be0483ce06419e49c277ea590095416071fb7a45e282d70b39",
+        "weapon": {
+          "socket_screen_xy": [
+            489.112,
+            223.457
+          ],
+          "shaft_witness_screen_xy": [
+            47.035,
+            36.744
+          ],
+          "socket_model_xyz": [
+            -0.2879153,
+            1.2116689,
+            0.313812
+          ],
+          "socket_rotation_matrix": [
+            [
+              -0.0359312,
+              0.9204193,
+              -0.3892775
+            ],
+            [
+              0.3866007,
+              0.3720035,
+              0.8438915
+            ],
+            [
+              0.9215462,
+              -0.1201731,
+              -0.3692014
+            ]
+          ],
+          "shaft_endpoint_visibility": "visible"
+        }
+      },
+      {
+        "id": "k007",
+        "source_index": 19,
+        "time_seconds": 0.791667,
+        "duration_seconds": 0.458333,
+        "event": "recovery landing",
+        "path": "source/frames/k007.png",
+        "sha256": "7f9a9306b5d452fc4ca5b5a725cbe6004154ee3b590f063531ffd0d846ee6ab9",
+        "weapon": {
+          "socket_screen_xy": [
+            492.818,
+            256.404
+          ],
+          "shaft_witness_screen_xy": [
+            -1555516.708,
+            -49218124.963
+          ],
+          "socket_model_xyz": [
+            -0.2158024,
+            1.1895507,
+            0.2200101
+          ],
+          "socket_rotation_matrix": [
+            [
+              0.6998023,
+              0.3190228,
+              -0.6391406
+            ],
+            [
+              0.4689411,
+              0.4697753,
+              0.7479339
+            ],
+            [
+              0.5388603,
+              -0.823125,
+              0.1791467
+            ]
+          ],
+          "shaft_endpoint_visibility": "behind-camera"
+        }
+      },
+      {
+        "id": "k008",
+        "source_index": 30,
+        "time_seconds": 1.25,
+        "duration_seconds": 0.041667,
+        "event": "held endpoint",
+        "path": "source/frames/k008.png",
+        "sha256": "8444109ed89f3ea38e38a3c0a57ca45184e4d004e4b2415f250eaa992c5e196f",
+        "weapon": {
+          "socket_screen_xy": [
+            492.818,
+            256.405
+          ],
+          "shaft_witness_screen_xy": [
+            -1555506.316,
+            -49218094.251
+          ],
+          "socket_model_xyz": [
+            -0.2158024,
+            1.1895506,
+            0.2200102
+          ],
+          "socket_rotation_matrix": [
+            [
+              0.6998023,
+              0.3190229,
+              -0.6391407
+            ],
+            [
+              0.4689411,
+              0.4697753,
+              0.7479339
+            ],
+            [
+              0.5388603,
+              -0.8231251,
+              0.1791467
+            ]
+          ],
+          "shaft_endpoint_visibility": "behind-camera"
+        }
+      }
+    ]
+  },
+  "locks": {
+    "camera": "Infinite Brutality arms runtime: vertical FOV 82 degrees, 16:9, Camera node + (0, 0.015, 0), look +Z",
+    "anchor": "fixed source camera and per-key Weapon.R socket",
+    "direction": "source screen direction; no mirror",
+    "identity": "Medieval Fleshpunk Hand Turnaround Sheet; full forearms and tapered cloth terminations",
+    "timing": "source key timestamps; authored exposure revision prohibited before key-only approval",
+    "background": "flat dark diagnostic plate"
+  },
+  "selection": {
+    "status": "reviewed-source-proposal",
+    "policy": "preserve start, release, crossing extreme, reversal, reach extreme, recovery, and held endpoint"
+  }
+}
