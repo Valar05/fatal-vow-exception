@@ -1,84 +1,92 @@
-# Fatal Vow — First-Person Hand + Weapon Arcade Workflow
+# Fatal Vow — First-Person Pose Grammar and Arcade Performance Workflow
 
 Status: Active workflow contract
 Decision authority: Drew Clarke
-Adopted: 2026-08-02
+Adopted: 2026-08-02; grammar revision adopted 2026-08-02
 Owning project: Fatal Vow Exception
-Donor boundary: Infinite Brutality supplies a bounded first-person animation workflow, not Fatal Vow canon.
+Donor boundary: Infinite Brutality supplies bounded motion evidence, not Fatal Vow canon.
 
 ## Decision
 
-Animate the visible hero hands, forearms, grip, and weapon/tool as one authored low-frame-rate performance.
+The visible hero hands, forearms, grip, and weapon/tool must read as one authored low-frame-rate performance. They do not have to be one bitmap or one runtime object.
 
-Reject the alternative of a smoothly interpolated weapon moving without visible hands. Runtime presentation may render at 30 FPS, but the hand-and-tool pose changes on deliberate stepped keys at roughly 8–12 authored poses per second.
+Runtime presentation uses three registered sprite layers:
 
-## Verified donor truth from Infinite Brutality
+1. rear hand/palm and forearm;
+2. weapon/tool;
+3. foreground fingers/knuckles.
 
-The transferable implementation pattern is:
+Reject smooth weapon-only motion under frozen or absent hands. The game may render at 30 FPS while the visible performance changes on deliberate stepped keys at roughly 8–12 authored poses per second.
 
-- FPSPlayer.glb is the first-person arm and animation source.
-- First-person arms use a separate camera-space render pass so the player does not see chest/body intrusion.
-- The established first-person camera mount is part of the performance contract.
-- The low-poly hard-edged source silhouette is an art-direction seed.
-- PBR material authority is preserved; flatness is diagnosed through lighting, UVs, material response, and render-pass setup rather than by deleting material information.
-- Poseclip attacks load from the project asset URL directly.
-- Browser-visible results require current-build screenshots or frame sheets; parse checks do not prove visual success.
-- Pose Lab remains the upstream authoring and transfer surface.
+Do not build every animation as an isolated strip. Mine reusable source-exact pose atoms, classify their contacts and constraints, and compose performances as scores over pose recipes. Gameplay actions, cinematics, demonstrations, and songs use the same grammar.
 
-Donor sources:
+## Verified donor truth
 
-- Valar05/infinite-brutality/PROJECT_ORIENTATION.md
-- Valar05/infinite-brutality/assets/asset_manifest.json
-- Valar05/infinite-brutality/docs/POSE_LAB_CLIP_GRADIENT_EDITOR.md
-- Valar05/infinite-brutality/AGENTS.md
-- Fatal Vow Game Design Document sections 11.4 and 15.2
+- `FPSPlayer.glb (5)` is the first-person arm and motion source.
+- The exact corpus contains 38 clips and 5,427 native transform channels with no resampling.
+- The established FPS camera mount is part of the performance contract.
+- `Weapon.R` +Z is the corrected shovel binding for `OneHandAttack2`.
+- First-person arms use a separate camera-space presentation so chest/body intrusion does not replace the intended view.
+- Contact sheets remain human-readable source, acceptance surface, and correction language.
+- Browser-visible results require current first-person frames or watchdowns; parse checks do not prove visual success.
 
-## Required source artifacts
+## Authoring units
 
-1. FPSPlayer.glb (5) as the source performance and weapon-bone reference.
-2. The accepted hero hand plate as identity, material, silhouette, cuff, forearm, and grip authority.
-3. The intended Fatal Vow tool mesh.
+- **Pose atom:** one source-exact skeletal state with provenance.
+- **Contact atom:** declared hand/tool, foot/ground, body/prop, or other coupled relationship.
+- **Layer atom:** registered rear-hand, weapon, or foreground-finger visual.
+- **Transition:** an allowed route between compatible atoms with explicit locks.
+- **Score event:** cue, accent, hold, release, repeat, interrupt, transition, or stop.
+- **Pose recipe:** donor atoms, joint subsets, overrides, contacts, sockets, occlusion, camera, and status.
+
+Rejected performances may be composted into valid atoms, constraints, transitions, or failure evidence. Rejection does not promote any part automatically.
+
+## Required sources
+
+1. `FPSPlayer.glb (5)` and `motion_corpus.json` as source performance evidence.
+2. `Medieval Fleshpunk Hand Turnaround Sheet.png` as accepted hand identity, material, silhouette, cuff, forearm, and grip authority.
+3. The intended Fatal Vow tool mesh or source-locked render.
 4. The established FPS camera mount.
-5. An extracted source-motion record for the weapon/tool bone.
-
-The weapon-motion record must include action name, source FPS, frame/time, bone name, parent chain, coordinate basis, local position, and local rotation quaternion. It is required evidence, not optional telemetry. As of adoption, this extraction is still missing.
+5. A declared grip class, socket, pivot, layer order, and collision path.
 
 ## Authoring sequence
 
-1. Lock the hero hand plate. Confirm consistent anatomy, skin, wear, sleeve, wrist reinforcement, and grip language. Show palms, backs, outer lateral sides, relaxed curl, and working grips. Full lateral forearms must be visible. No straight square or rectangular cutoff may masquerade as a sleeve end.
-2. Extract source motion. Record the weapon/tool bone position and quaternion rotation from FPSPlayer.glb (5) before generating replacement motion.
-3. Preserve the performed path. Use Drew's source performance and the established FPS camera. Do not independently invent a prettier tool arc.
-4. Select semantic keys. Choose anticipation, commitment, contact, force transfer, recovery, and deliberate stop. Remove dead frames; do not smooth away impact or held intent.
-5. Bind hand and tool. The grip owns the tool at every key. Wrist, fingers, handle, working end, and tool axis must read as one coupled object.
-6. Author the arcade clip. Use stepped pose timing at approximately 8–12 authored poses per second. Hold keys for readability. Render the game at full frame rate without interpolating the hands and tool into mush.
-7. Review both truths. Compare the source/contact sheet, transferred 3D performance, established FPS camera, and in-game result. Orbit diagnostics may explain attachment; first-person framing decides usability.
-8. Promote only after visual acceptance. A rig receipt, extracted curve, valid file, or green test does not accept the motion.
+1. Mine candidate pose atoms from native source transforms. Preserve clip, sample index, time, coordinate basis, and weapon registration.
+2. Classify candidates by domain, role hint, grip class, contact, visibility, and constraint needs. A label such as `contact_candidate` is navigation, not acceptance.
+3. Build a pose recipe by copying declared joint subsets from donor atoms, adding explicit overrides, and solving declared contacts.
+4. Bind visual layers through the established camera. Freeze source-locked weapon geometry; author back-hand and foreground-finger occlusion separately.
+5. Compose a score. Holds and abrupt changes are authored timing, not missing interpolation.
+6. Render contact sheets and a first-person watchdown at intended cadence.
+7. Promote only after visual acceptance. Source-derived, generated, manually corrected, rendered, and accepted states remain separate.
 
-## Hero hand plate acceptance
+## Hot-swap contract
 
-- Same hand identity and costume in every view.
+Weapons may hot-swap only inside a declared grip class with compatible socket, pivot, hand separation, occlusion, and reach. One-handed swords and compatible tools may share a contract. A shovel, axe, or two-handed implement may require a different contact and layer set even when it borrows the same body motion.
+
+Collision, damage, and gameplay state are independent of sprite artwork. A visual swap cannot silently change gameplay reach or force.
+
+## Hero hand acceptance
+
+- Same accepted hand identity and costume in every view.
 - Five correct, separated fingers where visible.
-- Readable palms, backs, wrists, outer lateral forearms, and grip ownership.
-- Whole side silhouettes rendered from fingers through the forearm/sleeve transition.
-- No square arm cutoffs, floating hands, cropped wrists, or sleeve blocks.
-- Materials remain honest: skin, woven fiber, hide, cord, wood, metal, ceramic, or other source-supported matter.
+- Readable grip ownership and correct rear/front occlusion.
+- Full lateral forearms with natural tapered sleeve transitions.
+- No square cutoffs, floating hands, cropped wrists, generic forearms, or reconstructed source-locked tools.
 - No unsupported fantasy armor, tactical gloves, literal fleshpunk, or generic hero musculature.
-- Grip poses anticipate shovel-kata: slide, reverse, brace, socket strike, pack, withdraw, release, and stop.
 
 ## Motion acceptance
 
-- Hand and tool move as one coupled performance.
-- Tool path matches extracted source evidence unless Drew authors and accepts a replacement.
-- Low-frame timing reads as intentional arcade cadence, not dropped frames.
-- Contact, load transfer, recovery, and stopping remain visible.
-- No weapon-only smooth animation under frozen or missing hands.
-- No camera substitution.
-- No acceptance without first-person visual review.
+- Hands and tool read as one coupled performance even though runtime layers remain separate.
+- Tool path matches source evidence unless Drew authors and accepts a replacement.
+- Contacts, force transfer, recovery, deliberate stopping, and frame-edge exits remain visible.
+- Low-frame timing reads as intentional arcade cadence.
+- No camera substitution and no acceptance without first-person visual review.
 
-## Capability state at adoption
+## Current capability state
 
-- Workflow: documented.
-- Hero plate: candidate generated; not yet accepted.
-- Source GLB: registered.
-- Weapon-bone position/rotation extraction: requested, not implemented or verified.
-- Runtime hand-and-tool clip: not implemented.
+- Hero hand identity: accepted.
+- Source motion extraction: implemented and tested for 38 clips / 5,427 channels.
+- Pose grammar miner: implemented and deterministic.
+- Mined pose catalog: 297 source-exact candidates in 33 semantic families; not visually accepted as a set.
+- `OneHandAttack2` isolated k004 hard grip: accepted as premise evidence.
+- Complete grammar-composed runtime sentence: not yet implemented or accepted.
