@@ -292,6 +292,11 @@ class ScarAuthority:
         if command.parameters.get("blocked"):
             return self._refuse(command, RefusalReason.MATERIAL_BLOCKED,
                                 "Dig blocked by mineral crust; inspect the edge or choose another cut.")
+        try:
+            NarrativeSurface(str(command.parameters.get("narrative_surface", "GAME_ONLY")))
+        except ValueError:
+            return self._refuse(command, RefusalReason.AUTHORITY_DENIED,
+                                "Runtime action cannot assign NOVEL_CANON.")
 
         before = {c.key: self.chunks[c.key].revision for c in command.target_chunks}
         materials_before = {c.key: dict(self.chunks[c.key].materials) for c in command.target_chunks}
@@ -391,6 +396,42 @@ class ScarAuthority:
         })
 
     @classmethod
+    def replay(cls, world_id: str, initial_chunks: dict[ChunkId, dict[str, int]],
+               events: tuple[ScarEvent, ...]) -> "ScarAuthority":
+        authority = cls(world_id)
+        for chunk_id, materials in initial_chunks.items():
+            authority.add_chunk(chunk_id, **materials)
+        transactions: dict[str, list[ScarEvent]] = {}
+        for event in events:
+            transactions.setdefault(event.transaction_id, []).append(event)
+        for transaction in transactions.values():
+            transaction.sort(key=lambda event: event.sequence_in_transaction)
+            first, last = transaction[0], transaction[-1]
+            if first.event_type == "MATERIAL_MOVED":
+                p = first.payload["parameters"]
+                source = authority.chunks[str(p["source_chunk"])]
+                destination = authority.chunks[str(p["destination_chunk"])]
+                material = str(p["material_type"])
+                quantity = int(p["quantity"])
+                source.materials[material] -= quantity
+                destination.materials[material] = destination.materials.get(material, 0) + quantity
+            authority.events.extend(transaction)
+            scar_id = first.scar_ids[0]
+            for chunk_id in first.affected_chunk_ids:
+                chunk = authority.chunks[chunk_id.key]
+                chunk.revision = last.chunk_revision_after[chunk_id.key]
+                chunk.last_applied_event_id = last.event_id
+                chunk.scar_refs.append(scar_id)
+            authority.scars[scar_id] = Scar(
+                scar_id, world_id, str(first.payload["parameters"].get("scar_type", "IMPACT")),
+                first.event_id, last.event_id, first.actor_id, None, first.affected_chunk_ids,
+                first.material_delta,
+                NarrativeSurface(str(first.payload["parameters"].get("narrative_surface", "GAME_ONLY"))),
+                first.simulation_tick, last.simulation_tick,
+            )
+        return authority
+
+    @classmethod
     def load(cls, payload: str) -> "ScarAuthority":
         data = json.loads(payload)
         authority = cls(data["world_id"])
@@ -465,6 +506,12 @@ class ScarContractFixtures(unittest.TestCase):
                                          self.world.chunks[self.b.key].materials["soil"],
                                          self.world.chunks[self.a.key].revision,
                                          self.world.chunks[self.b.key].revision))
+        good = self.command("T03-good", quantity=2)
+        self.world.submit(good)
+        self.assertEqual((18, 2, 1, 1), (self.world.chunks[self.a.key].materials["soil"],
+                                         self.world.chunks[self.b.key].materials["soil"],
+                                         self.world.chunks[self.a.key].revision,
+                                         self.world.chunks[self.b.key].revision))
 
     def test_t04_matter_conservation(self) -> None:
         event = self.world.submit(self.command("T04", quantity=10))[0]
@@ -479,9 +526,14 @@ class ScarContractFixtures(unittest.TestCase):
 
     def test_t06_replay_determinism(self) -> None:
         self.world.submit(self.command("T06", quantity=4))
-        payload = self.world.save()
-        self.assertEqual(ScarAuthority.load(payload).authority_hash(),
-                         ScarAuthority.load(payload).authority_hash())
+        events = tuple(self.world.events)
+        genesis = {self.a: {"soil": 20}, self.b: {"soil": 0}}
+        first = ScarAuthority.replay("chapter-9", genesis, events)
+        second = ScarAuthority.replay("chapter-9", genesis, events)
+        self.assertEqual(self.world.authority_hash(), first.authority_hash())
+        self.assertEqual(first.authority_hash(), second.authority_hash())
+        self.assertEqual([1, 1], [first.chunks[self.a.key].revision,
+                                 first.chunks[self.b.key].revision])
 
     def test_t07_dirty_job_race(self) -> None:
         self.world.submit(self.command("T07a"))
@@ -491,9 +543,12 @@ class ScarContractFixtures(unittest.TestCase):
 
     def test_t08_quality_independence(self) -> None:
         self.world.submit(self.command("T08"))
-        low = self.world.authority_hash()
-        high = self.world.authority_hash()
-        self.assertEqual(low, high)
+        low = {"renderer_profile": "tim-phone-low",
+               "source_authority_hash": self.world.authority_hash()}
+        high = {"renderer_profile": "high-quality",
+                "source_authority_hash": self.world.authority_hash()}
+        self.assertNotEqual(low["renderer_profile"], high["renderer_profile"])
+        self.assertEqual(low["source_authority_hash"], high["source_authority_hash"])
 
     def test_t09_autonomous_refusal(self) -> None:
         result = self.world.submit(self.command("T09", momo_refuses=True,
@@ -506,6 +561,14 @@ class ScarContractFixtures(unittest.TestCase):
         with self.assertRaises(ValueError):
             NarrativeSurface("NOVEL_CANON")
         self.assertNotIn("NOVEL_CANON", {s.value for s in NarrativeSurface})
+        before_chunks = canonical_json(self.world.chunks)
+        denied = self.world.submit(self.command("T10-denied", narrative_surface="NOVEL_CANON"))
+        self.assertEqual(RefusalReason.AUTHORITY_DENIED, denied.reason_code)
+        self.assertEqual(before_chunks, canonical_json(self.world.chunks))
+        self.assertEqual(0, len(self.world.events))
+        accepted = self.world.submit(self.command("T10-history", narrative_surface="PLAYER_HISTORY"))
+        self.assertEqual(NarrativeSurface.PLAYER_HISTORY,
+                         self.world.scars[accepted[0].scar_ids[0]].narrative_surface)
 
     def test_t11_accessible_refusal(self) -> None:
         result = self.world.submit(self.command("T11", blocked=True))
@@ -522,11 +585,17 @@ class ScarContractFixtures(unittest.TestCase):
 
     def test_t13_support_consequence(self) -> None:
         self.world.chunks[self.a.key].support_loads["wall-1"] = 7
-        command = self.command("T13", TerrainOperation.REMOVE_SUPPORT,
-                               support_id="wall-1", allow_settlement=True)
+        command = ScarCommand(
+            SCHEMA_VERSION, "chapter-9", "T13", "drew", "tetsuya",
+            TerrainOperation.REMOVE_SUPPORT, (self.a,), {self.a.key: 0},
+            {"support_id": "wall-1", "allow_settlement": True, "scar_type": "SUPPORT"},
+            100, "remove support with bounded settlement", "shovel-1",
+        )
         events = self.world.submit(command)
         self.assertEqual({events[0].transaction_id}, {e.transaction_id for e in events})
         self.assertEqual(["SUPPORT_REMOVED", "REGION_SETTLED"], [e.event_type for e in events])
+        self.assertEqual((1, 0), (self.world.chunks[self.a.key].revision,
+                                  self.world.chunks[self.b.key].revision))
 
     def test_t14_chapter_9_proof(self) -> None:
         events = self.world.submit(self.command("T14", quantity=2, scar_type="EXCAVATION"))
