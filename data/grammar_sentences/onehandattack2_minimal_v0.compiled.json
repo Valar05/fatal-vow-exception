@@ -2,7 +2,7 @@
   "schema": "fatal-vow.pose-sentence-compile/v1",
   "sentence_id": "onehandattack2-minimal-grammar-proof-v0",
   "grammar_schema": "fatal-vow.pose-grammar.v0",
-  "source_catalog_sha256": "28904ea5cbe24c6b46bfd27fcb5a15c4a9b05341412ba82408103f906f027fa9",
+  "source_catalog_sha256": "7e023c91fd72f2f290472f82cf027964cece423b0c0c992d313ea6ee51b2ff8b",
   "sentence_sha256": "c22c7bee4ca5ed689768a6773acd90ec3431cfd7def5a63d6e19de538dff918a",
   "motion_compile_status": "pass",
   "visual_compile_status": "blocked_missing_layers",
