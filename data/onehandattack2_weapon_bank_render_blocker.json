@@ -1,0 +1,101 @@
+{
+  "schema": "fatal-vow.weapon-bank-render-blocker/v1",
+  "recorded_at": "2026-08-02",
+  "project": "Fatal Vow Exception",
+  "sentence": "onehandattack2-minimal-grammar-proof-v0",
+  "requested_weapon_views": [
+    {
+      "atom": "onehandattack2.s000",
+      "role": "guard",
+      "sample_index": 0,
+      "time_seconds": 0
+    },
+    {
+      "atom": "onehandattack2.s004",
+      "role": "anticipation",
+      "sample_index": 4,
+      "time_seconds": 0.1666667
+    },
+    {
+      "atom": "onehandattack2.s006",
+      "role": "contact",
+      "sample_index": 6,
+      "time_seconds": 0.25
+    },
+    {
+      "atom": "onehandattack2.s027",
+      "role": "recovery",
+      "sample_index": 27,
+      "time_seconds": 1.125
+    }
+  ],
+  "source_identities": {
+    "motion_corpus": {
+      "library_file_id": "libfile_eff00dae99a88191b64658eff5315c74",
+      "filename": "motion_corpus.json",
+      "source_filename": "FPSPlayer.glb (5)",
+      "source_sha256": "9be07cf0e46e2ed97abca38a8a6cf1bbd7c111cec3fa9671c1b0b721c37535da",
+      "source_bytes": 1837152
+    },
+    "donor_glb": {
+      "library_file_id": "libfile_6ed0f03b95c4819189e609333180cbfa",
+      "filename": "FPSPlayer.glb (5)",
+      "sha256": "9be07cf0e46e2ed97abca38a8a6cf1bbd7c111cec3fa9671c1b0b721c37535da",
+      "bytes": 1837152,
+      "status": "source_exact"
+    },
+    "prop_atlas_candidate": {
+      "library_file_id": "libfile_fbe7ae138b088191bec37de2f09fd907",
+      "filename": "Meshy_AI_Low_Poly_Tools_and_Tr_0802140452_texture.glb",
+      "sha256": "f6e86e2a7a65061b8575ecbf3afd5d32e396716b21f57353718d3e9f66cfbd1a",
+      "bytes": 8094304,
+      "status": "candidate_unselected",
+      "known_structure": "one textured mesh containing many disconnected components; no named shovel node"
+    },
+    "hero_hand": {
+      "library_file_id": "libfile_8466a8dd2b408191a489cefda59013c3",
+      "filename": "Medieval Fleshpunk Hand Turnaround Sheet.png",
+      "sha256": "bf6a3107e26d6bba55ebcf933bb58517a17d9ba163b3c0c7d9deb93cbd68e18c",
+      "status": "accepted_identity_authority"
+    }
+  },
+  "render_request": {
+    "tool": "render_blender_glb",
+    "contract_version": "home-center.blender-render-request.v2",
+    "glb_sha256": "f6e86e2a7a65061b8575ecbf3afd5d32e396716b21f57353718d3e9f66cfbd1a",
+    "script_sha256": "ac9bdb4166ca635973e0717f0339afd822a6ed179e2072e5985f53cac56e9d49",
+    "idempotency_key": "fatal-vow-prop-atlas-f6e86e2a7a65061b-ac9bdb4166ca6359",
+    "render_id": "fatal-vow-prop-atlas-f6e86e2a7a65061b-ac9bdb4166ca6359",
+    "cache": true,
+    "output_name": "fatal_vow_prop_atlas_source"
+  },
+  "runtime": {
+    "home_center_source_commit": "8df4f9e9c2ad5f966a084772c694520f83ab33a2",
+    "deployed_revision": "homecentermcp-00202-fof",
+    "registry_schema_revision": "2026-08-02.blender-render-deprecated-v1",
+    "public_manifest_sha256": "bfea510ab2cd6717e95b9e377314f3f3b1a4e925abd9e9d6474db5f7aa85f37f"
+  },
+  "result": {
+    "status": "blocked",
+    "error_code": "INVALID_ARGUMENT",
+    "error": "MCP error -32602: Tool render_blender_glb not found",
+    "receipt_accepted": false,
+    "render_completed": false,
+    "visual_evidence_produced": false
+  },
+  "blocked_transitions": [
+    "visual selection of the intended shovel from the prop atlas",
+    "four-view source-locked weapon bank",
+    "rear-hand and foreground-finger layer authoring",
+    "registered composite",
+    "intended-cadence watchdown"
+  ],
+  "prohibited_fallbacks": [
+    "deprecated blender.workspace.render dispatcher",
+    "local render claimed as Home Center evidence",
+    "whole-sheet generation",
+    "invented shovel geometry",
+    "flattened k004 promoted as runtime layers"
+  ],
+  "next_required_transition": "Restore a callable top-level Home Center render_blender_glb backend, or obtain explicit authority to repair that Home Center capability; then repeat the exact source-atlas request before selecting or authoring any weapon layer."
+}
