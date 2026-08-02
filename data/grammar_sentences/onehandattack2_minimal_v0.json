@@ -1,0 +1,56 @@
+{
+  "schema": "fatal-vow.pose-sentence/v1",
+  "id": "onehandattack2-minimal-grammar-proof-v0",
+  "status": "candidate",
+  "authored_fps": 10,
+  "recipes": {
+    "guard": {
+      "atom": "onehandattack2.s000",
+      "role": "guard",
+      "status": "mined_candidate"
+    },
+    "anticipation": {
+      "atom": "onehandattack2.s004",
+      "role": "anticipation",
+      "status": "mined_candidate"
+    },
+    "contact": {
+      "atom": "onehandattack2.s006",
+      "role": "contact",
+      "accepted_role_override": "contact",
+      "status": "accepted_premise_evidence",
+      "acceptance_authority": {
+        "artifact": "Rugged Hand Gripping a Blue-Gray Shovel.png",
+        "sha256": "e5b472dbe5dc97c8e2a9a61c02f43cc8c89aaa3cc4254bcd6fc67f0c74990857",
+        "scope": "isolated k004 hard grip/contact only"
+      }
+    },
+    "recovery": {
+      "atom": "onehandattack2.s027",
+      "role": "recovery",
+      "status": "mined_candidate"
+    }
+  },
+  "layers": {
+    "guard": {},
+    "anticipation": {},
+    "contact": {
+      "flattened_reference_only": "Rugged Hand Gripping a Blue-Gray Shovel.png"
+    },
+    "recovery": {}
+  },
+  "score": [
+    {"event": "cue", "at_seconds": 0.0, "pose": "guard"},
+    {"event": "transition", "at_seconds": 0.1, "pose": "anticipation"},
+    {"event": "accent", "at_seconds": 0.2, "pose": "contact"},
+    {"event": "hold", "at_seconds": 0.3, "pose": "contact"},
+    {"event": "release", "at_seconds": 0.4, "pose": "recovery"},
+    {"event": "stop", "at_seconds": 0.7}
+  ],
+  "interrupts": {
+    "guard": "guard",
+    "anticipation": "recovery",
+    "contact": "recovery",
+    "recovery": "guard"
+  }
+}
