@@ -17,7 +17,9 @@ The source contains 38 embedded glTF animation clips. Their native key grid is 2
 - derived weapon transforms relative to the animated `Camera` node;
 - the source coordinate basis and both weapon parent chains.
 
-The compact repository manifest is `motion_manifest.json`. The exact 2.9 MB full corpus is stored in ChatGPT Library as `motion_corpus.json`, stable identity `libfile_eff00dae99a88191b64658eff5315c74`, version 0, SHA-256 `d46a66f76355e01c348e7dbab91ef3fd838d0eaf564d8ec6e983a37ea950ab22`.
+The compact repository manifest is `data/infinite_brutality_motion_manifest.json`. The exact donor and exact 2.9 MB corpus are now public repository inputs at `assets/motion/source/FPSPlayer.glb (5)` and `assets/motion/reference/motion_corpus.json`. The corpus remains mirrored in ChatGPT Library as stable identity `libfile_eff00dae99a88191b64658eff5315c74`, version 0. Its SHA-256 is `d46a66f76355e01c348e7dbab91ef3fd838d0eaf564d8ec6e983a37ea950ab22`.
+
+`tools/extract_fpsplayer_motions.py` reproduces both repository JSON artifacts byte-for-byte from the donor. `tools/validate_weapon_motion.py` independently verifies source/corpus hashes, all 38 clips, 5,440 native transform channels, quaternion normalization, and the inherited camera-space weapon motion required when the arms are removed.
 
 ## Complete clip set
 

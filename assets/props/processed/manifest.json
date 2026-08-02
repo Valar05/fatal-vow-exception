@@ -1,0 +1,379 @@
+{
+  "schema": "fatal-vow.prop-batch.v1",
+  "status": "processed-candidate",
+  "source": {
+    "path": "Meshy_AI_Low_Poly_Tools_and_Tr_0802140452_texture.glb",
+    "sha256": "f6e86e2a7a65061b8575ecbf3afd5d32e396716b21f57353718d3e9f66cfbd1a",
+    "bytes": 8094304,
+    "triangle_count": 2584,
+    "vertex_count": 1992,
+    "node_count": 1,
+    "mesh_count": 1
+  },
+  "processing": {
+    "assignment": "disconnected components assigned to source 4x3 spatial cells",
+    "texture_size": [
+      512,
+      512
+    ],
+    "texture_format": "JPEG",
+    "removed_components": [
+      {
+        "triangle_count": 1,
+        "source_triangle": 1188,
+        "center": [
+          0.256836,
+          -0.3320313,
+          0.00966
+        ],
+        "reason": "isolated single-triangle debris"
+      }
+    ],
+    "removed_triangle_count": 1,
+    "preserved_source_triangle_count": 2583
+  },
+  "contact_sheet": {
+    "path": "prop-library-contact-sheet.png",
+    "sha256": "19bd3af73ec632362e6d174c593b7833a6c7d1003f20ed0aa220406fd17c8b97",
+    "bytes": 108435,
+    "authority": "static processing evidence; human gameplay acceptance remains pending"
+  },
+  "props": [
+    {
+      "name": "scarred-d-grip-shovel",
+      "grid": {
+        "row": 0,
+        "column": 0
+      },
+      "path": "scarred-d-grip-shovel.glb",
+      "sha256": "03341b37677fc67da3bf01b0999a6c1ef92b2f187049dae55285e76e2e8ca5bc",
+      "bytes": 72836,
+      "triangle_count": 182,
+      "vertex_count": 165,
+      "source_center": [
+        -0.3632815,
+        0.2636715,
+        -0.008057
+      ],
+      "source_bounds_min": [
+        -0.466797,
+        0.162109,
+        -0.086426
+      ],
+      "source_bounds_max": [
+        -0.259766,
+        0.365234,
+        0.070312
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "spear",
+      "grid": {
+        "row": 0,
+        "column": 1
+      },
+      "path": "spear.glb",
+      "sha256": "f3a217e448bc994cc41e062c715c47b085dc40370273a4f416e744d12022519f",
+      "bytes": 68604,
+      "triangle_count": 108,
+      "vertex_count": 87,
+      "source_center": [
+        -0.1106265,
+        0.263672,
+        -0.008301
+      ],
+      "source_bounds_min": [
+        -0.209961,
+        0.152344,
+        -0.037354
+      ],
+      "source_bounds_max": [
+        -0.011292,
+        0.375,
+        0.020752
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "glass-launcher",
+      "grid": {
+        "row": 0,
+        "column": 2
+      },
+      "path": "glass-launcher.glb",
+      "sha256": "857207cf913b496ce704b5428260417e482c92af3146e52847502d6f5f34a6de",
+      "bytes": 74580,
+      "triangle_count": 258,
+      "vertex_count": 192,
+      "source_center": [
+        0.1377565,
+        0.2402345,
+        -0.048996
+      ],
+      "source_bounds_min": [
+        0.025513,
+        0.167969,
+        -0.103516
+      ],
+      "source_bounds_max": [
+        0.25,
+        0.3125,
+        0.005524
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "glass-cartridge",
+      "grid": {
+        "row": 0,
+        "column": 3
+      },
+      "path": "glass-cartridge.glb",
+      "sha256": "ba4cc69274ba49f759585dd20dc3b4b5096e5e3077290dadcfb659cf5fe0edb9",
+      "bytes": 69984,
+      "triangle_count": 172,
+      "vertex_count": 107,
+      "source_center": [
+        0.3916015,
+        0.2617185,
+        0.001953
+      ],
+      "source_bounds_min": [
+        0.355469,
+        0.205078,
+        -0.037354
+      ],
+      "source_bounds_max": [
+        0.427734,
+        0.318359,
+        0.04126
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "braided-wire",
+      "grid": {
+        "row": 1,
+        "column": 0
+      },
+      "path": "braided-wire.glb",
+      "sha256": "4c3a95b54e3964fe6dda25faf1fcd2865a77e8f21d1941b0f1d9c5a65a659876",
+      "bytes": 91324,
+      "triangle_count": 610,
+      "vertex_count": 497,
+      "source_center": [
+        -0.3720705,
+        -0.0009765,
+        -0.003418
+      ],
+      "source_bounds_min": [
+        -0.462891,
+        -0.057861,
+        -0.094727
+      ],
+      "source_bounds_max": [
+        -0.28125,
+        0.055908,
+        0.087891
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "ceramic-key",
+      "grid": {
+        "row": 1,
+        "column": 1
+      },
+      "path": "ceramic-key.glb",
+      "sha256": "820ce8431a371765991d781d9bf0e96deda4cbd5a5e6417c066fb421b70fef11",
+      "bytes": 70668,
+      "triangle_count": 144,
+      "vertex_count": 125,
+      "source_center": [
+        -0.1177975,
+        -0.006348,
+        -0.0066525
+      ],
+      "source_bounds_min": [
+        -0.200195,
+        -0.087891,
+        -0.042236
+      ],
+      "source_bounds_max": [
+        -0.0354,
+        0.075195,
+        0.028931
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "ration-bar",
+      "grid": {
+        "row": 1,
+        "column": 2
+      },
+      "path": "ration-bar.glb",
+      "sha256": "a7b2806c226624ca23362e3735772bb09a8bd624a581f904c84c48674e1964f8",
+      "bytes": 69548,
+      "triangle_count": 94,
+      "vertex_count": 108,
+      "source_center": [
+        0.142822,
+        -0.015625,
+        -0.0306395
+      ],
+      "source_bounds_min": [
+        0.040527,
+        -0.072754,
+        -0.117676
+      ],
+      "source_bounds_max": [
+        0.245117,
+        0.041504,
+        0.056397
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "bone-needle-case",
+      "grid": {
+        "row": 1,
+        "column": 3
+      },
+      "path": "bone-needle-case.glb",
+      "sha256": "9a9041174932000a0ec37bb0cee014fa94d1564fb001959e35c25c9dafd45aec",
+      "bytes": 74860,
+      "triangle_count": 256,
+      "vertex_count": 198,
+      "source_center": [
+        0.397461,
+        0.0214845,
+        0.0512085
+      ],
+      "source_bounds_min": [
+        0.294922,
+        -0.045898,
+        -0.024536
+      ],
+      "source_bounds_max": [
+        0.5,
+        0.088867,
+        0.126953
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "clinic-needle",
+      "grid": {
+        "row": 2,
+        "column": 0
+      },
+      "path": "clinic-needle.glb",
+      "sha256": "2d6cdb186b448329224fc1c173e913d9549a4244581bcec8bce69ab9dfc6f2d1",
+      "bytes": 71444,
+      "triangle_count": 192,
+      "vertex_count": 135,
+      "source_center": [
+        -0.3876955,
+        -0.2905275,
+        -0.0059815
+      ],
+      "source_bounds_min": [
+        -0.498047,
+        -0.375,
+        -0.035156
+      ],
+      "source_bounds_max": [
+        -0.277344,
+        -0.206055,
+        0.023193
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "compliance-mushroom",
+      "grid": {
+        "row": 2,
+        "column": 1
+      },
+      "path": "compliance-mushroom.glb",
+      "sha256": "bfb5515a70d611ff5a99e00f764c469e3be2399b8c5329d0aba90f69f2f44a74",
+      "bytes": 69576,
+      "triangle_count": 160,
+      "vertex_count": 100,
+      "source_center": [
+        -0.1153565,
+        -0.2851565,
+        -0.002197
+      ],
+      "source_bounds_min": [
+        -0.208984,
+        -0.371094,
+        -0.103027
+      ],
+      "source_bounds_max": [
+        -0.021729,
+        -0.199219,
+        0.098633
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "flint-kit",
+      "grid": {
+        "row": 2,
+        "column": 2
+      },
+      "path": "flint-kit.glb",
+      "sha256": "bc5ae551c6899805406c25034fddb760114be9d6a10cb709609c8c2c4119be72",
+      "bytes": 69984,
+      "triangle_count": 167,
+      "vertex_count": 108,
+      "source_center": [
+        0.152832,
+        -0.305176,
+        -0.0350345
+      ],
+      "source_bounds_min": [
+        0.043945,
+        -0.375,
+        -0.12793
+      ],
+      "source_bounds_max": [
+        0.261719,
+        -0.235352,
+        0.057861
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    },
+    {
+      "name": "beetle-venom-vial",
+      "grid": {
+        "row": 2,
+        "column": 3
+      },
+      "path": "beetle-venom-vial.glb",
+      "sha256": "9a41b4e274630c77d2aea3a87128724994faf1fe0b97daa5de359c47ffafba1a",
+      "bytes": 73280,
+      "triangle_count": 240,
+      "vertex_count": 167,
+      "source_center": [
+        0.4248045,
+        -0.3066405,
+        -0.0080565
+      ],
+      "source_bounds_min": [
+        0.376953,
+        -0.373047,
+        -0.059082
+      ],
+      "source_bounds_max": [
+        0.472656,
+        -0.240234,
+        0.042969
+      ],
+      "origin_contract": "geometry centered on source-space axis-aligned bounds"
+    }
+  ]
+}

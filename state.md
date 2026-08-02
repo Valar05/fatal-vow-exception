@@ -12,9 +12,9 @@ Build an independent Fatal Vow game where embodied labor, shovel-kata, mutable t
 
 ## Capability State
 
-Implemented: deterministic scar/voxel contracts; extraction of 38 Infinite Brutality clips / 5,427 channels; calibrated FPS-camera review; 405 source-exact v1 candidate atoms in 33 families; scored-sentence compiler; layered hand/weapon/finger runtime contract; local semantic and material-vertex shovel banks; and a reusable accepted-pixel hand carrier whose hand/cuff follows `Weapon.R +Z` while the forearm follows a declared wrist-to-frame-edge exit.
+Implemented: deterministic scar/voxel contracts; reproducible extraction of 38 Infinite Brutality clips / 5,440 channels; public arm-free camera-space `Weapon.R` reference with exact donor/corpus bytes; a processed twelve-prop Meshy library with immutable source and reproducible splitter; calibrated FPS-camera review; 405 source-exact v1 candidate atoms in 33 families; scored-sentence compiler; layered hand/weapon/finger runtime contract; local semantic and material-vertex shovel banks; and a reusable accepted-pixel hand carrier whose hand/cuff follows `Weapon.R +Z` while the forearm follows a declared wrist-to-frame-edge exit.
 
-Tested: extraction and phase coverage; 12 one-hand/knife diagnostics; `Weapon.R +Z`; isolated k004 identity; 182-triangle shovel extraction; cross-clip grip compatibility; all 12 sentence layers by path/hash/size/mode; eight-frame 10-FPS watchdown; and byte-identical repeat runs across 13 semantic-bank, 13 material-bank, and 26 carrier files.
+Tested: extraction and phase coverage; byte-identical donor-to-corpus reproduction; arm-free inherited camera-space weapon motion across all four one-hand attacks; all twelve prop GLBs by hash/structure/texture/triangle conservation; 12 one-hand/knife diagnostics; `Weapon.R +Z`; isolated k004 identity; 182-triangle shovel extraction; cross-clip grip compatibility; all 12 sentence layers by path/hash/size/mode; eight-frame 10-FPS watchdown; and byte-identical repeat runs across 13 semantic-bank, 13 material-bank, and 26 carrier files.
 
 Rejected: three whole-sheet transfers, two whole-image adapters, and `onehandattack2.s000` as this sentence's guard because its near-camera D-handle hid the forearm. The atom remains mined evidence; only that sentence role is rejected.
 
@@ -82,6 +82,8 @@ Present the material and semantic watchdowns for Drew's visual ruling. If accept
 - Adapter verdict: https://github.com/Valar05/fatal-vow-exception/blob/main/data/onehandattack2_grip_adapter_verdict.json
 - Hero hand plate: ChatGPT Library `libfile_8466a8dd2b408191a489cefda59013c3`
 - Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
+- Repository motion corpus: `assets/motion/reference/motion_corpus.json`
+- Processed prop library: `assets/props/processed/manifest.json`
 - Design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
 
 ## Recent Delta
@@ -95,3 +97,5 @@ Present the material and semantic watchdowns for Drew's visual ruling. If accept
 - Removed resurrected donor-tool pixels from the carrier after mask hole filling exposed the contamination.
 - Replaced the occluded `onehandattack2.s000` guard with compatible mined `onehandattack3.s002`; this is grammar composition, not a new named attack.
 - Compiled and rendered all twelve layers; 52 generated evidence files repeat byte-identically. Candidate watchdowns exist; user acceptance and runtime integration remain open.
+- Published the exact FPSPlayer donor and full arm-free weapon reference corpus to repository truth; validation confirms all 38 clips and proves the one-hand weapon arcs survive inherited arm removal through camera-space baking.
+- Published the untouched 2,584-triangle Meshy prop batch plus twelve centered GLBs. One visually reviewed floating triangle was removed; 2,583 triangles remain and all outputs pass structural/hash validation.

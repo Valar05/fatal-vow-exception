@@ -1,0 +1,48 @@
+{
+  "schema": "fatal-vow.weapon-motion-validation.v1",
+  "status": "PASS",
+  "authority": "source/reference only; no human animation acceptance implied",
+  "source_sha256": "9be07cf0e46e2ed97abca38a8a6cf1bbd7c111cec3fa9671c1b0b721c37535da",
+  "corpus_sha256": "d46a66f76355e01c348e7dbab91ef3fd838d0eaf564d8ec6e983a37ea950ab22",
+  "clip_count": 38,
+  "full_rig_channel_count": 5440,
+  "weapon_nodes": [
+    "Weapon.R",
+    "Weapon.L"
+  ],
+  "arm_free_runtime_track": "camera-space Weapon.R translation/quaternion/scale samples",
+  "inherited_motion_evidence": {
+    "OneHandAttack1": {
+      "local_translation_range": 1e-07,
+      "local_rotation_distance": 0.3952136,
+      "camera_translation_range": 0.7106668,
+      "camera_rotation_distance": 1.1807717
+    },
+    "OneHandAttack2": {
+      "local_translation_range": 1e-07,
+      "local_rotation_distance": 0.3537908,
+      "camera_translation_range": 0.5996424,
+      "camera_rotation_distance": 1.3755732
+    },
+    "OneHandAttack3": {
+      "local_translation_range": 3e-07,
+      "local_rotation_distance": 0.3384771,
+      "camera_translation_range": 0.5126063,
+      "camera_rotation_distance": 1.3407088
+    },
+    "OneHandAttack4": {
+      "local_translation_range": 2e-07,
+      "local_rotation_distance": 0.4080602,
+      "camera_translation_range": 0.6121395,
+      "camera_rotation_distance": 1.3994166
+    }
+  },
+  "retained_exporter_fossil": {
+    "clip": "OneHandAttack1.002",
+    "duration_seconds": 1.25,
+    "sample_count": 2,
+    "classification": "static duplicate; retained and not promoted"
+  },
+  "checks_passed": 6819,
+  "failures": []
+}

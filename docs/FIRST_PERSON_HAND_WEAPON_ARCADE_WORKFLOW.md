@@ -23,7 +23,7 @@ Do not build every animation as an isolated strip. Mine reusable source-exact po
 ## Verified donor truth
 
 - `FPSPlayer.glb (5)` is the first-person arm and motion source.
-- The exact corpus contains 38 clips and 5,427 native transform channels with no resampling.
+- The exact corpus contains 38 clips and 5,440 native transform channels with no resampling.
 - The established FPS camera mount is part of the performance contract.
 - `Weapon.R` +Z is the corrected shovel binding for `OneHandAttack2`.
 - First-person arms use a separate camera-space presentation so chest/body intrusion does not replace the intended view.
@@ -86,7 +86,7 @@ Collision, damage, and gameplay state are independent of sprite artwork. A visua
 ## Current capability state
 
 - Hero hand identity: accepted.
-- Source motion extraction: implemented and tested for 38 clips / 5,427 channels.
+- Source motion extraction: implemented and tested for 38 clips / 5,440 channels.
 - Pose grammar miner: implemented and deterministic.
 - Mined pose catalog: 297 source-exact candidates in 33 semantic families; not visually accepted as a set.
 - `OneHandAttack2` isolated k004 hard grip: accepted as premise evidence.

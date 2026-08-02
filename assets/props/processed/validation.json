@@ -1,0 +1,12 @@
+{
+  "schema": "fatal-vow.prop-batch-validation.v1",
+  "status": "PASS",
+  "source_sha256": "f6e86e2a7a65061b8575ecbf3afd5d32e396716b21f57353718d3e9f66cfbd1a",
+  "prop_count": 12,
+  "source_triangles": 2584,
+  "output_triangles": 2583,
+  "removed_triangles": 1,
+  "processed_glb_bytes": 876688,
+  "checks_passed": 166,
+  "failures": []
+}
