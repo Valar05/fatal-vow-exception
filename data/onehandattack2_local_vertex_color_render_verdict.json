@@ -1,0 +1,61 @@
+{
+  "schema": "fatal-vow.local-vertex-color-render-verdict/v1",
+  "recorded_at": "2026-08-02",
+  "user_correction": {
+    "render_lane": "local only",
+    "visibility_contract": "vertex color"
+  },
+  "supersedes": {
+    "evidence": "data/onehandattack2_weapon_bank_render_blocker.json",
+    "reason": "The Home Center Cloud Blender lane was an assistant-imposed constraint. Drew explicitly corrected the commissioned lane to local rendering."
+  },
+  "sources": {
+    "arms_glb_sha256": "9be07cf0e46e2ed97abca38a8a6cf1bbd7c111cec3fa9671c1b0b721c37535da",
+    "prop_atlas_glb_sha256": "f6e86e2a7a65061b8575ecbf3afd5d32e396716b21f57353718d3e9f66cfbd1a",
+    "shovel_region": {
+      "atlas_xy": [-0.5, 0.145, -0.25, 0.38],
+      "triangle_count": 182,
+      "bind": "Weapon.R +Z"
+    },
+    "camera": "Infinite Brutality FPS camera; 82 degree vertical FOV; 640x360; Camera node plus world (0, 0.015, 0); look world +Z"
+  },
+  "rejected": [
+    {
+      "id": "local-weapon-bank-v1",
+      "reason": "Reconstructed the projection from compacted camera-space quaternion data, flipped the longitudinal presentation, and produced false clipping."
+    }
+  ],
+  "candidate": {
+    "id": "onehandattack2-local-weapon-bank-v2",
+    "renderer": "scripts/render_local_weapon_bank.py",
+    "manifest": "evidence/onehandattack2-local-weapon-bank/onehandattack2-local-weapon-bank.manifest.json",
+    "weapon_contact_sheet": {
+      "path": "evidence/onehandattack2-local-weapon-bank/onehandattack2-weapon-bank-contact-sheet.png",
+      "sha256": "ced797d2e44d71b08bb5681aaf33eb993517cfa6e8778aa9bf469fb802ef72f9"
+    },
+    "vertex_color_composite_contact_sheet": {
+      "path": "evidence/onehandattack2-local-weapon-bank/onehandattack2-vertex-color-composite-contact-sheet.png",
+      "sha256": "39c14663c117908a42061b49093ae5374152e1ab2d1b3b571ee31f7c8f000fbf"
+    },
+    "weapon_watchdown": {
+      "path": "evidence/onehandattack2-local-weapon-bank/onehandattack2-weapon-bank-watchdown.gif",
+      "sha256": "7f3167c0b4987d831ed17903d13f0095e2429d55dde0834fb7eb361395e62203"
+    },
+    "vertex_color_composite_watchdown": {
+      "path": "evidence/onehandattack2-local-weapon-bank/onehandattack2-vertex-color-composite-watchdown.gif",
+      "sha256": "dd0c61b1eed313e3e4fd5788361818291229075bfb37e5cf6d3a9ae8fffc2fca"
+    },
+    "repeatability": "All four named artifacts and the manifest reproduced byte-identically on a second local run.",
+    "perceptual_verdict": "PASS as source registration and vertex-color mask evidence; UNJUDGED as target hand art.",
+    "frame_edge_policy": "Every recipe intentionally touches or crosses the 640x360 frame boundary because the source motion does. The renderer preserves rather than completes offscreen geometry."
+  },
+  "compiler_delta": {
+    "motion_compile_status": "pass",
+    "visual_compile_status": "blocked_missing_layers",
+    "previous_missing_layers": 12,
+    "current_missing_layers": 8,
+    "resolved_now": "weapon layer for guard, anticipation, contact, and recovery",
+    "still_missing": "accepted-identity rear-hand/forearm and foreground-finger passes for all four recipes"
+  },
+  "claim_boundary": "The local pass proves source-locked pose registration, weapon geometry, semantic vertex colors, source skin-weight colors, and cadence. It does not prove accepted Fatal Vow hand identity, readable final grip closure, final occlusion, or an accepted runtime sentence."
+}
