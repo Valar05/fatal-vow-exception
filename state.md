@@ -81,4 +81,5 @@ Render the source-locked `one_hand_long_handle` weapon view bank for the exact f
 - Mined 297 source-exact candidate atoms from all 38 donor clips into 33 semantic families without resampling or promoting visual acceptance.
 - Found that v0 had no one-handed long-handle recoil/recovery atom; repaired the miner with source-exact phase anchors while retaining kinematic discoveries.
 - Mined 405 v1 candidates and compiled the first grip-compatible scored sentence.
+- Repaired the compact-row contract so v1 retains exact weapon registration and reconstruction data needed by the weapon-view bank.
 - Kept the motion pass separate from the red visual compile: twelve registered layer atoms remain missing.
