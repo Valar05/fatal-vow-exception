@@ -87,6 +87,18 @@ states:
 A motion pass cannot promote a visual failure. A flattened accepted image is
 premise evidence, not three hot-swappable layers wearing a trench coat.
 
+The first carrier proof added one load-bearing constraint that the initial
+grammar only named loosely: a first-person forearm owns a visible frame-edge
+exit. The hand/cuff segment follows the weapon socket while the forearm segment
+maps wrist to that declared exit. A socket alone can preserve the grip while
+rotating the sleeve out through the wrong wall.
+
+Game-facing and diagnostic weapon banks are separate. The game-facing bank
+bakes the approved atlas base color into stable vertex colors. The diagnostic
+bank retains semantic grip/shaft/blade colors. Both use the same triangles,
+socket transforms, camera, and score; neither is allowed to borrow the other's
+claim.
+
 ## Song/score contract
 
 The score chooses pose recipes and timing. It may synchronize accents, holds, ruptures, repeats, or releases to audio markers. It may not silently modify contacts, camera, provenance, layer order, or acceptance state.
@@ -106,9 +118,14 @@ The first proof is not another complete attack. It is a small sentence assembled
 
 The proof passes only when the composed first-person watchdown preserves hand identity, weapon path, grip ownership, camera, frame-edge exits, readable low-FPS cadence, and interruption safety.
 
-The initial `OneHandAttack2` sentence passes motion compilation and remains
-blocked at visual compilation. Its exact four `Weapon.R +Z` shovel layers now
-exist as locally rendered, semantic-vertex-color candidate evidence. Eight
-target-identity hand passes remain missing: rear hand/forearm and foreground
-fingers for each recipe. The accepted k004 image remains accepted only as
-isolated grip/contact premise evidence.
+The current sentence composes `onehandattack3.s002` guard with
+`onehandattack2.s004` anticipation, accepted-role `onehandattack2.s006`
+contact, and `onehandattack2.s027` recovery. The compatible cross-clip guard
+replaced `onehandattack2.s000` after artifact review showed its near-camera
+D-handle hiding the forearm.
+
+All twelve runtime layers now exist and survive artifact verification. The
+material and semantic weapon banks plus the accepted-pixel hand carrier
+reproduce byte-identically. The rendered watchdown is a candidate visual pass,
+not user-accepted final art; matte edge cleanup, a supporting-left-hand atom,
+and runtime integration remain separate gates.
