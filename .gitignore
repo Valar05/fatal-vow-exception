@@ -1,0 +1,6 @@
+inputs/
+**/__pycache__/
+*.pyc
+
+# Superseded local staging bank; the sentence-owned material bank is tracked.
+evidence/onehandattack2-local-weapon-bank-material/
