@@ -12,13 +12,13 @@ Build an independent Fatal Vow game where embodied labor, shovel-kata, mutable t
 
 ## Capability State
 
-Implemented: deterministic scar/voxel source contracts; reproducible extraction of 38 Infinite Brutality clips and 5,427 transform channels; calibrated FPS-camera review; first shovel source selection and eight-key evidence packet; deterministic pose-grammar miner; 297 source-exact candidate atoms in 33 families; layered hand/weapon/finger runtime contract and score language.
+Implemented: deterministic scar/voxel source contracts; reproducible extraction of 38 Infinite Brutality clips and 5,427 transform channels; calibrated FPS-camera review; first shovel source selection and eight-key evidence packet; deterministic phase-complete pose-grammar miner; 405 source-exact v1 candidate atoms in 33 families; scored-sentence compiler; layered hand/weapon/finger runtime contract and score language.
 
-Tested: extraction JSON and channels; 12 one-hand/knife diagnostic runtimes at native 24 FPS; `OneHandAttack2` camera/tool registration; isolated load-bearing k004 identity redraw; grammar miner syntax, endpoint coverage, and repeatable output.
+Tested: extraction JSON and channels; 12 one-hand/knife diagnostic runtimes at native 24 FPS; `OneHandAttack2` camera/tool registration; isolated load-bearing k004 identity redraw; v1 grammar repeatability and phase coverage; the first sentence passes atom, role, `one_hand_long_handle` grip, cue/accent/hold/release score, and interruption compilation.
 
 Rejected: three whole-sheet transfers and two whole-image adapter attempts. Whole-image generation cannot preserve source-specific part transfer, immutable tool geometry, or layered occlusion.
 
-Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Sheet.png` as first-person hand identity authority, and the shift from isolated animations to a compostable pose grammar. The 297 mined atoms are candidates, not collectively accepted poses. No complete grammar-composed runtime sentence is accepted.
+Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Sheet.png` as first-person hand identity authority, and the shift from isolated animations to a compostable pose grammar. The 405 v1 mined atoms are candidates, not collectively accepted poses. No complete grammar-composed runtime sentence is accepted. The first sentence is motion-compile green and visual-compile red with twelve registered layers missing.
 
 ## Sealed Decisions
 
@@ -41,6 +41,11 @@ Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Shee
 - Grammar: `docs/POSE_GRAMMAR.md`
 - Miner: `scripts/mine_pose_grammar.py`
 - Candidate catalog: `data/pose_grammar.v0.json`
+- Phase-complete catalog: `data/pose_grammar.v1.json`
+- v1 validation: `data/pose_grammar.v1.validation.json`
+- Sentence compiler: `scripts/compose_pose_sentence.py`
+- First sentence source: `data/grammar_sentences/onehandattack2_minimal_v0.json`
+- First sentence compile: `data/grammar_sentences/onehandattack2_minimal_v0.compiled.json`
 - Arcade workflow: `docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md`
 - Shovel evidence: `data/onehandattack2_shovel_source_evidence.json`
 - Transfer verdict: `data/onehandattack2_shovel_transfer_verdict.json`
@@ -48,17 +53,20 @@ Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Shee
 
 ## Active Gate
 
-The isolated-animation gate is retired. The active gate is the first grammar-composed sentence. It must use a source guard, mined anticipation, accepted `OneHandAttack2` k004 hard grip/contact, and mined recoil/recovery; keep rear hand/forearm, weapon, and foreground fingers as registered layers; and run from a cue/accent/hold/release score. The mined catalog is navigation and evidence, not visual acceptance.
+The first grammar sentence now exists and passes motion compilation: `onehandattack2.s000` guard → `onehandattack2.s004` anticipation → accepted-role override on source-exact `onehandattack2.s006` / k004 contact → `onehandattack2.s027` recovery, conducted at 10 authored FPS by cue/accent/hold/release. Visual compilation is red because each recipe still lacks separate rear-hand/forearm, weapon, and foreground-finger layers. The flattened accepted k004 image cannot be promoted into those layers.
 
 ## Next Authorized Action
 
-Build and watch the smallest grammar proof in the established FPS camera. Review the composed source/candidate frames and intended-cadence watchdown for hand identity, weapon path, grip ownership, occlusion, camera, frame-edge exits, interruption safety, and deliberate arcade timing. Do not resume whole-sheet generation or build the remaining named attacks independently.
+Render the source-locked `one_hand_long_handle` weapon view bank for the exact four recipe transforms, then manually author the matching rear-hand/forearm and foreground-finger layers under the accepted hand identity. Composite the registered layers, build the intended-cadence watchdown, and review hand identity, weapon path, grip ownership, occlusion, camera, frame-edge exits, interruption safety, and arcade timing. Do not resume whole-sheet generation or build named attacks independently.
 
 ## Evidence Pointers
 
 - README: https://github.com/Valar05/fatal-vow-exception/blob/main/README.md
 - Pose grammar: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/POSE_GRAMMAR.md
 - Candidate catalog: https://github.com/Valar05/fatal-vow-exception/blob/main/data/pose_grammar.v0.json
+- Phase-complete catalog: https://github.com/Valar05/fatal-vow-exception/blob/main/data/pose_grammar.v1.json
+- v1 validation: https://github.com/Valar05/fatal-vow-exception/blob/main/data/pose_grammar.v1.validation.json
+- First sentence compile: https://github.com/Valar05/fatal-vow-exception/blob/main/data/grammar_sentences/onehandattack2_minimal_v0.compiled.json
 - Adapter verdict: https://github.com/Valar05/fatal-vow-exception/blob/main/data/onehandattack2_grip_adapter_verdict.json
 - Hero hand plate: ChatGPT Library `libfile_8466a8dd2b408191a489cefda59013c3`
 - Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
@@ -71,3 +79,6 @@ Build and watch the smallest grammar proof in the established FPS camera. Review
 - Adopted the fourth door: registered rear-hand / weapon / foreground-finger layers with grip-class hot swapping.
 - Replaced isolated animation construction with a compostable pose grammar and score language.
 - Mined 297 source-exact candidate atoms from all 38 donor clips into 33 semantic families without resampling or promoting visual acceptance.
+- Found that v0 had no one-handed long-handle recoil/recovery atom; repaired the miner with source-exact phase anchors while retaining kinematic discoveries.
+- Mined 405 v1 candidates and compiled the first grip-compatible scored sentence.
+- Kept the motion pass separate from the red visual compile: twelve registered layer atoms remain missing.
