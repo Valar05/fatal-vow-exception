@@ -23,6 +23,7 @@ Implemented and tested:
 - Local semantic and material-vertex shovel banks.
 - One accepted-pixel hand carrier whose hand/cuff follows `Weapon.R +Z` while the forearm follows a typed frame-edge exit.
 - Twelve sentence layers, 52 evidence files, and byte-identical repeat runs.
+- First Stage 1 Trenchmaker v0 visual specimen: accepted-pixel two-hand carrier, six-pose sentence, shovel-path/collision diagnostic, silhouette review, normal review GIF, and deterministic artifact contract.
 
 Rejected:
 - Three whole-sheet transfers and two whole-image adapters.
@@ -41,7 +42,7 @@ Accepted:
 
 Not accepted:
 - Any current shovel visual pass as final art or runtime behavior.
-- Any Stage 1 visual specimen; none exists yet.
+- The Trenchmaker Card 6 v0 specimen; it is delivered candidate evidence awaiting Drew's visual ruling.
 
 ## Sealed Decisions
 
@@ -73,31 +74,25 @@ Not accepted:
 - Carrier verdict: `data/onehandattack2_hand_carrier_verdict.json`
 - Arcade workflow: `docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md`
 - Hero hand plate: ChatGPT Library `libfile_8466a8dd2b408191a489cefda59013c3`
+- Trenchmaker v0 review GIF: `evidence/trenchmaker-card6/trenchmaker-card6-review.gif`
+- Trenchmaker v0 review board: `evidence/trenchmaker-card6/trenchmaker-card6-review-board.png`
+- Trenchmaker v0 manifest: `evidence/trenchmaker-card6/trenchmaker-card6.manifest.json`
 - Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
 - Design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
 
 ## Active Gate
 
-Stage 1 — Grammar Excavation is IN PROGRESS.
+Stage 1 — Grammar Excavation is IN PROGRESS. Its first reviewable specimen now exists.
 
 The durable board defines twelve mechanism cards: authored extremes; selective tween; anticipation compression; directional scale/stretch/shear; atlas-safe morph; two-hand grip choreography; shovel-head path/collision plane; contact lock; shared force response; overshoot/extraction/recovery; terrain consequence; and parallel accessibility authorship.
 
-Stage 1 is not complete from text. Each card requires an individual reviewable specimen with pose-only evidence, diagnostic overlays, normal/slow cadence, accessibility comparisons, donor provenance, native consequence, misuse test, and explicit verdict.
+Trenchmaker Card 6 v0 connects Cards 1, 2, 6, and 7 as a six-pose `load → slide → catch → drive → brake → extract` sentence. The review board carries material, ownership, collision-plane, and silhouette views; the GIF pairs material and diagnostic motion. The artifact contract passes. Visual quality is not accepted.
+
+Known candidate limits: both hands reuse one accepted grip atom from the hero plate; the source shovel render remains coarse; the specimen is a first-person proof rather than runtime integration; accessibility variants and Cards 3–5/8–12 remain open.
 
 ## Next Authorized Action
 
-Build Card 6 first at the pose-atom/carrier stage because the rejected pass failed hand ownership.
-
-First specimen requirements:
-- accepted-pixel Tetsuya identity carrier;
-- rear hand plus a real supporting-hand atom;
-- independent shaft and shovel;
-- colored grip ownership and socket markers;
-- authored slide → catch → brake choreography;
-- no blood, shader pressure, camera violence, or terrain fragments;
-- pose-only GIF, contact sheet, silhouette view, and grip-registration diagnostic.
-
-Then connect Cards 1, 2, and 7 to form Trenchmaker's first pose-only sentence. Do not return to the rejected watchdown, named-attack construction, Cloud Blender, or Infinite Brutality as a product/runtime target.
+Present Trenchmaker Card 6 v0 for Drew's visual ruling. Do not promote it from candidate evidence. If grip ownership and pose chronology read, advance the remaining Stage 1 cards and author a distinct supporting-hand atom. If either fails, repair that earliest visible contract before adding tween, morph, shader, impact, or terrain treatment. Do not return to the rejected watchdown, named-attack construction, Cloud Blender, or Infinite Brutality as a product/runtime target.
 
 ## Recent Delta
 
@@ -107,3 +102,4 @@ Then connect Cards 1, 2, and 7 to form Trenchmaker's first pose-only sentence. D
 - The six-stage Vow Motion Lab campaign was saved in Drive.
 - Stage 1 mechanism inventory and completion gate were saved in Drive.
 - Third-person Stanley framing remains active: Drew is the player; narration may reveal the machinery but cannot choose for him.
+- The first Card 6 / Trenchmaker pose-only specimen was built and artifact-tested; acceptance remains with Drew.
