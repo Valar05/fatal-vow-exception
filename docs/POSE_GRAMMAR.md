@@ -33,6 +33,13 @@ The runtime stack is:
 2. weapon sprite registered to a declared socket and pivot;
 3. foreground fingers/knuckles.
 
+These are logical draw passes, not a requirement to paint three unrelated
+images per pose. A locally rendered vertex-color carrier may encode ownership
+and depth masks in one registered source mesh, then deterministically emit the
+rear-hand and foreground-finger passes around the independent weapon layer.
+The color contract must remain stable across hot swaps and must never be baked
+into the final visible palette.
+
 Weapon hot swaps are legal only inside a declared grip class. Collision and damage paths remain independent of artwork.
 
 ## Building a novel pose
@@ -99,7 +106,9 @@ The first proof is not another complete attack. It is a small sentence assembled
 
 The proof passes only when the composed first-person watchdown preserves hand identity, weapon path, grip ownership, camera, frame-edge exits, readable low-FPS cadence, and interruption safety.
 
-The initial `OneHandAttack2` sentence now passes motion compilation and remains
-blocked at visual compilation. Its four recipes require twelve registered
-layers; none exists yet as a reusable runtime atom. The accepted k004 image
-remains accepted only as isolated grip/contact premise evidence.
+The initial `OneHandAttack2` sentence passes motion compilation and remains
+blocked at visual compilation. Its exact four `Weapon.R +Z` shovel layers now
+exist as locally rendered, semantic-vertex-color candidate evidence. Eight
+target-identity hand passes remain missing: rear hand/forearm and foreground
+fingers for each recipe. The accepted k004 image remains accepted only as
+isolated grip/contact premise evidence.
