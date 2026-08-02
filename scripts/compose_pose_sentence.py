@@ -13,6 +13,8 @@ import hashlib
 import json
 from pathlib import Path
 
+from PIL import Image
+
 
 def canonical_bytes(value: object) -> bytes:
     return json.dumps(value, sort_keys=True, separators=(",", ":")).encode()
@@ -131,13 +133,45 @@ def compile_sentence(grammar: dict, sentence: dict) -> dict:
     }
 
 
+def verify_layer_artifacts(compiled: dict, sentence: dict, artifact_root: Path) -> None:
+    verified: dict[str, dict[str, dict]] = {}
+    failures: list[str] = []
+    for recipe, layers in sentence.get("layers", {}).items():
+        verified[recipe] = {}
+        for layer in ("rear_hand_forearm", "weapon", "front_fingers_knuckles"):
+            value = layers.get(layer)
+            if not value:
+                continue
+            path = artifact_root / value
+            if not path.is_file():
+                failures.append(f"{recipe}:{layer}:missing artifact {value}")
+                continue
+            payload = path.read_bytes()
+            with Image.open(path) as image:
+                size = list(image.size)
+                mode = image.mode
+            verified[recipe][layer] = {
+                "path": value,
+                "sha256": hashlib.sha256(payload).hexdigest(),
+                "bytes": len(payload),
+                "size": size,
+                "mode": mode,
+            }
+    compiled["resolved_layer_artifacts"] = verified
+    compiled["layer_artifact_failures"] = failures
+    if failures:
+        compiled["visual_compile_status"] = "blocked_missing_artifacts"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("grammar", type=Path)
     parser.add_argument("sentence", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--artifact-root", type=Path, default=Path.cwd())
     args = parser.parse_args()
     compiled = compile_sentence(load(args.grammar), load(args.sentence))
+    verify_layer_artifacts(compiled, load(args.sentence), args.artifact_root)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(compiled, indent=2) + "\n")
     print(json.dumps({
