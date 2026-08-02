@@ -1,0 +1,575 @@
+{
+  "schema": "fatal-vow.infinite-brutality-motion-manifest.v1",
+  "source_filename": "FPSPlayer.glb (5)",
+  "source_sha256": "9be07cf0e46e2ed97abca38a8a6cf1bbd7c111cec3fa9671c1b0b721c37535da",
+  "source_bytes": 1837152,
+  "generator": "Khronos glTF Blender I/O v4.4.56",
+  "clip_count": 38,
+  "weapon_nodes": [
+    "Weapon.R",
+    "Weapon.L"
+  ],
+  "weapon_parent_chains": {
+    "Weapon.R": [
+      "Armature",
+      "Root",
+      "ShoulderCenter",
+      "Arm.R",
+      "Forearm.R",
+      "Hand.R",
+      "Weapon.R"
+    ],
+    "Weapon.L": [
+      "Armature",
+      "Root",
+      "ShoulderCenter",
+      "Arm.L",
+      "Forearm.L",
+      "Hand.L",
+      "Weapon.L"
+    ]
+  },
+  "camera_node": "Camera",
+  "coordinate_basis": {
+    "format": "glTF 2.0",
+    "handedness": "right-handed",
+    "axes": "+Y up; glTF cameras look down local -Z with +X right",
+    "quaternion_order": "x,y,z,w",
+    "local_space": "node transform relative to parent",
+    "model_space": "source scene/model root",
+    "camera_space": "Weapon transform premultiplied by inverse animated Camera world transform"
+  },
+  "clips": [
+    {
+      "index": 0,
+      "name": "Climbing",
+      "category": "traversal",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 108,
+        "LINEAR": 39
+      }
+    },
+    {
+      "index": 1,
+      "name": "ClimbingSide",
+      "category": "traversal",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 125,
+        "LINEAR": 22
+      }
+    },
+    {
+      "index": 2,
+      "name": "FistAttack1",
+      "category": "fist_attack",
+      "duration_seconds": 0.7083333,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 18,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 54,
+        "LINEAR": 93
+      }
+    },
+    {
+      "index": 3,
+      "name": "FistAttack2",
+      "category": "fist_attack",
+      "duration_seconds": 0.8333333,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 21,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 52,
+        "LINEAR": 95
+      }
+    },
+    {
+      "index": 4,
+      "name": "FistAttack3",
+      "category": "fist_attack",
+      "duration_seconds": 0.8333333,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 21,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 53,
+        "LINEAR": 94
+      }
+    },
+    {
+      "index": 5,
+      "name": "FistAttack4",
+      "category": "fist_attack",
+      "duration_seconds": 0.8333333,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 21,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 53,
+        "LINEAR": 94
+      }
+    },
+    {
+      "index": 6,
+      "name": "FistAttackAir",
+      "category": "fist_attack",
+      "duration_seconds": 0.75,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 19,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 42,
+        "LINEAR": 105
+      }
+    },
+    {
+      "index": 7,
+      "name": "FistAttackAirForward",
+      "category": "fist_attack",
+      "duration_seconds": 1.0416666,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 26,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "LINEAR": 60,
+        "STEP": 87
+      }
+    },
+    {
+      "index": 8,
+      "name": "FistAttackCrouch",
+      "category": "fist_attack",
+      "duration_seconds": 1.125,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 28,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "LINEAR": 80,
+        "STEP": 67
+      }
+    },
+    {
+      "index": 9,
+      "name": "FistBlockHitLeft",
+      "category": "fist_defense_hurt",
+      "duration_seconds": 0.375,
+      "inferred_source_fps": 24.000006,
+      "native_sample_count": 10,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 58,
+        "LINEAR": 89
+      }
+    },
+    {
+      "index": 10,
+      "name": "FistPowerAttack",
+      "category": "fist_attack",
+      "duration_seconds": 1.375,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 34,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 50,
+        "LINEAR": 97
+      }
+    },
+    {
+      "index": 11,
+      "name": "FistPowerAttackForwardOld",
+      "category": "fist_attack",
+      "duration_seconds": 0.9166667,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 23,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 99,
+        "LINEAR": 48
+      }
+    },
+    {
+      "index": 12,
+      "name": "FistPowerAttackNeutral",
+      "category": "fist_attack",
+      "duration_seconds": 1.1666666,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 29,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "LINEAR": 78,
+        "STEP": 69
+      }
+    },
+    {
+      "index": 13,
+      "name": "FistReady",
+      "category": "fist_ready",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 143,
+        "LINEAR": 4
+      }
+    },
+    {
+      "index": 14,
+      "name": "FistWalking",
+      "category": "locomotion",
+      "duration_seconds": 0.75,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 19,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 97,
+        "LINEAR": 50
+      }
+    },
+    {
+      "index": 15,
+      "name": "JumpAddative",
+      "category": "air_locomotion",
+      "duration_seconds": 0.4166667,
+      "inferred_source_fps": 24.000006,
+      "native_sample_count": 11,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 146,
+        "LINEAR": 1
+      }
+    },
+    {
+      "index": 16,
+      "name": "KnifeAttack1",
+      "category": "knife_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "LINEAR": 96,
+        "STEP": 51
+      }
+    },
+    {
+      "index": 17,
+      "name": "KnifeAttack2",
+      "category": "knife_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 50,
+        "LINEAR": 97
+      }
+    },
+    {
+      "index": 18,
+      "name": "KnifeAttack3",
+      "category": "knife_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 54,
+        "LINEAR": 93
+      }
+    },
+    {
+      "index": 19,
+      "name": "KnifeAttack4",
+      "category": "knife_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 54,
+        "LINEAR": 93
+      }
+    },
+    {
+      "index": 20,
+      "name": "KnifePowerAttackAir",
+      "category": "knife_attack",
+      "duration_seconds": 1.0,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 25,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 45,
+        "LINEAR": 102
+      }
+    },
+    {
+      "index": 21,
+      "name": "KnifePowerAttackForward",
+      "category": "knife_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 131,
+        "LINEAR": 16
+      }
+    },
+    {
+      "index": 22,
+      "name": "KnifePowerAttackLeft",
+      "category": "knife_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 85,
+        "LINEAR": 62
+      }
+    },
+    {
+      "index": 23,
+      "name": "KnifePowerAttackNeutral",
+      "category": "knife_attack",
+      "duration_seconds": 1.2916666,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 32,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 134,
+        "LINEAR": 13
+      }
+    },
+    {
+      "index": 24,
+      "name": "KnifeReadied",
+      "category": "knife_ready",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 62,
+        "LINEAR": 85
+      }
+    },
+    {
+      "index": 25,
+      "name": "KnifeReady",
+      "category": "knife_ready",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 130,
+        "LINEAR": 17
+      }
+    },
+    {
+      "index": 26,
+      "name": "LandAdditive",
+      "category": "air_locomotion",
+      "duration_seconds": 0.4166667,
+      "inferred_source_fps": 24.000006,
+      "native_sample_count": 11,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 146,
+        "LINEAR": 1
+      }
+    },
+    {
+      "index": 27,
+      "name": "Mantle",
+      "category": "traversal",
+      "duration_seconds": 1.0,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 25,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 49,
+        "LINEAR": 98
+      }
+    },
+    {
+      "index": 28,
+      "name": "OneHandAttack1",
+      "category": "one_hand_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 135,
+      "animated_node_count": 45,
+      "interpolation_counts": {
+        "STEP": 84,
+        "LINEAR": 51
+      }
+    },
+    {
+      "index": 29,
+      "name": "OneHandAttack2",
+      "category": "one_hand_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 53,
+        "LINEAR": 94
+      }
+    },
+    {
+      "index": 30,
+      "name": "OneHandAttack3",
+      "category": "one_hand_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 42,
+        "LINEAR": 105
+      }
+    },
+    {
+      "index": 31,
+      "name": "OneHandAttack4",
+      "category": "one_hand_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 51,
+        "LINEAR": 96
+      }
+    },
+    {
+      "index": 32,
+      "name": "OneHandReadied",
+      "category": "one_hand_ready",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 58,
+        "LINEAR": 89
+      }
+    },
+    {
+      "index": 33,
+      "name": "OneHandReady",
+      "category": "one_hand_ready",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 141,
+        "LINEAR": 6
+      }
+    },
+    {
+      "index": 34,
+      "name": "WandFire",
+      "category": "wand_attack",
+      "duration_seconds": 0.3333333,
+      "inferred_source_fps": 24.000006,
+      "native_sample_count": 9,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 99,
+        "LINEAR": 48
+      }
+    },
+    {
+      "index": 35,
+      "name": "WandReadied",
+      "category": "wand_ready",
+      "duration_seconds": 0.5416667,
+      "inferred_source_fps": 24.000006,
+      "native_sample_count": 14,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 100,
+        "LINEAR": 47
+      }
+    },
+    {
+      "index": 36,
+      "name": "WandReady",
+      "category": "wand_ready",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 24.000023,
+      "native_sample_count": 31,
+      "channel_count": 147,
+      "animated_node_count": 49,
+      "interpolation_counts": {
+        "STEP": 144,
+        "LINEAR": 3
+      }
+    },
+    {
+      "index": 37,
+      "name": "OneHandAttack1.002",
+      "category": "one_hand_attack",
+      "duration_seconds": 1.25,
+      "inferred_source_fps": 0.8,
+      "native_sample_count": 2,
+      "channel_count": 13,
+      "animated_node_count": 5,
+      "interpolation_counts": {
+        "STEP": 13
+      }
+    }
+  ]
+}
