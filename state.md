@@ -46,7 +46,7 @@ Accepted: The commission and sealed design decisions below are accepted. No repr
 - Repository: https://github.com/Valar05/fatal-vow-exception
 - README at bootstrap: blob SHA `433e5f9cf41b50eb107dfe104b1f8933f6f3bdd8`.
 - Current modules named by repository truth: `scar_contract_v0_1.py`, `voxel_support_v0_1.mjs`, `scar_voxel_authority_v0_1.mjs`, `weathered_contour_v0_1.mjs`.
-- Drive Writing: https://docs.google.com/document/d/1fiSuNMXlwIlwxUtoHuHrcITQvrDZ7uYCf3gwnBPKKKc/edit
+- Drive Writing: https://docs.google.com/document/d/1RrgqSJxFYu4_27pcY5DUWVAqwn8-IUifiuc49-xEmpE/edit
 - Drive Game: https://docs.google.com/document/d/1WoRCeiIL-t0ocujK8K-zTc5EP-pG0i9y8rcpHjuLFV8/edit
 - Drive Shared: https://docs.google.com/document/d/1MbnpDRbAKJPgIVGHbGWC4mzQ80lrAmy8u5IhO903y8o/edit
 
