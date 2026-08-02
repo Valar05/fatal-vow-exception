@@ -1,0 +1,52 @@
+{
+  "schema": "fatal-vow.grip-adapter-verdict/v1",
+  "project_id": "fatal-vow-onehandattack2-shovel-grip-adapter-v1",
+  "source_motion": "OneHandAttack2",
+  "target_keys": [
+    "k001",
+    "k002",
+    "k003"
+  ],
+  "authority": {
+    "hero_hand": "Medieval Fleshpunk Hand Turnaround Sheet.png / ChatGPT Library libfile_8466a8dd2b408191a489cefda59013c3",
+    "accepted_grip": "Rugged Hand Gripping a Blue-Gray Shovel.png",
+    "accepted_grip_sha256": "e5b472dbe5dc97c8e2a9a61c02f43cc8c89aaa3cc4254bcd6fc67f0c74990857",
+    "strict_sheet": "Rugged Medieval Hands and Shovel Contact Sheet.png"
+  },
+  "candidates": [
+    {
+      "id": "adapter-v1",
+      "sha256": "97c4e3e88d3db7eedaa55c95aab543e46278067b6524f16deb56d9893458d756",
+      "status": "rejected",
+      "observations": [
+        "Five-finger shaft closure is readable.",
+        "All three modules collapse toward the same front grip instead of preserving source-specific wrist approach, scale, and visibility.",
+        "k003 extends a convenient visible shaft rather than preserving off-frame continuation.",
+        "Forearms are included despite the requested part-level representation."
+      ]
+    },
+    {
+      "id": "adapter-v2",
+      "sha256": "3b96d3c6706c33391970e17f98820f2e0efd172ec986872b981b365efd421e5a",
+      "status": "rejected",
+      "observations": [
+        "Grip closure and accepted hand identity remain readable.",
+        "k001 and k002 are sibling rerenders rather than source-locked modules.",
+        "The candidate reconstructs shovel heads and shaft extents that were explicitly immutable or off-frame.",
+        "Full forearms remain, so the result is not a composable hand/grip adapter."
+      ]
+    }
+  ],
+  "overall": "red",
+  "earliest_false_contract": "Whole-image image generation cannot preserve immutable source/tool pixels while producing source-specific layered hand occlusion.",
+  "next_required_capability": "A mask-constrained, layered grip-part adapter: freeze every non-hand source pixel; preserve shaft pixels and wrist anchors; author back-hand and front-finger occlusion separately; review k001-k003 as frozen source/candidate pairs before touching k005-k008.",
+  "blocked_actions": [
+    "whole-sheet reroll",
+    "k005-k008 reconstruction",
+    "runtime watchdown",
+    "arcade timing",
+    "breakdowns",
+    "interpolation",
+    "smoothing"
+  ]
+}
