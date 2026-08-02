@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import importlib.util
+import io
 import json
 import math
 import struct
@@ -121,7 +122,40 @@ def trs_matrix(record: dict) -> np.ndarray:
     return result
 
 
-def extract_shovel(glb_path: Path):
+def embedded_image(doc: dict, binary: bytes, image_index: int) -> Image.Image:
+    image = doc["images"][image_index]
+    if "bufferView" not in image:
+        raise ValueError("Material vertex-color bake requires an embedded image")
+    view = doc["bufferViews"][image["bufferView"]]
+    start = view.get("byteOffset", 0)
+    end = start + view["byteLength"]
+    return Image.open(io.BytesIO(binary[start:end])).convert("RGB")
+
+
+def baked_material_colors(doc: dict, binary: bytes, primitive: dict, indices: np.ndarray):
+    if "TEXCOORD_0" not in primitive["attributes"]:
+        raise ValueError("Material vertex-color bake requires TEXCOORD_0")
+    if "material" not in primitive:
+        raise ValueError("Material vertex-color bake requires one material")
+    material = doc["materials"][primitive["material"]]
+    pbr = material.get("pbrMetallicRoughness", {})
+    texture_info = pbr.get("baseColorTexture")
+    if not texture_info:
+        raise ValueError("Material vertex-color bake requires baseColorTexture")
+    texture = doc["textures"][texture_info["index"]]
+    source = embedded_image(doc, binary, texture["source"])
+    pixels = np.asarray(source, dtype=np.float64)
+    uvs = accessor(doc, binary, primitive["attributes"]["TEXCOORD_0"])[indices]
+    uvs = np.mod(uvs, 1.0)
+    xs = np.clip(np.rint(uvs[:, 0] * (source.width - 1)), 0, source.width - 1).astype(int)
+    # glTF texture coordinates use the upper-left image origin.
+    ys = np.clip(np.rint(uvs[:, 1] * (source.height - 1)), 0, source.height - 1).astype(int)
+    colors = pixels[ys, xs, :3]
+    factor = np.asarray(pbr.get("baseColorFactor", [1, 1, 1, 1])[:3])
+    return np.clip(colors * factor[None, :], 0, 255)
+
+
+def extract_shovel(glb_path: Path, color_mode: str = "semantic"):
     doc, binary = load_glb(glb_path)
     if len(doc.get("meshes", [])) != 1:
         raise ValueError("Expected the approved prop atlas to contain one mesh")
@@ -159,13 +193,13 @@ def extract_shovel(glb_path: Path):
     # the shovel blade. X crosses the shallow tool thickness.
     grip_origin = np.array([-0.272, 0.352, 0.0], dtype=np.float64)
     blade_center = np.array([-0.395, 0.195, 0.0], dtype=np.float64)
-    shaft = blade_center - grip_origin
-    shaft /= np.linalg.norm(shaft)
-    transverse = np.array([-shaft[1], shaft[0], 0.0], dtype=np.float64)
+    shaft_axis = blade_center - grip_origin
+    shaft_axis /= np.linalg.norm(shaft_axis)
+    transverse = np.array([-shaft_axis[1], shaft_axis[0], 0.0], dtype=np.float64)
     thickness = np.array([0.0, 0.0, 1.0], dtype=np.float64)
     # Atlas transverse -> socket X; atlas thickness -> socket Y; atlas shaft
     # toward blade -> socket +Z. This is the accepted replacement for +Y bind.
-    source_to_socket = np.stack([transverse, thickness, shaft], axis=1)
+    source_to_socket = np.stack([transverse, thickness, shaft_axis], axis=1)
     local_positions = (positions - grip_origin) @ source_to_socket
     source_extent = float(local_positions[:, 2].max() - local_positions[:, 2].min())
     scale = 3.8
@@ -176,24 +210,32 @@ def extract_shovel(glb_path: Path):
     normalized = (local_positions[:, 2] - local_positions[:, 2].min()) / (
         local_positions[:, 2].max() - local_positions[:, 2].min()
     )
-    colors = np.empty((len(local_positions), 3), dtype=np.float64)
+    semantic_colors = np.empty((len(local_positions), 3), dtype=np.float64)
     grip = normalized < 0.22
-    shaft = (normalized >= 0.22) & (normalized < 0.68)
+    shaft_vertices = (normalized >= 0.22) & (normalized < 0.68)
     blade = normalized >= 0.68
-    colors[grip] = [232, 82, 196]
-    colors[shaft] = [72, 214, 191]
-    colors[blade] = [91, 149, 238]
+    semantic_colors[grip] = [232, 82, 196]
+    semantic_colors[shaft_vertices] = [72, 214, 191]
+    semantic_colors[blade] = [91, 149, 238]
+    material_colors = baked_material_colors(doc, binary, primitive, indices)
+    if color_mode == "semantic":
+        colors = semantic_colors
+    elif color_mode == "material-vertex":
+        colors = material_colors
+    else:
+        raise ValueError(f"Unknown weapon color mode {color_mode}")
     return local_positions, triangles, colors, {
         "selection": {"x_lt": -0.24, "y_gt": 0.10, "triangles": int(len(triangles))},
         "grip_origin_atlas": grip_origin.tolist(),
         "local_axes_atlas": {
             "x": transverse.tolist(),
             "y": thickness.tolist(),
-            "z_toward_blade": shaft.tolist(),
+            "z_toward_blade": shaft_axis.tolist(),
         },
         "source_extent": source_extent,
         "target_extent": target_extent,
         "uniform_scale": scale,
+        "render_color_mode": color_mode,
         "vertex_color_contract": {
             "grip": "#E852C4",
             "shaft": "#48D6BF",
@@ -202,11 +244,11 @@ def extract_shovel(glb_path: Path):
     }
 
 
-def atom_rows(catalog: dict) -> dict[str, dict]:
+def atom_rows(catalog: dict, atom_order=ATOM_ORDER) -> dict[str, dict]:
     columns = catalog["pose_atom_columns"]
     rows = {row[0]: dict(zip(columns, row)) for row in catalog["pose_atoms"]}
     result = {}
-    for atom, _ in ATOM_ORDER:
+    for atom, _ in atom_order:
         if atom not in rows:
             raise ValueError(f"Missing exact pose atom {atom}")
         result[atom] = rows[atom]
@@ -304,21 +346,40 @@ def main() -> None:
     parser.add_argument("--catalog", type=Path, required=True)
     parser.add_argument("--cpu-renderer", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--sentence",
+        type=Path,
+        help="Optional pose-sentence JSON; recipe order replaces the legacy four-atom proof order.",
+    )
+    parser.add_argument(
+        "--weapon-color-mode",
+        choices=("semantic", "material-vertex"),
+        default="semantic",
+    )
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     frames_dir = args.output / "frames"
     frames_dir.mkdir(exist_ok=True)
 
     catalog = json.loads(args.catalog.read_text())
-    rows = atom_rows(catalog)
+    if args.sentence:
+        sentence = json.loads(args.sentence.read_text())
+        atom_order = tuple(
+            (recipe["atom"], role) for role, recipe in sentence["recipes"].items()
+        )
+    else:
+        atom_order = ATOM_ORDER
+    rows = atom_rows(catalog, atom_order)
     spec = importlib.util.spec_from_file_location("fatal_vow_glb_cpu", args.cpu_renderer)
     glb_cpu = importlib.util.module_from_spec(spec)
     if spec.loader is None:
         raise ValueError("Could not load the local CPU GLB renderer")
     sys.modules["fatal_vow_glb_cpu"] = glb_cpu
     spec.loader.exec_module(glb_cpu)
-    arms_asset, _ = glb_cpu.load_asset(args.arms, "OneHandAttack2")
-    local_positions, triangles, colors, extraction = extract_shovel(args.atlas)
+    arms_assets = {}
+    local_positions, triangles, colors, extraction = extract_shovel(
+        args.atlas, args.weapon_color_mode
+    )
     source_homogeneous = np.concatenate(
         [local_positions, np.ones((len(local_positions), 1))], axis=1
     )
@@ -327,14 +388,17 @@ def main() -> None:
     composite_frames: list[Image.Image] = []
     labels: list[str] = []
     frame_records = []
-    for index, (atom, role) in enumerate(ATOM_ORDER):
+    for index, (atom, role) in enumerate(atom_order):
         row = rows[atom]
         socket = row["weapon_registration"]["Weapon.R"]["model"]
         model_points = (trs_matrix(socket) @ source_homogeneous.T).T[:, :3]
         weapon_geometry = [(model_points, triangles, colors)]
         frame, depth = rasterize_many(weapon_geometry)
+        source_clip = row["source_clip"]
+        if source_clip not in arms_assets:
+            arms_assets[source_clip], _ = glb_cpu.load_asset(args.arms, source_clip)
         arm_geometry = glb_cpu.geometry(
-            arms_asset, float(row["time_seconds"]), "bone-heat"
+            arms_assets[source_clip], float(row["time_seconds"]), "bone-heat"
         )
         composite, _ = rasterize_many(arm_geometry + weapon_geometry)
         alpha = np.asarray(frame)[:, :, 3]
@@ -416,6 +480,11 @@ def main() -> None:
         "pose_catalog": {
             "filename": args.catalog.name,
             "sha256": sha256(args.catalog),
+        },
+        "sentence": {
+            "filename": args.sentence.name if args.sentence else None,
+            "sha256": sha256(args.sentence) if args.sentence else None,
+            "atom_order": [atom for atom, _ in atom_order],
         },
         "arms_source": {
             "filename": args.arms.name,
