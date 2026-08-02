@@ -1,0 +1,78 @@
+{
+  "schema": "fatal-vow.motion-lab-specimen/v1",
+  "id": "trenchmaker-card6-pose-only-v0",
+  "status": "candidate_visual_evidence",
+  "cards": [
+    1,
+    2,
+    6,
+    7
+  ],
+  "pose_sentence": [
+    "load",
+    "slide",
+    "catch",
+    "drive",
+    "brake",
+    "extract"
+  ],
+  "constraints": {
+    "pose_only": true,
+    "effects": false,
+    "supporting_hand": "accepted hero-hand pixels; transformed; separately registered",
+    "layers": [
+      "rear_hand_forearm",
+      "support_rear",
+      "shovel",
+      "support_front",
+      "foreground_fingers"
+    ],
+    "collision_plane_y": 276,
+    "source_product": "Fatal Vow Exception",
+    "deprecated_reference_only": "Infinite Brutality"
+  },
+  "hero_hand_source": {
+    "filename": "Medieval Fleshpunk Hand Turnaround Sheet.png",
+    "sha256": "bf6a3107e26d6bba55ebcf933bb58517a17d9ba163b3c0c7d9deb93cbd68e18c",
+    "extraction": {
+      "source_crop": [
+        1200,
+        42,
+        1595,
+        900
+      ],
+      "source_hand": [
+        196.0,
+        185.0
+      ],
+      "source_exit": [
+        190.0,
+        810.0
+      ],
+      "background_rgb_median": [
+        160.0,
+        147.0,
+        128.0
+      ],
+      "support_pixels": 102777
+    }
+  },
+  "outputs": {
+    "review_gif": {
+      "path": "evidence/trenchmaker-card6/trenchmaker-card6-review.gif",
+      "sha256": "0083f4c024dbf19a6cc58f2aa90f0c3978734b00f4aae2d06593dd5071fad25a"
+    },
+    "review_board": {
+      "path": "evidence/trenchmaker-card6/trenchmaker-card6-review-board.png",
+      "sha256": "0e271f2ad0c64c6b32f95d102cb3b6e2d6c7920c86bc606b00be5b6048261b81"
+    }
+  },
+  "generated_derivatives": [
+    "evidence/trenchmaker-card6/trenchmaker-card6-watchdown.gif",
+    "evidence/trenchmaker-card6/trenchmaker-card6-slow-watchdown.gif",
+    "evidence/trenchmaker-card6/trenchmaker-card6-contact-sheet.png",
+    "evidence/trenchmaker-card6/trenchmaker-card6-silhouette-sheet.png",
+    "evidence/trenchmaker-card6/trenchmaker-card6-grip-registration-sheet.png"
+  ],
+  "claim_boundary": "First reviewable Stage 1 specimen. Technical generation does not grant visual acceptance or runtime promotion."
+}
