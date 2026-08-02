@@ -189,12 +189,33 @@ def extrema_indices(samples: list[dict]) -> set[int]:
     return indices
 
 
-def select_indices(clip: dict, maximum: int) -> tuple[list[int], list[float], dict[int, set[str]]]:
+def select_indices(
+    clip: dict,
+    maximum: int,
+    domain: str,
+) -> tuple[list[int], list[float], dict[int, set[str]]]:
     samples = clip["weapon_samples"]
     times = [sample["time_seconds"] for sample in samples]
     poses = [focus_pose(clip, value) for value in times]
     energy = [0.0] + [pose_delta(poses[i - 1], poses[i]) for i in range(1, len(poses))]
     reasons: dict[int, set[str]] = {0: {"endpoint"}, len(samples) - 1: {"endpoint"}}
+
+    # Grammar coverage is a stronger contract than kinematic novelty. A clip
+    # whose eight most interesting extrema omit recovery cannot compose even a
+    # basic attack sentence. Pin the nearest source-exact sample for every role
+    # anchor before filling the remaining budget with motion evidence.
+    duration = clip["duration_seconds"] or 1.0
+    required_indices: list[int] = []
+    for anchor_phase, anchor_role in ROLE_ANCHORS[domain]:
+        anchor_index = min(
+            range(len(samples)),
+            key=lambda index: abs((times[index] / duration) - anchor_phase),
+        )
+        reasons.setdefault(anchor_index, set()).add(f"phase_anchor:{anchor_role}")
+        required_indices.append(anchor_index)
+
+    required_unique = list(dict.fromkeys(required_indices))
+
     for index in extrema_indices(samples):
         reasons.setdefault(index, set()).add("weapon_camera_extremum")
     for index in range(1, len(energy) - 1):
@@ -215,7 +236,10 @@ def select_indices(clip: dict, maximum: int) -> tuple[list[int], list[float], di
                 chosen.append(index)
             if len(chosen) >= maximum:
                 break
-    return sorted(set(chosen)), energy, reasons
+    # maximum limits discovery atoms, not grammatical phase coverage.
+    # Unioning the two preserves every previously interesting source witness
+    # while guaranteeing that ordinary sentences remain typeable.
+    return sorted(set(chosen) | set(required_unique)), energy, reasons
 
 
 def build(corpus: dict, maximum: int) -> dict:
@@ -224,8 +248,8 @@ def build(corpus: dict, maximum: int) -> dict:
     for clip in corpus["clips"]:
         if not clip["weapon_samples"]:
             continue
-        indices, energy, reasons = select_indices(clip, maximum)
         domain = domain_for(clip["category"])
+        indices, energy, reasons = select_indices(clip, maximum, domain)
         duration = clip["duration_seconds"] or 1.0
         for index in indices:
             sample = clip["weapon_samples"][index]
