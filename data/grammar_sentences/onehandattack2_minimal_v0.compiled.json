@@ -3,27 +3,18 @@
   "sentence_id": "onehandattack2-minimal-grammar-proof-v0",
   "grammar_schema": "fatal-vow.pose-grammar.v0",
   "source_catalog_sha256": "7e023c91fd72f2f290472f82cf027964cece423b0c0c992d313ea6ee51b2ff8b",
-  "sentence_sha256": "6e5dc615df96a28f278148b7f66c04e663c37c1faf6303d3cbb94670d048fa61",
+  "sentence_sha256": "04b1434494ec7935a70f0d2a3131b615c3622914954d5aea702681f912bdebf9",
   "motion_compile_status": "pass",
-  "visual_compile_status": "blocked_missing_layers",
+  "visual_compile_status": "ready_for_render",
   "failures": [],
-  "missing_layers": [
-    "guard:rear_hand_forearm",
-    "guard:front_fingers_knuckles",
-    "anticipation:rear_hand_forearm",
-    "anticipation:front_fingers_knuckles",
-    "contact:rear_hand_forearm",
-    "contact:front_fingers_knuckles",
-    "recovery:rear_hand_forearm",
-    "recovery:front_fingers_knuckles"
-  ],
+  "missing_layers": [],
   "grip_class": "one_hand_long_handle",
   "resolved_recipes": {
     "guard": {
-      "atom": "onehandattack2.s000",
-      "source_clip": "OneHandAttack2",
-      "sample_index": 0,
-      "time_seconds": 0.0,
+      "atom": "onehandattack3.s002",
+      "source_clip": "OneHandAttack3",
+      "sample_index": 2,
+      "time_seconds": 0.0833333,
       "role": "guard",
       "catalog_role_hint": "guard",
       "grip_class": "one_hand_long_handle",
@@ -139,5 +130,136 @@
       "pose": "recovery"
     }
   ],
-  "claim_boundary": "Motion/score compatibility may pass while visual runtime remains blocked. No watchdown or acceptance claim is permitted until every registered rear-hand, weapon, and foreground-finger layer exists."
+  "claim_boundary": "Motion/score compatibility may pass while visual runtime remains blocked. No watchdown or acceptance claim is permitted until every registered rear-hand, weapon, and foreground-finger layer exists.",
+  "resolved_layer_artifacts": {
+    "guard": {
+      "rear_hand_forearm": {
+        "path": "evidence/onehandattack2-hand-carrier/layers/00-guard-rear-hand-forearm.png",
+        "sha256": "9746863a1d73e633ec5a902b59153e73b4d9ff617f376a14fb82dbc851bdca7e",
+        "bytes": 44611,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      },
+      "weapon": {
+        "path": "evidence/onehandattack2-grammar-bank-material/frames/00-guard.png",
+        "sha256": "c1d8c68bf88c8bf3a5e25294751d565e32ab1e821cc926849ade9ccbb0d14763",
+        "bytes": 12998,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      },
+      "front_fingers_knuckles": {
+        "path": "evidence/onehandattack2-hand-carrier/layers/00-guard-front-fingers-knuckles.png",
+        "sha256": "e6ab7c75b6e7a428a53302d1cd2e866df97e581717dd58a82f064acb7c628bf6",
+        "bytes": 9005,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      }
+    },
+    "anticipation": {
+      "rear_hand_forearm": {
+        "path": "evidence/onehandattack2-hand-carrier/layers/01-anticipation-rear-hand-forearm.png",
+        "sha256": "c3418046282a1685b422c6301347cfee9c66cd7cd895492a9654acfd7a156307",
+        "bytes": 29646,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      },
+      "weapon": {
+        "path": "evidence/onehandattack2-grammar-bank-material/frames/01-anticipation.png",
+        "sha256": "0043e5b403b919e33f1c745909ee6a4e58da749104e49fc2fc37ed3aa131335e",
+        "bytes": 23234,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      },
+      "front_fingers_knuckles": {
+        "path": "evidence/onehandattack2-hand-carrier/layers/01-anticipation-front-fingers-knuckles.png",
+        "sha256": "d02a0f7b5b3475d86a6d1785917b302514e46b302747fc14a41460136f8d21bd",
+        "bytes": 22358,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      }
+    },
+    "contact": {
+      "rear_hand_forearm": {
+        "path": "evidence/onehandattack2-hand-carrier/layers/02-contact-rear-hand-forearm.png",
+        "sha256": "1420c46125671c2709433f3745495b44a19058faba9bc2d86f866ecaa01e15ec",
+        "bytes": 35915,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      },
+      "weapon": {
+        "path": "evidence/onehandattack2-grammar-bank-material/frames/02-contact.png",
+        "sha256": "8a55844f440389e04d61bc72ccc680117c3edd00d21ead8574eebdbe97554c64",
+        "bytes": 10346,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      },
+      "front_fingers_knuckles": {
+        "path": "evidence/onehandattack2-hand-carrier/layers/02-contact-front-fingers-knuckles.png",
+        "sha256": "afd75b73da093cd2d4098c33cb0a75216d75396334c5ca5e79eac6864442b340",
+        "bytes": 10100,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      }
+    },
+    "recovery": {
+      "rear_hand_forearm": {
+        "path": "evidence/onehandattack2-hand-carrier/layers/03-recovery-rear-hand-forearm.png",
+        "sha256": "3b3b8c01198ed32fce612a7317ccee546db826563d6ba705c71a840d90c48ac6",
+        "bytes": 31335,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      },
+      "weapon": {
+        "path": "evidence/onehandattack2-grammar-bank-material/frames/03-recovery.png",
+        "sha256": "880e0026158f4809c2cd997d90ebf0fd0c8d0ddad2f66e08894b7299f840c799",
+        "bytes": 18632,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      },
+      "front_fingers_knuckles": {
+        "path": "evidence/onehandattack2-hand-carrier/layers/03-recovery-front-fingers-knuckles.png",
+        "sha256": "0f3252c3501d57202c01e903a525cd3705ed0786900679a758cac23ac7652d28",
+        "bytes": 17915,
+        "size": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      }
+    }
+  },
+  "layer_artifact_failures": []
 }
