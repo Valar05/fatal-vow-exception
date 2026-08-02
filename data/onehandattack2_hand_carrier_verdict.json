@@ -1,0 +1,78 @@
+{
+  "schema": "fatal-vow.vertex-hand-carrier-verdict/v1",
+  "recorded_at": "2026-08-02",
+  "authorized_lane": {
+    "render": "local only",
+    "visibility_contract": "vertex color",
+    "delivery": "public GitHub through Home Center"
+  },
+  "architecture": {
+    "runtime_layers": [
+      "rear_hand_forearm",
+      "weapon",
+      "front_fingers_knuckles"
+    ],
+    "carrier_segments": [
+      "hand/cuff follows camera-space Weapon.R +Z",
+      "forearm follows wrist-to-frame-edge exit"
+    ],
+    "hot_swap_boundary": "one_hand_long_handle grip class",
+    "source_policy": "accepted k004 pixels are transformed; no generated or repainted hand pixels"
+  },
+  "sentence": {
+    "guard": "onehandattack3.s002",
+    "anticipation": "onehandattack2.s004",
+    "contact": "onehandattack2.s006",
+    "recovery": "onehandattack2.s027",
+    "guard_replacement_reason": "onehandattack2.s000 placed the D-handle across most of the forearm; the compatible mined OneHandAttack3 guard preserves the grip class and reads clearly in the same camera",
+    "score": "cue 0.0s; anticipation 0.1s; accent 0.2s; hold 0.3s; release 0.4s; stop 0.7s at 10 authored FPS"
+  },
+  "compiler": {
+    "motion_compile_status": "pass",
+    "visual_compile_status": "ready_for_render",
+    "required_layers": 12,
+    "missing_layers": 0,
+    "missing_artifacts": 0,
+    "artifact_verification": "path, SHA-256, byte count, dimensions, and image mode"
+  },
+  "repeatability": {
+    "semantic_weapon_bank": {"files": 13, "byte_identical": true},
+    "material_vertex_weapon_bank": {"files": 13, "byte_identical": true},
+    "hand_carrier": {"files": 26, "byte_identical": true}
+  },
+  "artifact_review": {
+    "status": "candidate_visual_pass_not_user_accepted",
+    "pose_chronology": "pass",
+    "grip_ownership": "pass as a candidate; foreground fingers remain visibly in front of the independent handle",
+    "weapon_path": "pass against the selected source-exact atoms",
+    "forearm_exits": "pass after adding wrist-to-frame-edge registration and replacing the occluded guard atom",
+    "hand_identity": "accepted k004 pixels preserved; transformed guard, anticipation, and recovery remain candidates",
+    "camera": "pass at the locked 640x360, 82-degree vertical-FOV source projection",
+    "timing": "pass as an eight-exposure cue/accent/hold/release watchdown",
+    "known_limits": [
+      "The supporting left hand is not yet part of this one-hand carrier.",
+      "The material bank bakes the atlas base color to vertices; it does not reproduce PBR, normals, shadows, or per-pixel texture detail.",
+      "Thin matte/cloth-edge artifacts remain visible in anticipation and recovery and block final-art promotion.",
+      "No runtime integration or Drew acceptance is claimed."
+    ]
+  },
+  "artifacts": {
+    "contact_sheet": {
+      "path": "evidence/onehandattack2-hand-carrier/onehandattack2-hand-carrier-contact-sheet.png",
+      "sha256": "69edc68c6909dfeb4e8629c4af47359c832d0a2114e6d34cf508d532940f3b30"
+    },
+    "vertex_color_contact_sheet": {
+      "path": "evidence/onehandattack2-hand-carrier/onehandattack2-hand-carrier-vertex-color-contact-sheet.png",
+      "sha256": "919c40c594f1b1ad1ebae881613087bc62b0f92ea2231e3c339410f1798d6e97"
+    },
+    "watchdown": {
+      "path": "evidence/onehandattack2-hand-carrier/onehandattack2-hand-carrier-watchdown.gif",
+      "sha256": "838226692c514db821a7a5011c140e8548aa394908e971fa5922396b77b42e9c"
+    },
+    "vertex_color_watchdown": {
+      "path": "evidence/onehandattack2-hand-carrier/onehandattack2-hand-carrier-vertex-color-watchdown.gif",
+      "sha256": "6f7aeea217b8a0fe1f2368f96f24ed09a996771f4cb5b892a2f81bdbf2c6c206"
+    }
+  },
+  "claim_boundary": "This large-bite pass implements and tests the first reusable carrier sentence. It does not make the sentence accepted final art or prove integration in the game runtime."
+}
