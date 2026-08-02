@@ -5,7 +5,7 @@
   "authored_fps": 10,
   "recipes": {
     "guard": {
-      "atom": "onehandattack2.s000",
+      "atom": "onehandattack3.s002",
       "role": "guard",
       "status": "mined_candidate"
     },
@@ -33,21 +33,29 @@
   },
   "layers": {
     "guard": {
-      "weapon": "evidence/onehandattack2-local-weapon-bank/frames/00-guard.png",
-      "vertex_color_guide": "evidence/onehandattack2-local-weapon-bank/frames/00-guard-vertex-color-composite.png"
+      "rear_hand_forearm": "evidence/onehandattack2-hand-carrier/layers/00-guard-rear-hand-forearm.png",
+      "weapon": "evidence/onehandattack2-grammar-bank-material/frames/00-guard.png",
+      "front_fingers_knuckles": "evidence/onehandattack2-hand-carrier/layers/00-guard-front-fingers-knuckles.png",
+      "vertex_color_guide": "evidence/onehandattack2-grammar-bank-semantic/frames/00-guard-vertex-color-composite.png"
     },
     "anticipation": {
-      "weapon": "evidence/onehandattack2-local-weapon-bank/frames/01-anticipation.png",
-      "vertex_color_guide": "evidence/onehandattack2-local-weapon-bank/frames/01-anticipation-vertex-color-composite.png"
+      "rear_hand_forearm": "evidence/onehandattack2-hand-carrier/layers/01-anticipation-rear-hand-forearm.png",
+      "weapon": "evidence/onehandattack2-grammar-bank-material/frames/01-anticipation.png",
+      "front_fingers_knuckles": "evidence/onehandattack2-hand-carrier/layers/01-anticipation-front-fingers-knuckles.png",
+      "vertex_color_guide": "evidence/onehandattack2-grammar-bank-semantic/frames/01-anticipation-vertex-color-composite.png"
     },
     "contact": {
-      "weapon": "evidence/onehandattack2-local-weapon-bank/frames/02-contact.png",
-      "vertex_color_guide": "evidence/onehandattack2-local-weapon-bank/frames/02-contact-vertex-color-composite.png",
+      "rear_hand_forearm": "evidence/onehandattack2-hand-carrier/layers/02-contact-rear-hand-forearm.png",
+      "weapon": "evidence/onehandattack2-grammar-bank-material/frames/02-contact.png",
+      "front_fingers_knuckles": "evidence/onehandattack2-hand-carrier/layers/02-contact-front-fingers-knuckles.png",
+      "vertex_color_guide": "evidence/onehandattack2-grammar-bank-semantic/frames/02-contact-vertex-color-composite.png",
       "flattened_reference_only": "Rugged Hand Gripping a Blue-Gray Shovel.png"
     },
     "recovery": {
-      "weapon": "evidence/onehandattack2-local-weapon-bank/frames/03-recovery.png",
-      "vertex_color_guide": "evidence/onehandattack2-local-weapon-bank/frames/03-recovery-vertex-color-composite.png"
+      "rear_hand_forearm": "evidence/onehandattack2-hand-carrier/layers/03-recovery-rear-hand-forearm.png",
+      "weapon": "evidence/onehandattack2-grammar-bank-material/frames/03-recovery.png",
+      "front_fingers_knuckles": "evidence/onehandattack2-hand-carrier/layers/03-recovery-front-fingers-knuckles.png",
+      "vertex_color_guide": "evidence/onehandattack2-grammar-bank-semantic/frames/03-recovery-vertex-color-composite.png"
     }
   },
   "score": [
