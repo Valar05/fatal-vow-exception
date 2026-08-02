@@ -8,85 +8,69 @@ Drive control hub: https://drive.google.com/drive/folders/1hw5NVu5ftzmnKTBwL-oTO
 
 ## Commission
 
-Outcome: Build a new, independent Fatal Vow game where embodied labor, shovel-kata, mutable terrain, choosing inhabitants, and provenance-bearing consequences remain true to the novels.
-Owner/executor: Drew owns canon and acceptance; Adam advances implementation and durable state through authorized lanes.
-Method/workflow: Source truth first; 3D world and bodies with 2D timing; Drew-authored performance through Pose Lab; visible hands, forearms, grip, and tool animate together on deliberate stepped arcade keys; deterministic scar events own terrain truth; disposable presentation consumes them.
-Lane/tool: Public GitHub repository through Home Center; compact Drive control records; ChatGPT Library for broad assets.
-Exclusions: No literal-fleshpunk rewrite of the setting; no generic crafting tree; no commanded Momo-chan; no networking implementation yet; no unbounded Infinite Brutality import; no scratch artifact as delivery proof.
-Evidence: Repository readback, executable contract tests, runtime profiling, visual review, and Tim-phone acceptance.
-Delivery: Public, forkable web/Android-capable game; stable 30 FPS on Tim's non-flagship phone in a representative trench battle.
+Build an independent Fatal Vow game where embodied labor, shovel-kata, mutable terrain, choosing inhabitants, and provenance-bearing consequences remain true to the novels. Drew owns canon and acceptance; Adam advances implementation and durable state through authorized lanes. Source truth first; 3D world and bodies with deliberate 2D arcade timing. Public GitHub through Home Center; compact Drive control; broad assets in ChatGPT Library. Target low-end Android and web, with stable 30 FPS on Tim's non-flagship phone in a representative trench battle.
 
 ## Capability State
 
-Requested: Full independent game, single-player first, later multiplayer-compatible state contracts.
-Implemented: Repository source documents deterministic scar contracts, bounded voxel support, append-only terrain history, revision-safe contour presentation, and a reproducible complete extraction of all 38 motions embedded in `FPSPlayer.glb (5)`.
-Tested: Motion extraction parsed all 38 clips and 5,427 transform channels, preserved native STEP/LINEAR interpolation, derived both weapon mounts in local/model/camera space, and passed JSON validation. Broader runtime tests were not rerun.
-Deployed: No game deployment proved in this bootstrap.
-Callable: Source repository is reachable; no shipped game runtime is claimed.
-Delivered: Public repository and compact Drive hub exist. This state file requires readback before the bootstrap is complete.
-Accepted: The commission and sealed design decisions below are accepted. No representative runtime has been accepted.
+Implemented: deterministic scar/voxel source contracts; complete reproducible extraction of 38 Infinite Brutality clips and 5,427 transform channels; calibrated FPS-camera review; first shovel source selection and eight-key evidence packet.
+
+Tested: extraction JSON and channels; 12 one-hand/knife diagnostic runtimes at native 24 FPS; `OneHandAttack2` camera/tool registration; isolated load-bearing k004 identity redraw.
+
+Accepted: commission, sealed decisions, and `Medieval Fleshpunk Hand Turnaround Sheet.png` as first-person hand identity authority. No full hand-and-tool animation or representative runtime is accepted.
 
 ## Sealed Decisions
 
-- Repository: `Valar05/fatal-vow-exception`; public and forkable.
-- Runtime: new independent game.
-- Targets: low-end Android and web.
-- Acceptance device: Tim's non-flagship phone, stable 30 FPS in a representative trench battle.
-- Single-player first; shape deterministic state contracts for later multiplayer, but do not implement networking now.
-- Infinite Brutality is a bounded voxel/support donor, not Fatal Vow canon.
-- Pose Lab is the bounded upstream source for Drew-authored FPS-to-Meshy performance transfer.
-- The world is not literally fleshpunk. Rendering may be influenced by it; world materials, technology, institutions, and causality remain faithful to the novels.
-- 3D world, 3D bodies, 2D timing. Contact sheets remain animation source, approval surface, and correction language.
-- First-person hands, forearms, grip, and tool animate as one coupled low-FPS performance. Reject smooth weapon-only motion. Runtime may render at 30 FPS while authored poses step at roughly 8–12 FPS.
-- Hero hand plates must show full lateral forearms with natural sleeve transitions; no square or rectangular arm cutoffs.
-- After Chapter 7, audience votes cannot move Tetsuya's body.
-- Momo-chan is a choosing intelligence, never a pet command wheel.
-- The sealed conclusion remains protected.
+- New independent public game; single-player first; deterministic state contracts may anticipate later multiplayer without implementing networking.
+- Infinite Brutality is a bounded donor, not Fatal Vow canon.
+- 3D world and bodies; 2D timing. Contact sheets are source, approval surface, and correction language.
+- First-person hands, forearms, grip, and tool are one stepped performance at roughly 8–12 authored FPS inside a 30 FPS runtime. Reject smooth weapon-only motion.
+- Hero hand authority uses full lateral forearms, natural tapered sleeve transitions, and no square cutoffs.
+- The world is not literally fleshpunk. Rendering may borrow its material language; causality remains faithful to the novels.
+- After Chapter 7, audience votes cannot move Tetsuya's body. Momo-chan chooses; she is not a command wheel. The sealed conclusion remains protected.
 
 ## Working Set
 
 - Repository: https://github.com/Valar05/fatal-vow-exception
-- README at bootstrap: blob SHA `433e5f9cf41b50eb107dfe104b1f8933f6f3bdd8`.
-- Current modules named by repository truth: `scar_contract_v0_1.py`, `voxel_support_v0_1.mjs`, `scar_voxel_authority_v0_1.mjs`, `weathered_contour_v0_1.mjs`.
 - Drive Writing: https://docs.google.com/document/d/1RrgqSJxFYu4_27pcY5DUWVAqwn8-IUifiuc49-xEmpE/edit
 - Drive Game: https://docs.google.com/document/d/1WoRCeiIL-t0ocujK8K-zTc5EP-pG0i9y8rcpHjuLFV8/edit
 - Drive Shared: https://docs.google.com/document/d/1MbnpDRbAKJPgIVGHbGWC4mzQ80lrAmy8u5IhO903y8o/edit
-- First-person hand + weapon arcade workflow: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md
+- Arcade workflow: `docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md`
+- Donor inventory: `docs/INFINITE_BRUTALITY_MOTION_INVENTORY.md`
+- Shovel source review: `docs/ONEHANDATTACK2_SHOVEL_SOURCE_REVIEW.md`
+- Key evidence: `data/onehandattack2_shovel_source_evidence.json`
+- Transfer verdict: `data/onehandattack2_shovel_transfer_verdict.json`
 
 ## Active Gate
 
-A representative, source-faithful trench slice has not yet been proved at stable 30 FPS on Tim's phone. Asset existence and fixture-scale terrain tests do not satisfy that gate.
+The first source-locked shovel master is red. `OneHandAttack2` and its eight semantic source keys are selected, and the shovel bind is corrected to `Weapon.R` +Z. The isolated k004 grip proves the identity-transfer premise, but whole-sheet k001–k003 grips remain open or ambiguous. No animation is promoted.
 
 ## Next Authorized Action
 
-Visually review the extracted one-hand and knife families in the established FPS camera, select the strongest source path for the first Fatal Vow shovel/sword performance, reduce it to deliberate 8–12 FPS semantic keys, and author the first coupled hand-and-tool clip. No motion is promoted without first-person review and Drew's acceptance.
+Build a canonical hand/grip part adapter from the accepted hero plate and the good k004 solution. Reconstruct k001–k003 against immutable shovel pixels and wrist anchors; proceed through k005–k008 only after frozen-pair review passes. Then split, reconstruct with source exposure, and perform intended-speed key-only watchdown. Arcade timing and breakdowns remain blocked until Drew accepts the key-only runtime.
 
 ## Evidence Pointers
 
-- Repository README: https://github.com/Valar05/fatal-vow-exception/blob/main/README.md
-- First-person arcade workflow: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md
-- Complete donor motion inventory: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/INFINITE_BRUTALITY_MOTION_INVENTORY.md
-- Machine-readable 38-clip manifest: https://github.com/Valar05/fatal-vow-exception/blob/main/data/infinite_brutality_motion_manifest.json
-- Reproducible extractor: https://github.com/Valar05/fatal-vow-exception/blob/main/tools/extract_fpsplayer_motions.py
-- Game design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
-- Drive control hub: https://drive.google.com/drive/folders/1hw5NVu5ftzmnKTBwL-oTOstrNqghTe2w
-
-## Open Questions
-
-None required to complete this bootstrap. New canon, acceptance, or lane changes require Drew.
+- README: https://github.com/Valar05/fatal-vow-exception/blob/main/README.md
+- Shovel source review: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/ONEHANDATTACK2_SHOVEL_SOURCE_REVIEW.md
+- Motion manifest: https://github.com/Valar05/fatal-vow-exception/blob/main/data/infinite_brutality_motion_manifest.json
+- Extractor: https://github.com/Valar05/fatal-vow-exception/blob/main/tools/extract_fpsplayer_motions.py
+- Hero hand plate: ChatGPT Library `libfile_8466a8dd2b408191a489cefda59013c3`
+- Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
+- Design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
 
 ## ChatGPT Library Assets
 
-| Asset | Library identity/version | Role | Status | Consumer | Verification |
-|---|---|---|---|---|---|
-| Fatal_Vow_Exception_Game_Design_Document.docx | `libfile_04e85c38ae848191b0f192f756663871`; version unavailable | Design foundation | source | Writing/Game | Read and source-ledger checked 2026-08-02 |
-| Meshy_AI_Low_Poly_Tools_and_Tr_0802140452_texture.glb | `libfile_fbe7ae138b088191bec37de2f09fd907`; version unavailable | Low-poly prop source | candidate | Game/repository | Needs asset-level visual/runtime verification |
-| FPSPlayer.glb (5) | `libfile_6ed0f03b95c4819189e609333180cbfa`; version unavailable | FPS performance and weapon-bone reference | source | Pose Lab/Game | Full 38-clip transform extraction completed; visual clip review still required |
-| motion_corpus.json | `libfile_eff00dae99a88191b64658eff5315c74`; version 0 | Exact extracted native motion corpus | evidence | Pose Lab/Game/repository manifest | 38 clips; 5,427 channels; SHA-256 `d46a66f76355e01c348e7dbab91ef3fd838d0eaf564d8ec6e983a37ea950ab22`; JSON validated |
-| chapter9_contour_witness.png | `libfile_6a7f4b5daed08191a026d9a877b9c7ab`; version unavailable | Terrain witness | candidate | Game/repository | Compare against authoritative scar revisions |
+| Asset | Stable identity | Role | Status | Verification |
+|---|---|---|---|---|
+| Fatal Vow game design | `libfile_04e85c38ae848191b0f192f756663871` | foundation | source | read/source-ledger checked |
+| Low-poly tool atlas | `libfile_fbe7ae138b088191bec37de2f09fd907` | shovel geometry | source | shovel isolated; +Z bind reviewed |
+| FPSPlayer.glb (5) | `libfile_6ed0f03b95c4819189e609333180cbfa` | motion authority | source | 38 clips extracted; one-hand/knife families viewed |
+| motion_corpus.json | `libfile_eff00dae99a88191b64658eff5315c74` v0 | exact transforms | evidence | 38 clips; 5,427 channels; JSON validated |
+| Medieval Fleshpunk Hand Turnaround Sheet.png | `libfile_8466a8dd2b408191a489cefda59013c3` | hand identity | accepted | Drew: “Perfect!” |
+
+Current-turn generated review candidates are automatically entering Library; their stable identities are intentionally not guessed before next-turn readback. None is accepted as a whole animation.
 
 ## Recent Delta
 
-- 2026-08-02: Extracted all 38 motions from `FPSPlayer.glb (5)` at their native 24 FPS key grid, including exact full-rig channels and Weapon.R/Weapon.L transforms in local, model, and animated-camera space. Published the extractor, compact manifest, human inventory, and Library corpus. The next gate is visual source-clip selection, not further data archaeology.
-- 2026-08-02: Chose coupled hero hands + tool with low-FPS arcade timing over smooth weapon-only animation. Documented the bounded Infinite Brutality donor workflow and hero plate acceptance contract. Candidate plate generated with full side forearms and non-square terminations; not yet accepted and its stable Library identity is not available in this turn.
-- 2026-08-02: Bootstrapped repository-root state plus compact Drive Writing, Game, and Shared control records. Broad assets remain in Library.
+- 2026-08-02: Selected `OneHandAttack2` for the first shovel path and retained `KnifeAttack1` for later sword review. Reduced the shovel action to eight source-witnessed keys without changing pose order or timing.
+- 2026-08-02: Corrected the shovel bind from rejected socket +Y to longitudinal socket +Z. A frozen k004 identity redraw passed the premise. Three whole-sheet candidates were rejected for camera squeeze, source recentering/tool completion, or grip collapse. Published a red verdict instead of promoting attractive drift.
