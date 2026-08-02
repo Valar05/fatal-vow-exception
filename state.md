@@ -18,7 +18,7 @@ Tested: extraction JSON and channels; 12 one-hand/knife diagnostic runtimes at n
 
 Rejected: three whole-sheet transfers and two whole-image adapter attempts. Whole-image generation cannot preserve source-specific part transfer, immutable tool geometry, or layered occlusion.
 
-Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Sheet.png` as first-person hand identity authority, and the shift from isolated animations to a compostable pose grammar. The 405 v1 mined atoms are candidates, not collectively accepted poses. No complete grammar-composed runtime sentence is accepted. The first sentence is motion-compile green and visual-compile red with twelve registered layers missing.
+Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Sheet.png` as first-person hand identity authority, and the shift from isolated animations to a compostable pose grammar. The 405 v1 mined atoms are candidates, not collectively accepted poses. No complete grammar-composed runtime sentence is accepted. The first sentence is motion-compile green and visual-compile red with twelve registered layers missing.\n\nBlocked: the attached top-level Home Center `render_blender_glb` contract is not callable on deployed revision `homecentermcp-00202-fof`; the exact request returned `INVALID_ARGUMENT: Tool render_blender_glb not found`. No render receipt or visual evidence exists.
 
 ## Sealed Decisions
 
@@ -49,15 +49,15 @@ Accepted: commission, sealed decisions, `Medieval Fleshpunk Hand Turnaround Shee
 - Arcade workflow: `docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md`
 - Shovel evidence: `data/onehandattack2_shovel_source_evidence.json`
 - Transfer verdict: `data/onehandattack2_shovel_transfer_verdict.json`
-- Adapter verdict: `data/onehandattack2_grip_adapter_verdict.json`
+- Adapter verdict: `data/onehandattack2_grip_adapter_verdict.json`\n- Weapon-bank render blocker: `data/onehandattack2_weapon_bank_render_blocker.json`
 
 ## Active Gate
 
-The first grammar sentence now exists and passes motion compilation: `onehandattack2.s000` guard → `onehandattack2.s004` anticipation → accepted-role override on source-exact `onehandattack2.s006` / k004 contact → `onehandattack2.s027` recovery, conducted at 10 authored FPS by cue/accent/hold/release. Visual compilation is red because each recipe still lacks separate rear-hand/forearm, weapon, and foreground-finger layers. The flattened accepted k004 image cannot be promoted into those layers.
+The first grammar sentence now exists and passes motion compilation: `onehandattack2.s000` guard → `onehandattack2.s004` anticipation → accepted-role override on source-exact `onehandattack2.s006` / k004 contact → `onehandattack2.s027` recovery, conducted at 10 authored FPS by cue/accent/hold/release. Visual compilation is red because each recipe still lacks separate rear-hand/forearm, weapon, and foreground-finger layers. The flattened accepted k004 image cannot be promoted into those layers. Source identities are resolved, but the first required Cloud Blender source-atlas render is blocked before receipt by the missing live direct-render tool.
 
 ## Next Authorized Action
 
-Render the source-locked `one_hand_long_handle` weapon view bank for the exact four recipe transforms, then manually author the matching rear-hand/forearm and foreground-finger layers under the accepted hand identity. Composite the registered layers, build the intended-cadence watchdown, and review hand identity, weapon path, grip ownership, occlusion, camera, frame-edge exits, interruption safety, and arcade timing. Do not resume whole-sheet generation or build named attacks independently.
+Rendering is stopped at the Home Center capability boundary. Restore the callable top-level `render_blender_glb` backend or obtain Drew's explicit authority to repair that Home Center capability; do not use deprecated `blender.workspace.render` or local rendering as substitute evidence. Once callable, rerun the exact prop-atlas source request, visually select the intended shovel, render `s000`, `s004`, `s006`, and `s027`, then author the matching hand layers and watchdown.
 
 ## Evidence Pointers
 
@@ -67,9 +67,9 @@ Render the source-locked `one_hand_long_handle` weapon view bank for the exact f
 - Phase-complete catalog: https://github.com/Valar05/fatal-vow-exception/blob/main/data/pose_grammar.v1.json
 - v1 validation: https://github.com/Valar05/fatal-vow-exception/blob/main/data/pose_grammar.v1.validation.json
 - First sentence compile: https://github.com/Valar05/fatal-vow-exception/blob/main/data/grammar_sentences/onehandattack2_minimal_v0.compiled.json
-- Adapter verdict: https://github.com/Valar05/fatal-vow-exception/blob/main/data/onehandattack2_grip_adapter_verdict.json
+- Adapter verdict: https://github.com/Valar05/fatal-vow-exception/blob/main/data/onehandattack2_grip_adapter_verdict.json\n- Weapon-bank render blocker: https://github.com/Valar05/fatal-vow-exception/blob/main/data/onehandattack2_weapon_bank_render_blocker.json
 - Hero hand plate: ChatGPT Library `libfile_8466a8dd2b408191a489cefda59013c3`
-- Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
+- Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`\n- Exact donor GLB: ChatGPT Library `libfile_6ed0f03b95c4819189e609333180cbfa`, SHA-256 `9be07cf0e46e2ed97abca38a8a6cf1bbd7c111cec3fa9671c1b0b721c37535da`\n- Prop-atlas candidate GLB: ChatGPT Library `libfile_fbe7ae138b088191bec37de2f09fd907`, SHA-256 `f6e86e2a7a65061b8575ecbf3afd5d32e396716b21f57353718d3e9f66cfbd1a`
 - Design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
 
 ## Recent Delta
@@ -82,4 +82,4 @@ Render the source-locked `one_hand_long_handle` weapon view bank for the exact f
 - Found that v0 had no one-handed long-handle recoil/recovery atom; repaired the miner with source-exact phase anchors while retaining kinematic discoveries.
 - Mined 405 v1 candidates and compiled the first grip-compatible scored sentence.
 - Repaired the compact-row contract so v1 retains exact weapon registration and reconstruction data needed by the weapon-view bank.
-- Kept the motion pass separate from the red visual compile: twelve registered layer atoms remain missing.
+- Kept the motion pass separate from the red visual compile: twelve registered layer atoms remain missing.\n- Resolved `motion_corpus.json` versus `FPSPlayer.glb (5)` as extracted corpus versus exact binary donor, matching the corpus source SHA-256.\n- Attempted the first exact prop-atlas Cloud Blender render; the live backend rejected the attached direct tool as missing, so no weapon view or hand layer was promoted.
