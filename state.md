@@ -19,8 +19,8 @@ Delivery: Public, forkable web/Android-capable game; stable 30 FPS on Tim's non-
 ## Capability State
 
 Requested: Full independent game, single-player first, later multiplayer-compatible state contracts.
-Implemented: Repository source documents deterministic scar contracts, bounded voxel support, append-only terrain history, and revision-safe contour presentation.
-Tested: Test commands exist in repository truth; this bootstrap did not rerun current HEAD.
+Implemented: Repository source documents deterministic scar contracts, bounded voxel support, append-only terrain history, revision-safe contour presentation, and a reproducible complete extraction of all 38 motions embedded in `FPSPlayer.glb (5)`.
+Tested: Motion extraction parsed all 38 clips and 5,427 transform channels, preserved native STEP/LINEAR interpolation, derived both weapon mounts in local/model/camera space, and passed JSON validation. Broader runtime tests were not rerun.
 Deployed: No game deployment proved in this bootstrap.
 Callable: Source repository is reachable; no shipped game runtime is claimed.
 Delivered: Public repository and compact Drive hub exist. This state file requires readback before the bootstrap is complete.
@@ -59,12 +59,15 @@ A representative, source-faithful trench slice has not yet been proved at stable
 
 ## Next Authorized Action
 
-Extract and verify the weapon/tool bone position and quaternion rotation from FPSPlayer.glb (5), then use the accepted hero hand plate and established FPS camera mount to author the first coupled hand-and-tool arcade clip. Preserve deliberate 8–12 FPS semantic keys and review it in first person before promotion.
+Visually review the extracted one-hand and knife families in the established FPS camera, select the strongest source path for the first Fatal Vow shovel/sword performance, reduce it to deliberate 8–12 FPS semantic keys, and author the first coupled hand-and-tool clip. No motion is promoted without first-person review and Drew's acceptance.
 
 ## Evidence Pointers
 
 - Repository README: https://github.com/Valar05/fatal-vow-exception/blob/main/README.md
 - First-person arcade workflow: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/FIRST_PERSON_HAND_WEAPON_ARCADE_WORKFLOW.md
+- Complete donor motion inventory: https://github.com/Valar05/fatal-vow-exception/blob/main/docs/INFINITE_BRUTALITY_MOTION_INVENTORY.md
+- Machine-readable 38-clip manifest: https://github.com/Valar05/fatal-vow-exception/blob/main/data/infinite_brutality_motion_manifest.json
+- Reproducible extractor: https://github.com/Valar05/fatal-vow-exception/blob/main/tools/extract_fpsplayer_motions.py
 - Game design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
 - Drive control hub: https://drive.google.com/drive/folders/1hw5NVu5ftzmnKTBwL-oTOstrNqghTe2w
 
@@ -78,11 +81,12 @@ None required to complete this bootstrap. New canon, acceptance, or lane changes
 |---|---|---|---|---|---|
 | Fatal_Vow_Exception_Game_Design_Document.docx | `libfile_04e85c38ae848191b0f192f756663871`; version unavailable | Design foundation | source | Writing/Game | Read and source-ledger checked 2026-08-02 |
 | Meshy_AI_Low_Poly_Tools_and_Tr_0802140452_texture.glb | `libfile_fbe7ae138b088191bec37de2f09fd907`; version unavailable | Low-poly prop source | candidate | Game/repository | Needs asset-level visual/runtime verification |
-| FPSPlayer.glb (5) | `libfile_6ed0f03b95c4819189e609333180cbfa`; version unavailable | FPS performance and weapon-bone reference | source | Pose Lab/Game | Needs motion extraction evidence and visual review |
+| FPSPlayer.glb (5) | `libfile_6ed0f03b95c4819189e609333180cbfa`; version unavailable | FPS performance and weapon-bone reference | source | Pose Lab/Game | Full 38-clip transform extraction completed; visual clip review still required |
+| motion_corpus.json | `libfile_eff00dae99a88191b64658eff5315c74`; version 0 | Exact extracted native motion corpus | evidence | Pose Lab/Game/repository manifest | 38 clips; 5,427 channels; SHA-256 `d46a66f76355e01c348e7dbab91ef3fd838d0eaf564d8ec6e983a37ea950ab22`; JSON validated |
 | chapter9_contour_witness.png | `libfile_6a7f4b5daed08191a026d9a877b9c7ab`; version unavailable | Terrain witness | candidate | Game/repository | Compare against authoritative scar revisions |
 
 ## Recent Delta
 
+- 2026-08-02: Extracted all 38 motions from `FPSPlayer.glb (5)` at their native 24 FPS key grid, including exact full-rig channels and Weapon.R/Weapon.L transforms in local, model, and animated-camera space. Published the extractor, compact manifest, human inventory, and Library corpus. The next gate is visual source-clip selection, not further data archaeology.
 - 2026-08-02: Chose coupled hero hands + tool with low-FPS arcade timing over smooth weapon-only animation. Documented the bounded Infinite Brutality donor workflow and hero plate acceptance contract. Candidate plate generated with full side forearms and non-square terminations; not yet accepted and its stable Library identity is not available in this turn.
-- 2026-08-02: Weapon/tool bone transform extraction remains requested but unimplemented; it is the next evidence gate.
 - 2026-08-02: Bootstrapped repository-root state plus compact Drive Writing, Game, and Shared control records. Broad assets remain in Library.
