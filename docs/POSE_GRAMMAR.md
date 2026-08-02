@@ -56,7 +56,7 @@ This can construct arbitrary candidates without pretending every interpolation i
 
 Role hints are navigation, not acceptance. The miner cannot know that a visually plausible frame is the correct shovel contact merely because its transform curve peaks there.
 
-The generated `data/pose_grammar.v0.json` retains exact clip, sample index, time, weapon registration, selection reason, and reconstruction recipe for every atom.
+The generated `data/pose_grammar.v1.json` retains exact clip, sample index, time, weapon registration, selection reason, and reconstruction recipe for every atom. The v0 compact rows accidentally dropped weapon registration and reconstruction even though the miner built them internally; v1 repairs that contract.
 
 ## Phase-complete mining
 
