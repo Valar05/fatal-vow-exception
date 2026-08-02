@@ -1,0 +1,344 @@
+{
+  "schema": "fatal-vow.vertex-hand-carrier/v1",
+  "status": "candidate_visual_evidence",
+  "authorized_lane": "local_only",
+  "source_policy": "accepted k004 pixels transformed; no generated or repainted hand pixels",
+  "accepted_sources": {
+    "k004_proof": {
+      "filename": "Rugged Hand Gripping a Blue-Gray Shovel.png",
+      "sha256": "e5b472dbe5dc97c8e2a9a61c02f43cc8c89aaa3cc4254bcd6fc67f0c74990857"
+    },
+    "hero_plate": {
+      "filename": "Medieval Fleshpunk Hand Turnaround Sheet.png",
+      "sha256": "bf6a3107e26d6bba55ebcf933bb58517a17d9ba163b3c0c7d9deb93cbd68e18c"
+    }
+  },
+  "carrier": {
+    "reference_atom": "onehandattack2.s006",
+    "grip_class": "one_hand_long_handle",
+    "deformation_segments": [
+      "hand_cuff_follows_weapon_socket",
+      "forearm_follows_wrist_to_frame_edge_exit"
+    ],
+    "vertex_colors": {
+      "rear_hand_forearm": "#995CD6",
+      "front_fingers_knuckles": "#FF9933",
+      "invalid_overlap": "#FF2828"
+    },
+    "extraction": {
+      "arm_polygon_px": [
+        [
+          252,
+          143
+        ],
+        [
+          326,
+          145
+        ],
+        [
+          363,
+          188
+        ],
+        [
+          374,
+          242
+        ],
+        [
+          469,
+          359
+        ],
+        [
+          309,
+          359
+        ],
+        [
+          307,
+          284
+        ],
+        [
+          279,
+          228
+        ],
+        [
+          251,
+          216
+        ]
+      ],
+      "front_finger_polygon_px": [
+        [
+          252,
+          151
+        ],
+        [
+          309,
+          151
+        ],
+        [
+          313,
+          176
+        ],
+        [
+          307,
+          221
+        ],
+        [
+          286,
+          228
+        ],
+        [
+          253,
+          216
+        ]
+      ],
+      "rear_pixels": 14406,
+      "hand_rear_pixels": 4001,
+      "forearm_pixels": 12472,
+      "front_pixels": 2749,
+      "donor_tool_pixels_excluded": 1562
+    },
+    "layers": [
+      "rear_hand_forearm",
+      "weapon",
+      "front_fingers_knuckles"
+    ]
+  },
+  "frames": [
+    {
+      "atom": "onehandattack3.s002",
+      "role": "guard",
+      "time_seconds": 0.0833333,
+      "similarity": {
+        "a": 0.7631581566755061,
+        "b": -0.43252149795113287,
+        "tx": 113.64506164802765,
+        "ty": 150.5448324731979,
+        "scale": 0.8772030655955599,
+        "rotation_degrees": -29.54248788466978
+      },
+      "forearm_registration": {
+        "wrist_px": [
+          464.33090670330057,
+          178.65828040541066
+        ],
+        "frame_edge_exit_px": [
+          600.0,
+          360.0
+        ],
+        "matrix": [
+          [
+            1.0310630013769875,
+            0.48560599409677235
+          ],
+          [
+            0.07037261258391901,
+            1.307825051399132
+          ]
+        ],
+        "translation": [
+          12.756641574366938,
+          -138.96606353725514
+        ]
+      },
+      "rear_hand_forearm": "layers/00-guard-rear-hand-forearm.png",
+      "rear_hand_forearm_sha256": "9746863a1d73e633ec5a902b59153e73b4d9ff617f376a14fb82dbc851bdca7e",
+      "weapon": "onehandattack2-grammar-bank-material/frames/00-guard.png",
+      "weapon_sha256": "c1d8c68bf88c8bf3a5e25294751d565e32ab1e821cc926849ade9ccbb0d14763",
+      "semantic_weapon": "evidence/onehandattack2-grammar-bank-semantic/frames/00-guard.png",
+      "semantic_weapon_sha256": "1518b652031c1f6c541d5bffc857824c6df8e376063249b939213fa499777cda",
+      "front_fingers_knuckles": "layers/00-guard-front-fingers-knuckles.png",
+      "front_fingers_knuckles_sha256": "e6ab7c75b6e7a428a53302d1cd2e866df97e581717dd58a82f064acb7c628bf6",
+      "composed": "frames/00-guard-composed.png",
+      "composed_sha256": "ea0d694ef60af9100cb5b65dcc395ca846d76f67731ff2125edcc32905c143b5",
+      "vertex_color": "frames/00-guard-vertex-color.png",
+      "vertex_color_sha256": "5f7e3012c5ceba53c3e424079dd2087726e8327badf1ec0f71b825e352c944e3"
+    },
+    {
+      "atom": "onehandattack2.s004",
+      "role": "anticipation",
+      "time_seconds": 0.1666667,
+      "similarity": {
+        "a": 1.2293602227894176,
+        "b": 1.0090085086313287,
+        "tx": -39.685322366758356,
+        "ty": -309.96396555054014,
+        "scale": 1.5904165265323624,
+        "rotation_degrees": 39.37774715523792
+      },
+      "forearm_registration": {
+        "wrist_px": [
+          141.4353571572793,
+          301.63290944268
+        ],
+        "frame_edge_exit_px": [
+          118.0,
+          360.0
+        ],
+        "matrix": [
+          [
+            1.2483739619663334,
+            -0.8024058264517776
+          ],
+          [
+            0.7029506659155427,
+            0.07826996500046741
+          ]
+        ],
+        "translation": [
+          -92.48348726389344,
+          50.64254623361467
+        ]
+      },
+      "rear_hand_forearm": "layers/01-anticipation-rear-hand-forearm.png",
+      "rear_hand_forearm_sha256": "c3418046282a1685b422c6301347cfee9c66cd7cd895492a9654acfd7a156307",
+      "weapon": "onehandattack2-grammar-bank-material/frames/01-anticipation.png",
+      "weapon_sha256": "0043e5b403b919e33f1c745909ee6a4e58da749104e49fc2fc37ed3aa131335e",
+      "semantic_weapon": "evidence/onehandattack2-grammar-bank-semantic/frames/01-anticipation.png",
+      "semantic_weapon_sha256": "eabdba4a38f0db36ddc614cdd48bf53afc578e82f662c946f0159ad0b766ba21",
+      "front_fingers_knuckles": "layers/01-anticipation-front-fingers-knuckles.png",
+      "front_fingers_knuckles_sha256": "d02a0f7b5b3475d86a6d1785917b302514e46b302747fc14a41460136f8d21bd",
+      "composed": "frames/01-anticipation-composed.png",
+      "composed_sha256": "86240e32374788a9800e635974e73807dc9689a72f37ec71b4baffa2ca947aaa",
+      "vertex_color": "frames/01-anticipation-vertex-color.png",
+      "vertex_color_sha256": "bda98967c4a5ce9c7132f2ff65602d99f9a8f777ad8def86bf300a471c9e85d4"
+    },
+    {
+      "atom": "onehandattack2.s006",
+      "role": "contact",
+      "time_seconds": 0.25,
+      "similarity": {
+        "a": 1.0,
+        "b": -0.0,
+        "tx": 0.0,
+        "ty": 0.0,
+        "scale": 1.0,
+        "rotation_degrees": -0.0
+      },
+      "forearm_registration": {
+        "wrist_px": [
+          332.0,
+          225.0
+        ],
+        "frame_edge_exit_px": [
+          400.0,
+          360.0
+        ],
+        "matrix": [
+          [
+            1.0,
+            -2.3852447794681098e-17
+          ],
+          [
+            3.469446951953614e-18,
+            1.0
+          ]
+        ],
+        "translation": [
+          0.0,
+          0.0
+        ]
+      },
+      "rear_hand_forearm": "layers/02-contact-rear-hand-forearm.png",
+      "rear_hand_forearm_sha256": "1420c46125671c2709433f3745495b44a19058faba9bc2d86f866ecaa01e15ec",
+      "weapon": "onehandattack2-grammar-bank-material/frames/02-contact.png",
+      "weapon_sha256": "8a55844f440389e04d61bc72ccc680117c3edd00d21ead8574eebdbe97554c64",
+      "semantic_weapon": "evidence/onehandattack2-grammar-bank-semantic/frames/02-contact.png",
+      "semantic_weapon_sha256": "fd69438f093996ee52e5c513a232acf24d206abf9145482bd6dd70d658aaedfe",
+      "front_fingers_knuckles": "layers/02-contact-front-fingers-knuckles.png",
+      "front_fingers_knuckles_sha256": "afd75b73da093cd2d4098c33cb0a75216d75396334c5ca5e79eac6864442b340",
+      "composed": "frames/02-contact-composed.png",
+      "composed_sha256": "4f5d8b43565954521ea7076968e0f8c365f39db856c17821e66a1fd77e07491b",
+      "vertex_color": "frames/02-contact-vertex-color.png",
+      "vertex_color_sha256": "639bd128056ffc5dd9b67ffceb56a94a657252dd3d1d31c01f7e1f9067b9c221"
+    },
+    {
+      "atom": "onehandattack2.s027",
+      "role": "recovery",
+      "time_seconds": 1.125,
+      "similarity": {
+        "a": 1.2203783735793199,
+        "b": 0.6638041984285867,
+        "tx": 296.99711126521976,
+        "ty": -207.92920106339483,
+        "scale": 1.3892297824879527,
+        "rotation_degrees": 28.543233108584097
+      },
+      "forearm_registration": {
+        "wrist_px": [
+          552.806786647122,
+          287.03892687024296
+        ],
+        "frame_edge_exit_px": [
+          602.0,
+          360.0
+        ],
+        "matrix": [
+          [
+            1.175135017538757,
+            -0.22752568770190693
+          ],
+          [
+            -0.4764755712389156,
+            0.7804549035111356
+          ]
+        ],
+        "translation": [
+          213.85524055718372,
+          269.6264632315574
+        ]
+      },
+      "rear_hand_forearm": "layers/03-recovery-rear-hand-forearm.png",
+      "rear_hand_forearm_sha256": "3b3b8c01198ed32fce612a7317ccee546db826563d6ba705c71a840d90c48ac6",
+      "weapon": "onehandattack2-grammar-bank-material/frames/03-recovery.png",
+      "weapon_sha256": "880e0026158f4809c2cd997d90ebf0fd0c8d0ddad2f66e08894b7299f840c799",
+      "semantic_weapon": "evidence/onehandattack2-grammar-bank-semantic/frames/03-recovery.png",
+      "semantic_weapon_sha256": "d728e273d2b4424a39965f064a8a99e9ead8918f894a304277944525a6cad79a",
+      "front_fingers_knuckles": "layers/03-recovery-front-fingers-knuckles.png",
+      "front_fingers_knuckles_sha256": "0f3252c3501d57202c01e903a525cd3705ed0786900679a758cac23ac7652d28",
+      "composed": "frames/03-recovery-composed.png",
+      "composed_sha256": "ac0b9fcda3718e8f5b0dec1d463fe9a5570ab0f4312b1636f1f4a330697eaf65",
+      "vertex_color": "frames/03-recovery-vertex-color.png",
+      "vertex_color_sha256": "29d6cba666e4a16e7f58b622a31c7d8109e0a0dedc37144eb49515f48ca99411"
+    }
+  ],
+  "score": {
+    "timeline_frame_indices": [
+      0,
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3
+    ],
+    "durations_ms": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ]
+  },
+  "outputs": {
+    "contact_sheet": {
+      "path": "onehandattack2-hand-carrier-contact-sheet.png",
+      "sha256": "69edc68c6909dfeb4e8629c4af47359c832d0a2114e6d34cf508d532940f3b30"
+    },
+    "vertex_color_contact_sheet": {
+      "path": "onehandattack2-hand-carrier-vertex-color-contact-sheet.png",
+      "sha256": "919c40c594f1b1ad1ebae881613087bc62b0f92ea2231e3c339410f1798d6e97"
+    },
+    "watchdown": {
+      "path": "onehandattack2-hand-carrier-watchdown.gif",
+      "sha256": "838226692c514db821a7a5011c140e8548aa394908e971fa5922396b77b42e9c"
+    },
+    "vertex_color_watchdown": {
+      "path": "onehandattack2-hand-carrier-vertex-color-watchdown.gif",
+      "sha256": "6f7aeea217b8a0fe1f2368f96f24ed09a996771f4cb5b892a2f81bdbf2c6c206"
+    }
+  },
+  "claim_boundary": "Layer completeness and deterministic registration may pass. Pose quality, final grip readability, and acceptance remain human visual judgments."
+}
