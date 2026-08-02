@@ -55,6 +55,7 @@ Rejected performances may be composted into valid atoms, constraints, transition
 2. Classify candidates by domain, role hint, grip class, contact, visibility, and constraint needs. A label such as `contact_candidate` is navigation, not acceptance.
 3. Build a pose recipe by copying declared joint subsets from donor atoms, adding explicit overrides, and solving declared contacts.
 4. Bind visual layers through the established camera. Freeze source-locked weapon geometry; author back-hand and foreground-finger occlusion separately.
+   Register the hand/cuff to the weapon socket and the forearm to an explicit wrist-to-frame-edge exit; one rigid transform is insufficient for first-person foreshortening.
 5. Compose a score. Holds and abrupt changes are authored timing, not missing interpolation.
 6. Render contact sheets and a first-person watchdown at intended cadence.
 7. Promote only after visual acceptance. Source-derived, generated, manually corrected, rendered, and accepted states remain separate.
@@ -90,3 +91,4 @@ Collision, damage, and gameplay state are independent of sprite artwork. A visua
 - Mined pose catalog: 297 source-exact candidates in 33 semantic families; not visually accepted as a set.
 - `OneHandAttack2` isolated k004 hard grip: accepted as premise evidence.
 - Complete grammar-composed runtime sentence: not yet implemented or accepted.
+- First grammar-composed carrier sentence: implemented and locally rendered as a candidate; all twelve layer artifacts compile. It is not user accepted or runtime integrated.
