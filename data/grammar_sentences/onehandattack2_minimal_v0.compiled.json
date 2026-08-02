@@ -1,0 +1,147 @@
+{
+  "schema": "fatal-vow.pose-sentence-compile/v1",
+  "sentence_id": "onehandattack2-minimal-grammar-proof-v0",
+  "grammar_schema": "fatal-vow.pose-grammar.v0",
+  "source_catalog_sha256": "28904ea5cbe24c6b46bfd27fcb5a15c4a9b05341412ba82408103f906f027fa9",
+  "sentence_sha256": "c22c7bee4ca5ed689768a6773acd90ec3431cfd7def5a63d6e19de538dff918a",
+  "motion_compile_status": "pass",
+  "visual_compile_status": "blocked_missing_layers",
+  "failures": [],
+  "missing_layers": [
+    "guard:rear_hand_forearm",
+    "guard:weapon",
+    "guard:front_fingers_knuckles",
+    "anticipation:rear_hand_forearm",
+    "anticipation:weapon",
+    "anticipation:front_fingers_knuckles",
+    "contact:rear_hand_forearm",
+    "contact:weapon",
+    "contact:front_fingers_knuckles",
+    "recovery:rear_hand_forearm",
+    "recovery:weapon",
+    "recovery:front_fingers_knuckles"
+  ],
+  "grip_class": "one_hand_long_handle",
+  "resolved_recipes": {
+    "guard": {
+      "atom": "onehandattack2.s000",
+      "source_clip": "OneHandAttack2",
+      "sample_index": 0,
+      "time_seconds": 0.0,
+      "role": "guard",
+      "catalog_role_hint": "guard",
+      "grip_class": "one_hand_long_handle",
+      "status": "mined_candidate"
+    },
+    "anticipation": {
+      "atom": "onehandattack2.s004",
+      "source_clip": "OneHandAttack2",
+      "sample_index": 4,
+      "time_seconds": 0.1666667,
+      "role": "anticipation",
+      "catalog_role_hint": "anticipation",
+      "grip_class": "one_hand_long_handle",
+      "status": "mined_candidate"
+    },
+    "contact": {
+      "atom": "onehandattack2.s006",
+      "source_clip": "OneHandAttack2",
+      "sample_index": 6,
+      "time_seconds": 0.25,
+      "role": "contact",
+      "catalog_role_hint": "anticipation",
+      "grip_class": "one_hand_long_handle",
+      "status": "accepted_premise_evidence"
+    },
+    "recovery": {
+      "atom": "onehandattack2.s027",
+      "source_clip": "OneHandAttack2",
+      "sample_index": 27,
+      "time_seconds": 1.125,
+      "role": "recovery",
+      "catalog_role_hint": "recovery",
+      "grip_class": "one_hand_long_handle",
+      "status": "mined_candidate"
+    }
+  },
+  "score": [
+    {
+      "event": "cue",
+      "at_seconds": 0.0,
+      "pose": "guard"
+    },
+    {
+      "event": "transition",
+      "at_seconds": 0.1,
+      "pose": "anticipation"
+    },
+    {
+      "event": "accent",
+      "at_seconds": 0.2,
+      "pose": "contact"
+    },
+    {
+      "event": "hold",
+      "at_seconds": 0.3,
+      "pose": "contact"
+    },
+    {
+      "event": "release",
+      "at_seconds": 0.4,
+      "pose": "recovery"
+    },
+    {
+      "event": "stop",
+      "at_seconds": 0.7
+    }
+  ],
+  "interrupts": {
+    "guard": "guard",
+    "anticipation": "recovery",
+    "contact": "recovery",
+    "recovery": "guard"
+  },
+  "timeline": [
+    {
+      "frame": 0,
+      "at_seconds": 0.0,
+      "pose": "guard"
+    },
+    {
+      "frame": 1,
+      "at_seconds": 0.1,
+      "pose": "anticipation"
+    },
+    {
+      "frame": 2,
+      "at_seconds": 0.2,
+      "pose": "contact"
+    },
+    {
+      "frame": 3,
+      "at_seconds": 0.3,
+      "pose": "contact"
+    },
+    {
+      "frame": 4,
+      "at_seconds": 0.4,
+      "pose": "recovery"
+    },
+    {
+      "frame": 5,
+      "at_seconds": 0.5,
+      "pose": "recovery"
+    },
+    {
+      "frame": 6,
+      "at_seconds": 0.6,
+      "pose": "recovery"
+    },
+    {
+      "frame": 7,
+      "at_seconds": 0.7,
+      "pose": "recovery"
+    }
+  ],
+  "claim_boundary": "Motion/score compatibility may pass while visual runtime remains blocked. No watchdown or acceptance claim is permitted until every registered rear-hand, weapon, and foreground-finger layer exists."
+}
