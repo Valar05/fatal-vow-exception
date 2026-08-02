@@ -32,12 +32,23 @@
     }
   },
   "layers": {
-    "guard": {},
-    "anticipation": {},
+    "guard": {
+      "weapon": "evidence/onehandattack2-local-weapon-bank/frames/00-guard.png",
+      "vertex_color_guide": "evidence/onehandattack2-local-weapon-bank/frames/00-guard-vertex-color-composite.png"
+    },
+    "anticipation": {
+      "weapon": "evidence/onehandattack2-local-weapon-bank/frames/01-anticipation.png",
+      "vertex_color_guide": "evidence/onehandattack2-local-weapon-bank/frames/01-anticipation-vertex-color-composite.png"
+    },
     "contact": {
+      "weapon": "evidence/onehandattack2-local-weapon-bank/frames/02-contact.png",
+      "vertex_color_guide": "evidence/onehandattack2-local-weapon-bank/frames/02-contact-vertex-color-composite.png",
       "flattened_reference_only": "Rugged Hand Gripping a Blue-Gray Shovel.png"
     },
-    "recovery": {}
+    "recovery": {
+      "weapon": "evidence/onehandattack2-local-weapon-bank/frames/03-recovery.png",
+      "vertex_color_guide": "evidence/onehandattack2-local-weapon-bank/frames/03-recovery-vertex-color-composite.png"
+    }
   },
   "score": [
     {"event": "cue", "at_seconds": 0.0, "pose": "guard"},
