@@ -1,6 +1,6 @@
 # Fatal Vow Exception — State
 
-Updated: 2026-08-02
+Updated: 2026-08-03
 State owner: Adam, publishing through Home Center
 Project authority and final acceptance: Drew Clarke
 Authoritative home: https://github.com/Valar05/fatal-vow-exception/blob/main/state.md
@@ -39,6 +39,7 @@ Accepted:
 - Vertex color as visibility/deformation evidence.
 - Vow Motion Lab as the six-stage execution campaign.
 - Trenchmaker as the first end-to-end promotion spine.
+- Aubreigh Fujita narrator casting: Gemini 3.1 Flash TTS voice Pulcherrima, exact accepted source waveform at 1.20× speed. Canon artifact: `Aubreigh-Fujita-Gemini-Narrator-CANON-v2-1p2x.wav` (14.8666666667 s, SHA-256 `d7f8f15517374d9441a673b4195cf4aa19ed4625c15cf0098aba2128dfcc2562`).
 
 Not accepted:
 - Any current shovel visual pass as final art or runtime behavior.
@@ -79,6 +80,8 @@ Not accepted:
 - Trenchmaker v0 manifest: `evidence/trenchmaker-card6/trenchmaker-card6.manifest.json`
 - Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
 - Design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
+- Canon Aubreigh narrator: https://drive.google.com/file/d/1FNz_vw6Eqxi4jhGEq4Hvrkl0KDzrzFGl/view
+- Canon narrator manifest: https://drive.google.com/file/d/17dFqPs2rfjxjGPwmdLrK5WHnB2Bcz2FJ/view
 
 ## Active Gate
 
@@ -103,3 +106,4 @@ Present Trenchmaker Card 6 v0 for Drew's visual ruling. Do not promote it from c
 - Stage 1 mechanism inventory and completion gate were saved in Drive.
 - Third-person Stanley framing remains active: Drew is the player; narration may reveal the machinery but cannot choose for him.
 - The first Card 6 / Trenchmaker pose-only specimen was built and artifact-tested; acceptance remains with Drew.
+- Drew accepted Aubreigh’s Gemini narrator casting after an exact 20% speed increase. The original audition is preserved as revision-requested lineage; the 1.20× successor is accepted and canon.
