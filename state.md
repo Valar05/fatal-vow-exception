@@ -39,11 +39,12 @@ Accepted:
 - Vertex color as visibility/deformation evidence.
 - Vow Motion Lab as the six-stage execution campaign.
 - Trenchmaker as the first end-to-end promotion spine.
-- Aubreigh Fujita narrator casting: Gemini 3.1 Flash TTS voice Pulcherrima, exact accepted source waveform at 1.20× speed. Canon artifact: `Aubreigh-Fujita-Gemini-Narrator-CANON-v2-1p2x.wav` (14.8666666667 s, SHA-256 `d7f8f15517374d9441a673b4195cf4aa19ed4625c15cf0098aba2128dfcc2562`).
+- Aubreigh Fujita narrator casting: Gemini 3.1 Flash TTS voice Pulcherrima, pitch-preserving 1.20× master accepted under Drew’s direct canon order. Canon artifact: `Aubreigh-Fujita-Gemini-Narrator-CANON-v3-1p2x-pitch-preserved.wav` (14.866667 s, SHA-256 `c7cab59f19218f100efc09bc70f2a02c5de0cb6e0a228ed6afba2c8c854acd9a`).
 
 Not accepted:
 - Any current shovel visual pass as final art or runtime behavior.
 - The Trenchmaker Card 6 v0 specimen; it is delivered candidate evidence awaiting Drew's visual ruling.
+- The Aubreigh narrator v2 resampling candidate (`d7f8f155…`) is quarantined as rejected processing lineage because its time_stretch path raised vocal pitch; v3 is the linked pitch-preserving successor.
 
 ## Sealed Decisions
 
@@ -80,8 +81,9 @@ Not accepted:
 - Trenchmaker v0 manifest: `evidence/trenchmaker-card6/trenchmaker-card6.manifest.json`
 - Exact motion corpus: ChatGPT Library `libfile_eff00dae99a88191b64658eff5315c74`
 - Design foundation: ChatGPT Library `libfile_04e85c38ae848191b0f192f756663871`
-- Canon Aubreigh narrator: https://drive.google.com/file/d/1FNz_vw6Eqxi4jhGEq4Hvrkl0KDzrzFGl/view
-- Canon narrator manifest: https://drive.google.com/file/d/17dFqPs2rfjxjGPwmdLrK5WHnB2Bcz2FJ/view
+- Canon Aubreigh narrator: https://drive.google.com/file/d/1W3YBf0mgbJGRyh3fGQjvb4IPLY8aC7ol/view
+- Canon narrator immutable artifact: `home-center://artifacts/fatal-vow-aubreigh-narrator-canon-v3-1p2x-pitch-preserved`
+- Canon narrator acceptance receipt: `fatal-vow-aubreigh-narrator-v3-acceptance-20260803`
 
 ## Active Gate
 
@@ -106,4 +108,4 @@ Present Trenchmaker Card 6 v0 for Drew's visual ruling. Do not promote it from c
 - Stage 1 mechanism inventory and completion gate were saved in Drive.
 - Third-person Stanley framing remains active: Drew is the player; narration may reveal the machinery but cannot choose for him.
 - The first Card 6 / Trenchmaker pose-only specimen was built and artifact-tested; acceptance remains with Drew.
-- Drew accepted Aubreigh’s Gemini narrator casting after an exact 20% speed increase. The original audition is preserved as revision-requested lineage; the 1.20× successor is accepted and canon.
+- Drew accepted Aubreigh’s Gemini narrator casting after an exact 20% speed increase. Adam caught that the first 1.20× resampling candidate raised pitch, quarantined it, and replaced it with the verified pitch-preserving v3 master. The v1 audition and rejected v2 remain preserved as lineage; v3 is accepted and canon.
